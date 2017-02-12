@@ -4,8 +4,6 @@ __version__ = '0.38'
 __license__ = 'MIT'
 
 import re
-import os
-import sys
 import time
 import logging
 import marshal
@@ -91,6 +89,15 @@ class Tokenizer(object):
         return lfreq, ltotal
 
     def initialize(self, dictionary=None):
+        '''
+        :param dictionary:
+        :return:
+
+         判断有无已经缓存的前缀词典cache_file文件，
+         若有相应的cache文件则直接使用 marshal.load
+         方法加载前缀词典，若无则通过gen_pfdict对指
+         定的词库dict.txt进行计算生成前缀词典
+        '''
         if dictionary:
             abs_path = _get_abs_path(dictionary)
             if self.dictionary == abs_path and self.initialized:
@@ -166,18 +173,30 @@ class Tokenizer(object):
             default_logger.debug("Prefix dict has been built succesfully.")
 
     def check_initialized(self):
+        # 是否已经加载词库
         if not self.initialized:
             self.initialize()
 
     def calc(self, sentence, DAG, route):
+        # 动态规划，计算最大概率的切分组合
         N = len(sentence)
         route[N] = (0, 0)
+        # 对概率值取对数之后的结果(可以让概率相乘的计算变成对数相加,防止相乘造成下溢)
         logtotal = log(self.total)
+        # 从后往前遍历句子 反向计算最大概率
         for idx in xrange(N - 1, -1, -1):
+            '''
+            列表推倒求最大概率对数路径
+            route[idx] = max([ (概率对数，词语末字位置) for x in DAG[idx] ])
+            以idx:(概率对数最大值，词语末字位置)键值对形式保存在route中
+            route[x+1][0] 表示 词路径[x+1,N-1]的最大概率对数,
+            [x+1][0]即表示取句子x+1位置对应元组(概率对数，词语末字位置)的概率对数
+            '''
             route[idx] = max((log(self.FREQ.get(sentence[idx:x + 1]) or 1) -
                               logtotal + route[x + 1][0], x) for x in DAG[idx])
 
     def get_DAG(self, sentence):
+        # 获得待切分句子的DAG
         self.check_initialized()
         DAG = {}
         N = len(sentence)
@@ -282,32 +301,37 @@ class Tokenizer(object):
             - HMM: Whether to use the Hidden Markov Model.
         '''
         sentence = strdecode(sentence)
-
+        # 分詞主函数,返回结果是一个可迭代的 generator
+        # 不同模式下的正则
         if cut_all:
             re_han = re_han_cut_all
             re_skip = re_skip_cut_all
         else:
             re_han = re_han_default
             re_skip = re_skip_default
+
+        # 设置不同模式下的cut_block分词方法
         if cut_all:
             cut_block = self.__cut_all
         elif HMM:
             cut_block = self.__cut_DAG
         else:
             cut_block = self.__cut_DAG_NO_HMM
+
+        # 先用正则对句子进行切分
         blocks = re_han.split(sentence)
         for blk in blocks:
             if not blk:
                 continue
-            if re_han.match(blk):
-                for word in cut_block(blk):
+            if re_han.match(blk):  # re_han匹配的串
+                for word in cut_block(blk):  # 根据不同模式的方法进行分词
                     yield word
-            else:
-                tmp = re_skip.split(blk)
+            else:  # 按照re_skip正则表对blk进行重新切分
+                tmp = re_skip.split(blk)  # 返回list
                 for x in tmp:
                     if re_skip.match(x):
                         yield x
-                    elif not cut_all:
+                    elif not cut_all:  # 精准模式下逐个字符输出
                         for xx in x:
                             yield xx
                     else:
@@ -595,5 +619,3 @@ def disable_parallel():
     cut_for_search = dt.cut_for_search
 
 
-if __name__ == '__main__':
-    cut("aaa bbb")

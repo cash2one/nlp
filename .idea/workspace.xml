@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="add all --zaber-pc">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4093_洛炜01.爱杀.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4093_洛炜01.爱杀.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4094_洛炜02.暗夜绅士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4094_洛炜02.暗夜绅士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4095_洛炜03.暗之女.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4095_洛炜03.暗之女.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4096_洛炜04.傲龙落难.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4096_洛炜04.傲龙落难.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4097_洛炜05.傲女诱龙.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4097_洛炜05.傲女诱龙.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4098_洛炜06.暴君情劫.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4098_洛炜06.暴君情劫.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4099_洛炜07.标准恶女.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4099_洛炜07.标准恶女.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4100_洛炜08.痴心护卫.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4100_洛炜08.痴心护卫.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4101_洛炜09.痴心烙.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4101_洛炜09.痴心烙.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4102_洛炜10.胆小鬼.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4102_洛炜10.胆小鬼.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4103_洛炜11.点情郎.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4103_洛炜11.点情郎.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4104_洛炜12.毒香.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4104_洛炜12.毒香.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4105_洛炜13.妒忌的长发公主.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4105_洛炜13.妒忌的长发公主.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4106_洛炜14.夺情骑士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4106_洛炜14.夺情骑士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4107_洛炜15.恶君炽恋.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4107_洛炜15.恶君炽恋.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4108_洛炜16.恶魔绅士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4108_洛炜16.恶魔绅士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4109_洛炜17.焚梦.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4109_洛炜17.焚梦.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4110_洛炜18.愤怒的睡美人.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4110_洛炜18.愤怒的睡美人.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4111_洛炜19.管家别生气！.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4111_洛炜19.管家别生气！.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4112_洛炜20.管家的秘密.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4112_洛炜20.管家的秘密.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4113_洛炜21.光之子.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4113_洛炜21.光之子.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4114_洛炜22.姽婳.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4114_洛炜22.姽婳.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4115_洛炜23.鬼罂粟.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4115_洛炜23.鬼罂粟.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4116_洛炜24.好欲的灰姑娘.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4116_洛炜24.好欲的灰姑娘.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4117_洛炜25.红尘中的精灵.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4117_洛炜25.红尘中的精灵.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4118_洛炜26.狐郎.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4118_洛炜26.狐郎.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4119_洛炜27.画魂.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4119_洛炜27.画魂.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4120_洛炜28.还君泪千行.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4120_洛炜28.还君泪千行.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4121_洛炜29.荒野绅士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4121_洛炜29.荒野绅士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4122_洛炜30.火美人.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4122_洛炜30.火美人.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4123_洛炜31.火焰绅士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4123_洛炜31.火焰绅士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4124_洛炜32.祸水(上).txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4124_洛炜32.祸水(上).txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4125_洛炜33.祸水(下).txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4125_洛炜33.祸水(下).txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4126_洛炜34.佳人与十难.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4126_洛炜34.佳人与十难.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4127_洛炜35.骄傲的蓝胡子新娘.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4127_洛炜35.骄傲的蓝胡子新娘.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4128_洛炜36.金钻绅士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4128_洛炜36.金钻绅士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4129_洛炜37.口红战争.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4129_洛炜37.口红战争.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4130_洛炜38.狂君擒心.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4130_洛炜38.狂君擒心.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4131_洛炜39.狂郎.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4131_洛炜39.狂郎.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4132_洛炜40.蓝影绅士.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4132_洛炜40.蓝影绅士.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4133_洛炜41.懒惰的白雪公主.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4133_洛炜41.懒惰的白雪公主.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4134_洛炜42.泪美人.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4134_洛炜42.泪美人.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4135_洛炜43.冷君挚爱.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4135_洛炜43.冷君挚爱.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4136_洛炜44.恋蝶.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4136_洛炜44.恋蝶.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4137_洛炜45.烈焰红妆.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4137_洛炜45.烈焰红妆.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4138_洛炜46.灵月.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4138_洛炜46.灵月.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4139_洛炜47.流浪者之梦.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4139_洛炜47.流浪者之梦.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4140_洛炜48.掠夺者之役.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4140_洛炜48.掠夺者之役.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4141_洛炜49.蛮君戏妻.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4141_洛炜49.蛮君戏妻.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4142_洛炜50.魅香.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4142_洛炜50.魅香.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4143_洛炜51.梦娘.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4143_洛炜51.梦娘.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4144_洛炜52.魔君夺爱.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4144_洛炜52.魔君夺爱.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4145_洛炜53.魔美人.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4145_洛炜53.魔美人.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4146_洛炜54.魔眼夺魂.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4146_洛炜54.魔眼夺魂.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4147_洛炜55.魔眼挑情.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4147_洛炜55.魔眼挑情.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4148_洛炜56.魔眼炙心.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4148_洛炜56.魔眼炙心.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4149_洛炜57.南王魅红妆.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4149_洛炜57.南王魅红妆.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4150_洛炜58.孽君忏心.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4150_洛炜58.孽君忏心.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4151_洛炜59.亲亲小茉莉.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4151_洛炜59.亲亲小茉莉.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4152_洛炜60.荣耀者之冠.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4152_洛炜60.荣耀者之冠.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4153_洛炜61.少爷别闹了！.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4153_洛炜61.少爷别闹了！.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4154_洛炜62.圣界情劫.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4154_洛炜62.圣界情劫.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4155_洛炜63.圣女颖儿.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4155_洛炜63.圣女颖儿.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4156_洛炜64.圣王传说.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4156_洛炜64.圣王传说.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4157_洛炜65.水晶球里的新娘.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4157_洛炜65.水晶球里的新娘.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4158_洛炜66.四方宇 劣女戏豹.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4158_洛炜66.四方宇 劣女戏豹.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4159_洛炜67.天骄斗天娇.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4159_洛炜67.天骄斗天娇.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4160_洛炜68.王者的魅惑.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4160_洛炜68.王者的魅惑.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4161_洛炜69.王子与野兽系列外传魔法师之约.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4161_洛炜69.王子与野兽系列外传魔法师之约.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4162_洛炜70.小妹难缠.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4162_洛炜70.小妹难缠.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4163_洛炜71.小魔女的海上情劫.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4163_洛炜71.小魔女的海上情劫.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4164_洛炜72.邪君掠情.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4164_洛炜72.邪君掠情.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4165_洛炜73.邪美人.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4165_洛炜73.邪美人.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4166_洛炜74.修罗(上).txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4166_洛炜74.修罗(上).txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4167_洛炜75.修罗(下).txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4167_洛炜75.修罗(下).txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4168_洛炜76.亚当斗夏娃.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4168_洛炜76.亚当斗夏娃.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4169_洛炜77.艳君绮恋.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4169_洛炜77.艳君绮恋.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4170_洛炜78.妖花.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4170_洛炜78.妖花.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4171_洛炜79.鹰女若幽.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4171_洛炜79.鹰女若幽.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4172_洛炜80.诱惑者之吻.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4172_洛炜80.诱惑者之吻.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4173_洛炜81.冤家鸳家.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4173_洛炜81.冤家鸳家.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4174_洛炜82.鸳鸯契.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4174_洛炜82.鸳鸯契.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4175_洛炜83.紫云纱传说.txt.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4175_洛炜83.紫云纱传说.txt.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/jiebafenci.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zaberFenci/__init__.py" afterPath="$PROJECT_DIR$/zaberFenci/__init__.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nlp$jiebafenci.coverage" NAME="jiebafenci Coverage Results" MODIFIED="1486630960933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1486602443888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp$test.coverage" NAME="test Coverage Results" MODIFIED="1486635954043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp$NovelRecommend.coverage" NAME="NovelRecommend Coverage Results" MODIFIED="1486606500402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp$rnnfenci.coverage" NAME="rnnfenci Coverage Results" MODIFIED="1486461248878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nlp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding>
+                <element signature="e#17#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zaberFenci/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="108" column="38" lean-forward="true" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="323">
+                <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>endtime</find>
+      <find>getSourceFileLists</find>
+      <find>sourceDataDir</find>
+      <find>dag</find>
+      <find>ini</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>end_time</replace>
+      <replace>dir</replace>
+      <replace>source_dir</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/origin/msr_training.txt" />
+        <option value="$PROJECT_DIR$/SogouC.reduced/对照表.txt" />
+        <option value="$PROJECT_DIR$/rnnfenci.py" />
+        <option value="$PROJECT_DIR$/nltk.py" />
+        <option value="$PROJECT_DIR$/NovelRecommend.py" />
+        <option value="$PROJECT_DIR$/jiebafenci.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/zaberFenci/__init__.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zaberFenci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="get_Da&#9;null&#9;null&#10;dag&#9;null&#9;null&#10;get_DAG&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\nlp" />
+      <recent name="E:\PycharmProjects\nlp\study" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\nlp\study" />
+      <recent name="E:\PycharmProjects\nlp" />
+      <recent name="E:\PycharmProjects\nlp\origin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.demo">
+    <configuration default="false" name="jiebafenci" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\nlp\study\jiebafenci.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="nltk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\nlp\study\NovelRecommend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\nlp\study\test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NovelRecommend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\PycharmProjects\nlp\study\NovelRecommend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="nlp" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.jiebafenci" />
+      <item index="1" class="java.lang.String" itemvalue="Python.nltk" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.NovelRecommend" />
+      <item index="4" class="java.lang.String" itemvalue="Python.demo" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.demo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.jiebafenci" />
+        <item index="3" class="java.lang.String" itemvalue="Python.NovelRecommend" />
+        <item index="4" class="java.lang.String" itemvalue="Python.nltk" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="" />
+      <created>1486438390995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486438390995</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1486521961727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1486521961727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change name">
+      <created>1486524512016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486524512016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="novel">
+      <created>1486549576088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1486549576088</updated>
+    </task>
+    <task id="LOCAL-00004" summary="text Rank">
+      <created>1486636012563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1486636012563</updated>
+    </task>
+    <task id="LOCAL-00005" summary="move files">
+      <created>1486721515920</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1486721515920</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add all --zaber-pc">
+      <created>1486900145264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1486900145264</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add all --zaber-pc">
+      <created>1486900294908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1486900294908</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28744328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39443535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="change name" />
+    <MESSAGE value="novel" />
+    <MESSAGE value="text Rank" />
+    <MESSAGE value="move files" />
+    <MESSAGE value="add all --zaber-pc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all --zaber-pc" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaberFenci/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/jiebafenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4825">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/jiebafenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/jiebafenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/jiebafenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/nltk/tokenize/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NaiveBayesClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/对照表.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/jiebafenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NaiveBayesClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/keras/models.py" />
+    <entry file="file://$PROJECT_DIR$/study/origin/msr_training.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/news_orig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/keras/models.py" />
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/对照表.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NaiveBayesClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/nltk/tokenize/__init__.py" />
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/nltk/data.py" />
+    <entry file="file://$PROJECT_DIR$/novel_.0" />
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000008/10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000024/10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000014/10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/auto_comments_orig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/SogouR.reduced.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/weibo_orig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/food_comments_orig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2950">
+          <caret line="174" column="14" lean-forward="false" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/NovelRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/jiebafenci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_compat.py" />
+    <entry file="file://$PROJECT_DIR$/_init_.py" />
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000020/274.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Program Files/Anaconda2/Lib/site-packages/networkx/algorithms/dag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#17#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaberFenci/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="108" column="38" lean-forward="true" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
