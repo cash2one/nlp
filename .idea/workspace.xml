@@ -1,178 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="add all --zaber-pc">
+    <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4093_洛炜01.爱杀.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4093_洛炜01.爱杀.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4094_洛炜02.暗夜绅士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4094_洛炜02.暗夜绅士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4095_洛炜03.暗之女.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4095_洛炜03.暗之女.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4096_洛炜04.傲龙落难.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4096_洛炜04.傲龙落难.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4097_洛炜05.傲女诱龙.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4097_洛炜05.傲女诱龙.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4098_洛炜06.暴君情劫.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4098_洛炜06.暴君情劫.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4099_洛炜07.标准恶女.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4099_洛炜07.标准恶女.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4100_洛炜08.痴心护卫.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4100_洛炜08.痴心护卫.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4101_洛炜09.痴心烙.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4101_洛炜09.痴心烙.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4102_洛炜10.胆小鬼.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4102_洛炜10.胆小鬼.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4103_洛炜11.点情郎.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4103_洛炜11.点情郎.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4104_洛炜12.毒香.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4104_洛炜12.毒香.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4105_洛炜13.妒忌的长发公主.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4105_洛炜13.妒忌的长发公主.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4106_洛炜14.夺情骑士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4106_洛炜14.夺情骑士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4107_洛炜15.恶君炽恋.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4107_洛炜15.恶君炽恋.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4108_洛炜16.恶魔绅士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4108_洛炜16.恶魔绅士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4109_洛炜17.焚梦.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4109_洛炜17.焚梦.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4110_洛炜18.愤怒的睡美人.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4110_洛炜18.愤怒的睡美人.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4111_洛炜19.管家别生气！.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4111_洛炜19.管家别生气！.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4112_洛炜20.管家的秘密.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4112_洛炜20.管家的秘密.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4113_洛炜21.光之子.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4113_洛炜21.光之子.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4114_洛炜22.姽婳.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4114_洛炜22.姽婳.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4115_洛炜23.鬼罂粟.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4115_洛炜23.鬼罂粟.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4116_洛炜24.好欲的灰姑娘.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4116_洛炜24.好欲的灰姑娘.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4117_洛炜25.红尘中的精灵.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4117_洛炜25.红尘中的精灵.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4118_洛炜26.狐郎.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4118_洛炜26.狐郎.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4119_洛炜27.画魂.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4119_洛炜27.画魂.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4120_洛炜28.还君泪千行.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4120_洛炜28.还君泪千行.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4121_洛炜29.荒野绅士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4121_洛炜29.荒野绅士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4122_洛炜30.火美人.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4122_洛炜30.火美人.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4123_洛炜31.火焰绅士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4123_洛炜31.火焰绅士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4124_洛炜32.祸水(上).txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4124_洛炜32.祸水(上).txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4125_洛炜33.祸水(下).txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4125_洛炜33.祸水(下).txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4126_洛炜34.佳人与十难.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4126_洛炜34.佳人与十难.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4127_洛炜35.骄傲的蓝胡子新娘.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4127_洛炜35.骄傲的蓝胡子新娘.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4128_洛炜36.金钻绅士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4128_洛炜36.金钻绅士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4129_洛炜37.口红战争.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4129_洛炜37.口红战争.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4130_洛炜38.狂君擒心.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4130_洛炜38.狂君擒心.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4131_洛炜39.狂郎.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4131_洛炜39.狂郎.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4132_洛炜40.蓝影绅士.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4132_洛炜40.蓝影绅士.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4133_洛炜41.懒惰的白雪公主.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4133_洛炜41.懒惰的白雪公主.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4134_洛炜42.泪美人.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4134_洛炜42.泪美人.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4135_洛炜43.冷君挚爱.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4135_洛炜43.冷君挚爱.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4136_洛炜44.恋蝶.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4136_洛炜44.恋蝶.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4137_洛炜45.烈焰红妆.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4137_洛炜45.烈焰红妆.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4138_洛炜46.灵月.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4138_洛炜46.灵月.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4139_洛炜47.流浪者之梦.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4139_洛炜47.流浪者之梦.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4140_洛炜48.掠夺者之役.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4140_洛炜48.掠夺者之役.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4141_洛炜49.蛮君戏妻.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4141_洛炜49.蛮君戏妻.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4142_洛炜50.魅香.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4142_洛炜50.魅香.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4143_洛炜51.梦娘.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4143_洛炜51.梦娘.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4144_洛炜52.魔君夺爱.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4144_洛炜52.魔君夺爱.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4145_洛炜53.魔美人.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4145_洛炜53.魔美人.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4146_洛炜54.魔眼夺魂.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4146_洛炜54.魔眼夺魂.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4147_洛炜55.魔眼挑情.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4147_洛炜55.魔眼挑情.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4148_洛炜56.魔眼炙心.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4148_洛炜56.魔眼炙心.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4149_洛炜57.南王魅红妆.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4149_洛炜57.南王魅红妆.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4150_洛炜58.孽君忏心.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4150_洛炜58.孽君忏心.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4151_洛炜59.亲亲小茉莉.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4151_洛炜59.亲亲小茉莉.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4152_洛炜60.荣耀者之冠.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4152_洛炜60.荣耀者之冠.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4153_洛炜61.少爷别闹了！.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4153_洛炜61.少爷别闹了！.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4154_洛炜62.圣界情劫.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4154_洛炜62.圣界情劫.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4155_洛炜63.圣女颖儿.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4155_洛炜63.圣女颖儿.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4156_洛炜64.圣王传说.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4156_洛炜64.圣王传说.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4157_洛炜65.水晶球里的新娘.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4157_洛炜65.水晶球里的新娘.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4158_洛炜66.四方宇 劣女戏豹.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4158_洛炜66.四方宇 劣女戏豹.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4159_洛炜67.天骄斗天娇.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4159_洛炜67.天骄斗天娇.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4160_洛炜68.王者的魅惑.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4160_洛炜68.王者的魅惑.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4161_洛炜69.王子与野兽系列外传魔法师之约.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4161_洛炜69.王子与野兽系列外传魔法师之约.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4162_洛炜70.小妹难缠.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4162_洛炜70.小妹难缠.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4163_洛炜71.小魔女的海上情劫.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4163_洛炜71.小魔女的海上情劫.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4164_洛炜72.邪君掠情.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4164_洛炜72.邪君掠情.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4165_洛炜73.邪美人.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4165_洛炜73.邪美人.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4166_洛炜74.修罗(上).txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4166_洛炜74.修罗(上).txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4167_洛炜75.修罗(下).txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4167_洛炜75.修罗(下).txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4168_洛炜76.亚当斗夏娃.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4168_洛炜76.亚当斗夏娃.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4169_洛炜77.艳君绮恋.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4169_洛炜77.艳君绮恋.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4170_洛炜78.妖花.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4170_洛炜78.妖花.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4171_洛炜79.鹰女若幽.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4171_洛炜79.鹰女若幽.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4172_洛炜80.诱惑者之吻.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4172_洛炜80.诱惑者之吻.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4173_洛炜81.冤家鸳家.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4173_洛炜81.冤家鸳家.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4174_洛炜82.鸳鸯契.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4174_洛炜82.鸳鸯契.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4175_洛炜83.紫云纱传说.txt.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/corpus/4175_洛炜83.紫云纱传说.txt.mm.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/study/jiebafenci.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zaberFenci/__init__.py" afterPath="$PROJECT_DIR$/zaberFenci/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -762,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486900294908</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="explain some code">
+      <created>1486916172996</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1486916172996</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,7 +648,8 @@
     <MESSAGE value="text Rank" />
     <MESSAGE value="move files" />
     <MESSAGE value="add all --zaber-pc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all --zaber-pc" />
+    <MESSAGE value="explain some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="explain some code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
