@@ -1,4 +1,5 @@
 from __future__ import absolute_import, unicode_literals
+
 __version__ = '0.38'
 __license__ = 'MIT'
 
@@ -45,12 +46,13 @@ re_skip_default = re.compile("(\r\n|\s)", re.U)
 re_han_cut_all = re.compile("([\u4E00-\u9FD5]+)", re.U)
 re_skip_cut_all = re.compile("[^a-zA-Z0-9+#\n]", re.U)
 
+
 def setLogLevel(log_level):
     global logger
     default_logger.setLevel(log_level)
 
-class Tokenizer(object):
 
+class Tokenizer(object):
     def __init__(self, dictionary=DEFAULT_DICT):
         self.lock = threading.RLock()
         if dictionary == DEFAULT_DICT:
@@ -74,13 +76,13 @@ class Tokenizer(object):
         for lineno, line in enumerate(f, 1):
             try:
                 line = line.strip().decode('utf-8')
-                word, freq = line.split(' ')[:2]
+                word, freq = line.split(' ')[:2]  # 获得词条 及其出现次数
                 freq = int(freq)
                 lfreq[word] = freq
                 ltotal += freq
-                for ch in xrange(len(word)):
+                for ch in xrange(len(word)):  # 处理word的前缀
                     wfrag = word[:ch + 1]
-                    if wfrag not in lfreq:
+                    if wfrag not in lfreq:  # word前缀不在lfreq则其出现频次置0
                         lfreq[wfrag] = 0
             except ValueError:
                 raise ValueError(
@@ -126,7 +128,7 @@ class Tokenizer(object):
 
             load_from_cache_fail = True
             if os.path.isfile(cache_file) and (abs_path == DEFAULT_DICT or
-                os.path.getmtime(cache_file) > os.path.getmtime(abs_path)):
+                                                       os.path.getmtime(cache_file) > os.path.getmtime(abs_path)):
                 default_logger.debug(
                     "Loading model from cache %s" % cache_file)
                 try:
@@ -592,5 +594,6 @@ def disable_parallel():
     cut = dt.cut
     cut_for_search = dt.cut_for_search
 
+
 if __name__ == '__main__':
-   cut("aaa bbb")
+    cut("aaa bbb")
