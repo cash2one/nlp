@@ -2,6 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4093_洛炜01.爱杀.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4094_洛炜02.暗夜绅士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4095_洛炜03.暗之女.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4096_洛炜04.傲龙落难.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4097_洛炜05.傲女诱龙.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4098_洛炜06.暴君情劫.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4099_洛炜07.标准恶女.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4100_洛炜08.痴心护卫.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4101_洛炜09.痴心烙.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4102_洛炜10.胆小鬼.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4103_洛炜11.点情郎.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4104_洛炜12.毒香.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4105_洛炜13.妒忌的长发公主.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4106_洛炜14.夺情骑士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4107_洛炜15.恶君炽恋.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4108_洛炜16.恶魔绅士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4109_洛炜17.焚梦.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4110_洛炜18.愤怒的睡美人.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4111_洛炜19.管家别生气！.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4112_洛炜20.管家的秘密.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4113_洛炜21.光之子.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4114_洛炜22.姽婳.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4115_洛炜23.鬼罂粟.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4116_洛炜24.好欲的灰姑娘.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4117_洛炜25.红尘中的精灵.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4118_洛炜26.狐郎.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4119_洛炜27.画魂.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4120_洛炜28.还君泪千行.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4121_洛炜29.荒野绅士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4122_洛炜30.火美人.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4123_洛炜31.火焰绅士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4124_洛炜32.祸水(上).txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4125_洛炜33.祸水(下).txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4126_洛炜34.佳人与十难.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4127_洛炜35.骄傲的蓝胡子新娘.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4128_洛炜36.金钻绅士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4129_洛炜37.口红战争.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4130_洛炜38.狂君擒心.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4131_洛炜39.狂郎.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4132_洛炜40.蓝影绅士.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4133_洛炜41.懒惰的白雪公主.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4134_洛炜42.泪美人.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4135_洛炜43.冷君挚爱.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4136_洛炜44.恋蝶.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4137_洛炜45.烈焰红妆.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4138_洛炜46.灵月.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4139_洛炜47.流浪者之梦.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4140_洛炜48.掠夺者之役.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4141_洛炜49.蛮君戏妻.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4142_洛炜50.魅香.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4143_洛炜51.梦娘.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4144_洛炜52.魔君夺爱.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4145_洛炜53.魔美人.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4146_洛炜54.魔眼夺魂.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4147_洛炜55.魔眼挑情.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4148_洛炜56.魔眼炙心.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4149_洛炜57.南王魅红妆.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4150_洛炜58.孽君忏心.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4151_洛炜59.亲亲小茉莉.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4152_洛炜60.荣耀者之冠.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4153_洛炜61.少爷别闹了！.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4154_洛炜62.圣界情劫.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4155_洛炜63.圣女颖儿.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4156_洛炜64.圣王传说.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4157_洛炜65.水晶球里的新娘.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4158_洛炜66.四方宇 劣女戏豹.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4159_洛炜67.天骄斗天娇.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4160_洛炜68.王者的魅惑.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4161_洛炜69.王子与野兽系列外传魔法师之约.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4162_洛炜70.小妹难缠.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4163_洛炜71.小魔女的海上情劫.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4164_洛炜72.邪君掠情.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4165_洛炜73.邪美人.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4166_洛炜74.修罗(上).txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4167_洛炜75.修罗(下).txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4168_洛炜76.亚当斗夏娃.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4169_洛炜77.艳君绮恋.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4170_洛炜78.妖花.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4171_洛炜79.鹰女若幽.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4172_洛炜80.诱惑者之吻.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4173_洛炜81.冤家鸳家.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4174_洛炜82.鸳鸯契.txt.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/dict/4175_洛炜83.紫云纱传说.txt.dict" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,32 +119,7 @@
     <favorites_list name="nlp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zaber_nlp/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11675">
-              <caret line="479" column="19" lean-forward="false" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
-              <folding>
-                <element signature="e#15#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zaber_nlp/posseg/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="272" column="7" lean-forward="false" selection-start-line="272" selection-start-column="7" selection-end-line="272" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,8 +191,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="5" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -192,6 +250,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,14 +642,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="5" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.301059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.301059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -885,22 +957,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11675">
-          <caret line="479" column="19" lean-forward="false" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zaber_nlp/posseg/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="272" column="7" lean-forward="false" selection-start-line="272" selection-start-column="7" selection-end-line="272" selection-end-column="7" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaber_nlp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="479" column="19" lean-forward="false" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
+          <folding>
+            <element signature="e#15#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
