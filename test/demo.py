@@ -13,9 +13,6 @@ print('=' * 40)
 print('1. 分词')
 print('-' * 40)
 
-seg_list = zaber_nlp.cut(u"我来到北京清华大学", cut_all=True)
-print("Full Mode: " + "/ ".join(seg_list))  # 全模式
-
 seg_list = zaber_nlp.cut(u"我来到北京清华大学", cut_all=False)
 print("Default Mode: " + "/ ".join(seg_list))  # 默认模式
 
@@ -42,17 +39,13 @@ print('/'.join(zaber_nlp.cut('「台中」正确应该不会被切开', HMM=Fals
 print('=' * 40)
 print('3. 关键词提取')
 print('-' * 40)
-# print(' TF-IDF')
-# print('-' * 40)
+
 
 s = "此外，公司拟对全资子公司吉林欧亚置业有限公司增资4.3亿元，" \
     "增资后，吉林欧亚置业注册资本由7000万元增加到5亿元。吉林欧亚置" \
     "业主要经营范围为房地产开发及百货零售等业务。目前在建吉林欧亚城市" \
     "商业综合体项目。2013年，实现营业收入0万元，实现净利润-139.13万元。"
-# for x, w in zaber_nlp.analyse.extract_tags(s, withWeight=True):
-#     print('%s %s' % (x, w))
-#
-# print('-' * 40)
+
 print(' TextRank')
 print('-' * 40)
 
@@ -68,3 +61,7 @@ for word, flag in words:
     print('%s %s' % (word, flag))
 
 print('=' * 40)
+
+content = open("../study/origin/weibo_orig.txt", "rb").read()
+# zaber_nlp.cut(content)
+print("Default Mode: " + "/ ".join(zaber_nlp.cut("环境宽股份有限公司")))  # 默认模式
