@@ -68,15 +68,3 @@ for word, flag in words:
     print('%s %s' % (word, flag))
 
 print('=' * 40)
-print('6. Tokenize: 返回词语在原文的起止位置')
-print('-' * 40)
-print(' 默认模式')
-print('-' * 40)
-
-result = zaber_nlp.tokenize('永和服装饰品有限公司')
-for tk in result:
-    print("word %s\t\t start: %d \t\t end:%d" % (tk[0], tk[1], tk[2]))
-
-print('-' * 40)
-
-

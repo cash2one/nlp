@@ -13,8 +13,6 @@ from math import log
 from . import finalseg
 from ._compat import *
 
-__version__ = '0.38'
-__license__ = 'MIT'
 if os.name == 'nt':
     from shutil import move as _replace_file
 else:
@@ -400,39 +398,6 @@ class Tokenizer(object):
             add_word(word, freq)
         return freq
 
-    def tokenize(self, unicode_sentence, mode="default", HMM=True):
-        """
-        Tokenize a sentence and yields tuples of (word, start, end)
-
-        Parameter:
-            - sentence: the str(unicode) to be segmented.
-            - mode: "default" or "search", "search" is for finer segmentation.
-            - HMM: whether to use the Hidden Markov Model.
-        """
-        if not isinstance(unicode_sentence, text_type):
-            raise ValueError("zaber_nlp: the input parameter should be unicode.")
-        start = 0
-        if mode == 'default':
-            for w in self.cut(unicode_sentence, HMM=HMM):
-                width = len(w)
-                yield (w, start, start + width)
-                start += width
-        else:
-            for w in self.cut(unicode_sentence, HMM=HMM):
-                width = len(w)
-                if len(w) > 2:
-                    for i in xrange(len(w) - 1):
-                        gram2 = w[i:i + 2]
-                        if self.FREQ.get(gram2):
-                            yield (gram2, start + i, start + i + 2)
-                if len(w) > 3:
-                    for i in xrange(len(w) - 2):
-                        gram3 = w[i:i + 3]
-                        if self.FREQ.get(gram3):
-                            yield (gram3, start + i, start + i + 3)
-                yield (w, start, start + width)
-                start += width
-
     def set_dictionary(self, dictionary_path):
         with self.lock:
             abs_path = _get_abs_path(dictionary_path)
@@ -460,21 +425,5 @@ initialize = dt.initialize
 load_userdict = dt.load_userdict
 set_dictionary = dt.set_dictionary
 suggest_freq = dt.suggest_freq
-tokenize = dt.tokenize
 user_word_tag_tab = dt.user_word_tag_tab
 
-
-
-
-def _lcut(s):
-    return dt._lcut(s)
-
-
-def _pcut(sentence, cut_all=False, HMM=True):
-    parts = strdecode(sentence).splitlines(True)
-    if HMM:
-        result = pool.map(_lcut, parts)
-
-    for r in result:
-        for w in r:
-            yield w
