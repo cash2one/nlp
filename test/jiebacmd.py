@@ -1,7 +1,7 @@
 '''
 usage example (find top 100 words in abc.txt):
 
-cat abc.txt | python zaberFencicmd.py | sort | uniq -c | sort -nr -k1 | head -100
+cat abc.txt | python zaber_nlpcmd.py | sort | uniq -c | sort -nr -k1 | head -100
 
 
 '''
@@ -10,7 +10,7 @@ from __future__ import unicode_literals
 import sys
 sys.path.append("../")
 
-import zaberFenci
+import zaber_nlp
 
 default_encoding='utf-8'
 
@@ -22,7 +22,7 @@ while True:
     if line=="":
         break
     line = line.strip()
-    for word in zaberFenci.cut(line):
+    for word in zaber_nlp.cut(line):
         print(word)
 
 

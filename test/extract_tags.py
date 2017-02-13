@@ -1,8 +1,8 @@
 import sys
 sys.path.append('../')
 
-import zaberFenci
-import zaberFenci.analyse
+import zaber_nlp
+import zaber_nlp.analyse
 from optparse import OptionParser
 
 USAGE = "usage:    python extract_tags.py [file name] -k [top k]"
@@ -25,6 +25,6 @@ else:
 
 content = open(file_name, 'rb').read()
 
-tags = zaberFenci.analyse.extract_tags(content, topK=topK)
+tags = zaber_nlp.analyse.extract_tags(content, topK=topK)
 
 print(",".join(tags))

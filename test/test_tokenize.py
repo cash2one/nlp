@@ -2,13 +2,13 @@
 from __future__ import print_function,unicode_literals
 import sys
 sys.path.append("../")
-import zaberFenci
+import zaber_nlp
 
 g_mode="default"
 
 def cuttest(test_sent):
     global g_mode
-    result = zaberFenci.tokenize(test_sent,mode=g_mode)
+    result = zaber_nlp.tokenize(test_sent,mode=g_mode)
     for tk in result:
         print("word %s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
 

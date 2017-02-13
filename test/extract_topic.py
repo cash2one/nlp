@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn import decomposition
 
-import zaberFenci
+import zaber_nlp
 import time
 import glob
 import sys
@@ -34,7 +34,7 @@ for f_name in glob.glob(pattern):
     with open(f_name) as f:
         print("read file:", f_name)
         for line in f: #one line as a document
-            words = " ".join(zaberFenci.cut(line))
+            words = " ".join(zaber_nlp.cut(line))
             docs.append(words)
 
 random.shuffle(docs)

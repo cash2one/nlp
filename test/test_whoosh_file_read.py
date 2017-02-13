@@ -7,7 +7,7 @@ from whoosh.index import create_in,open_dir
 from whoosh.fields import *
 from whoosh.qparser import QueryParser
 
-from zaberFenci.analyse import ChineseAnalyzer
+from zaber_nlp.analyse import ChineseAnalyzer
 
 analyzer = ChineseAnalyzer()
 

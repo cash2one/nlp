@@ -1,11 +1,11 @@
 #encoding=utf-8
 import sys
 sys.path.append("../")
-import zaberFenci
+import zaber_nlp
 
 
 def cuttest(test_sent):
-    result = zaberFenci.cut(test_sent)
+    result = zaber_nlp.cut(test_sent)
     print(" / ".join(result))
 
 

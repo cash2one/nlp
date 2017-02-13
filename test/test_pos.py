@@ -2,7 +2,7 @@
 from __future__ import print_function
 import sys
 sys.path.append("../")
-import zaberFenci.posseg as pseg
+import zaber_nlp.posseg as pseg
 
 def cuttest(test_sent):
     result = pseg.cut(test_sent)

@@ -2,10 +2,10 @@
 from __future__ import print_function
 import sys
 sys.path.append("../")
-import zaberFenci
+import zaber_nlp
 
 def cuttest(test_sent):
-    result = zaberFenci.cut(test_sent)
+    result = zaber_nlp.cut(test_sent)
     print("  ".join(result))
 
 def testcase():
@@ -22,7 +22,7 @@ def testcase():
     
 if __name__ == "__main__":
     testcase()
-    zaberFenci.set_dictionary("foobar.txt")
+    zaber_nlp.set_dictionary("foobar.txt")
     print("================================")
     testcase()
 

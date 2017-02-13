@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import zaberFenci
+import zaber_nlp
 import threading
 
 def inittokenizer(tokenizer, group):
@@ -9,8 +9,8 @@ def inittokenizer(tokenizer, group):
 	tokenizer.initialize()
 	print('<=== Thread %s:%s finished' % (group, threading.current_thread().ident))
 
-tokrs1 = [zaberFenci.Tokenizer() for n in range(5)]
-tokrs2 = [zaberFenci.Tokenizer('../extra_dict/dict.txt.small') for n in range(5)]
+tokrs1 = [zaber_nlp.Tokenizer() for n in range(5)]
+tokrs2 = [zaber_nlp.Tokenizer('../extra_dict/dict.txt.small') for n in range(5)]
 
 thr1 = [threading.Thread(target=inittokenizer, args=(tokr, 1)) for tokr in tokrs1]
 thr2 = [threading.Thread(target=inittokenizer, args=(tokr, 2)) for tokr in tokrs2]
@@ -27,8 +27,8 @@ del tokrs1, tokrs2
 
 print('='*40)
 
-tokr1 = zaberFenci.Tokenizer()
-tokr2 = zaberFenci.Tokenizer('../extra_dict/dict.txt.small')
+tokr1 = zaber_nlp.Tokenizer()
+tokr2 = zaber_nlp.Tokenizer('../extra_dict/dict.txt.small')
 
 thr1 = [threading.Thread(target=inittokenizer, args=(tokr1, 1)) for n in range(5)]
 thr2 = [threading.Thread(target=inittokenizer, args=(tokr2, 2)) for n in range(5)]

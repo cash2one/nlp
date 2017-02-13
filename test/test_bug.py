@@ -2,8 +2,8 @@
 from __future__ import print_function
 import sys
 sys.path.append("../")
-import zaberFenci
-import zaberFenci.posseg as pseg
+import zaber_nlp
+import zaber_nlp.posseg as pseg
 words=pseg.cut("又跛又啞")
 for w in words:
 	print(w.word,w.flag)

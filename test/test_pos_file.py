@@ -2,9 +2,9 @@ from __future__ import print_function
 import sys
 import time
 sys.path.append("../")
-import zaberFenci
-zaberFenci.initialize()
-import zaberFenci.posseg as pseg
+import zaber_nlp
+zaber_nlp.initialize()
+import zaber_nlp.posseg as pseg
 
 url = sys.argv[1]
 content = open(url,"rb").read()

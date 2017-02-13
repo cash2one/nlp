@@ -4,11 +4,11 @@ import sys
 sys.path.append("../")
 import unittest
 import types
-import zaberFenci
+import zaber_nlp
 if sys.version_info[0] > 2:
     from imp import reload
 
-zaberFenci.initialize()
+zaber_nlp.initialize()
 
 
 test_contents = [
@@ -99,16 +99,16 @@ test_contents = [
     '枪杆子中出政权']
 
 
-class zaberFenciTestCase(unittest.TestCase):
+class zaber_nlpTestCase(unittest.TestCase):
     def setUp(self):
-        reload(zaberFenci)
+        reload(zaber_nlp)
 
     def tearDown(self):
         pass
 
     def testDefaultCut(self):
         for content in test_contents:
-            result = zaberFenci.cut(content)
+            result = zaber_nlp.cut(content)
             assert isinstance(result, types.GeneratorType), "Test DefaultCut Generator error"
             result = list(result)
             assert isinstance(result, list), "Test DefaultCut error on content: %s" % content
@@ -117,7 +117,7 @@ class zaberFenciTestCase(unittest.TestCase):
 
     def testCutAll(self):
         for content in test_contents:
-            result = zaberFenci.cut(content, cut_all=True)
+            result = zaber_nlp.cut(content, cut_all=True)
             assert isinstance(result, types.GeneratorType), "Test CutAll Generator error"
             result = list(result)
             assert isinstance(result, list), "Test CutAll error on content: %s" % content
@@ -125,9 +125,9 @@ class zaberFenciTestCase(unittest.TestCase):
         print("testCutAll", file=sys.stderr)
 
     def testSetDictionary(self):
-        zaberFenci.set_dictionary("foobar.txt")
+        zaber_nlp.set_dictionary("foobar.txt")
         for content in test_contents:
-            result = zaberFenci.cut(content)
+            result = zaber_nlp.cut(content)
             assert isinstance(result, types.GeneratorType), "Test SetDictionary Generator error"
             result = list(result)
             assert isinstance(result, list), "Test SetDictionary error on content: %s" % content
@@ -136,7 +136,7 @@ class zaberFenciTestCase(unittest.TestCase):
 
     def testCutForSearch(self):
         for content in test_contents:
-            result = zaberFenci.cut_for_search(content)
+            result = zaber_nlp.cut_for_search(content)
             assert isinstance(result, types.GeneratorType), "Test CutForSearch Generator error"
             result = list(result)
             assert isinstance(result, list), "Test CutForSearch error on content: %s" % content
@@ -144,7 +144,7 @@ class zaberFenciTestCase(unittest.TestCase):
         print("testCutForSearch", file=sys.stderr)
 
     def testPosseg(self):
-        import zaberFenci.posseg as pseg
+        import zaber_nlp.posseg as pseg
         for content in test_contents:
             result = pseg.cut(content)
             assert isinstance(result, types.GeneratorType), "Test Posseg Generator error"
@@ -155,7 +155,7 @@ class zaberFenciTestCase(unittest.TestCase):
 
     def testTokenize(self):
         for content in test_contents:
-            result = zaberFenci.tokenize(content)
+            result = zaber_nlp.tokenize(content)
             assert isinstance(result, types.GeneratorType), "Test Tokenize Generator error"
             result = list(result)
             assert isinstance(result, list), "Test Tokenize error on content: %s" % content
@@ -165,7 +165,7 @@ class zaberFenciTestCase(unittest.TestCase):
 
     def testDefaultCut_NOHMM(self):
         for content in test_contents:
-            result = zaberFenci.cut(content,HMM=False)
+            result = zaber_nlp.cut(content,HMM=False)
             assert isinstance(result, types.GeneratorType), "Test DefaultCut Generator error"
             result = list(result)
             assert isinstance(result, list), "Test DefaultCut error on content: %s" % content
@@ -173,7 +173,7 @@ class zaberFenciTestCase(unittest.TestCase):
         print("testDefaultCut_NOHMM", file=sys.stderr)
 
     def testPosseg_NOHMM(self):
-        import zaberFenci.posseg as pseg
+        import zaber_nlp.posseg as pseg
         for content in test_contents:
             result = pseg.cut(content,HMM=False)
             assert isinstance(result, types.GeneratorType), "Test Posseg Generator error"
@@ -184,7 +184,7 @@ class zaberFenciTestCase(unittest.TestCase):
 
     def testTokenize_NOHMM(self):
         for content in test_contents:
-            result = zaberFenci.tokenize(content,HMM=False)
+            result = zaber_nlp.tokenize(content,HMM=False)
             assert isinstance(result, types.GeneratorType), "Test Tokenize Generator error"
             result = list(result)
             assert isinstance(result, list), "Test Tokenize error on content: %s" % content
@@ -194,7 +194,7 @@ class zaberFenciTestCase(unittest.TestCase):
 
     def testCutForSearch_NOHMM(self):
         for content in test_contents:
-            result = zaberFenci.cut_for_search(content,HMM=False)
+            result = zaber_nlp.cut_for_search(content,HMM=False)
             assert isinstance(result, types.GeneratorType), "Test CutForSearch Generator error"
             result = list(result)
             assert isinstance(result, list), "Test CutForSearch error on content: %s" % content

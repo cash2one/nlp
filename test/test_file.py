@@ -1,13 +1,13 @@
 import time
 import sys
 sys.path.append("../")
-import zaberFenci
-zaberFenci.initialize()
+import zaber_nlp
+zaber_nlp.initialize()
 
 url = sys.argv[1]
 content = open(url,"rb").read()
 t1 = time.time()
-words = "/ ".join(zaberFenci.cut(content))
+words = "/ ".join(zaber_nlp.cut(content))
 
 t2 = time.time()
 tm_cost = t2-t1
