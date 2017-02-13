@@ -13,14 +13,14 @@ print('=' * 40)
 print('1. 分词')
 print('-' * 40)
 
-seg_list = zaber_nlp.cut(u"我来到北京清华大学", cut_all=False)
-print("Default Mode: " + "/ ".join(seg_list))  # 默认模式
+seg_list = zaber_nlp.cut("2012厦门国际马拉松将于1月7日举行厦门国际马拉松赛")
+print(" " + "/ ".join(seg_list))  # 默认模式
 
-seg_list = zaber_nlp.cut(u"他来到了网易杭研大厦")
-print(", ".join(seg_list))
+seg_list = zaber_nlp.cut("羽球女单李雪芮率先亮相 横扫对手获小组开门红_网易体育")
+print(" " + "/ ".join(seg_list))
 
 print('=' * 40)
-print(u'2. 添加自定义词典/调整词典')
+print(u'2. 添加新词典/调整词典')
 print('-' * 40)
 
 print('/'.join(zaber_nlp.cut('如果放到post中将出错。', HMM=False)))
@@ -37,7 +37,7 @@ print('/'.join(zaber_nlp.cut('「台中」正确应该不会被切开', HMM=Fals
 # 「/台中/」/正确/应该/不会/被/切开
 
 print('=' * 40)
-print('3. 关键词提取')
+print('关键词提取')
 print('-' * 40)
 
 
@@ -53,15 +53,18 @@ for x, w in zaber_nlp.analyse.textrank(s, withWeight=True):
     print('%s %s' % (x, w))
 
 print('=' * 40)
-print('4. 词性标注')
+print('3. 词性标注')
 print('-' * 40)
 
-words = zaber_nlp.posseg.cut("我爱北京天安门")
+words = zaber_nlp.posseg.cut("2012厦门国际马拉松将于1月7日举行厦门国际马拉松赛")
 for word, flag in words:
     print('%s %s' % (word, flag))
 
 print('=' * 40)
 
-content = open("../study/origin/weibo_orig.txt", "rb").read()
+content = open("../study/origin/aa", "rb").read()
 # zaber_nlp.cut(content)
-print("Default Mode: " + "/ ".join(zaber_nlp.cut("环境宽股份有限公司")))  # 默认模式
+# print("Default Mode: " + "/ ".join(zaber_nlp.cut(content)))  # 默认模式
+zaber_nlp.analyse.set_stop_words("./stopwords.txt")
+for x, w in zaber_nlp.analyse.textrank(content, withWeight=True, topK=10):
+    print('%s %s' % (x, w))
