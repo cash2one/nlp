@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/stop_words.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/stopwords.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/设计文档.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study/test.py" afterPath="$PROJECT_DIR$/study/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/demo.py" afterPath="$PROJECT_DIR$/test/demo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_userdict.py" afterPath="$PROJECT_DIR$/test/test_userdict.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/userdict.txt" afterPath="$PROJECT_DIR$/test/userdict.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zaber_nlp/__init__.py" afterPath="$PROJECT_DIR$/zaber_nlp/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zaber_nlp/analyse/textrank.py" afterPath="$PROJECT_DIR$/zaber_nlp/analyse/textrank.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -277,15 +270,15 @@
     <property name="SearchEverywhereHistoryKey" value="us&#9;null&#9;null&#10;jieba&#9;RUN_CONFIGURATION&#9;jiebafenci&#10;get_Da&#9;null&#9;null&#10;dag&#9;null&#9;null&#10;get_DAG&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PycharmProjects\nlp\test" />
-      <recent name="E:\PycharmProjects\nlp\study" />
-      <recent name="E:\PycharmProjects\nlp" />
-      <recent name="E:\PycharmProjects\nlp\origin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\nlp" />
       <recent name="E:\PycharmProjects\nlp\study" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\nlp" />
+      <recent name="E:\PycharmProjects\nlp\test" />
+      <recent name="E:\PycharmProjects\nlp\study" />
+      <recent name="E:\PycharmProjects\nlp\origin" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test_userdict">
@@ -722,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486982835997</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="for test">
+      <created>1487241126401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1487241126401</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -744,15 +744,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36497545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36497545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.52" order="2" side_tool="true" content_ui="tabs" />
@@ -823,7 +823,8 @@
     <MESSAGE value="remove some functions" />
     <MESSAGE value="remove some  test functions" />
     <MESSAGE value="for paper" />
-    <option name="LAST_COMMIT_MESSAGE" value="for paper" />
+    <MESSAGE value="for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="for test" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
