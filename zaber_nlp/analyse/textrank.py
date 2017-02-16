@@ -25,6 +25,7 @@ class KeywordExtractor(object):
             raise Exception("zaber_nlp: file does not exist: " + abs_path)
         content = open(abs_path, 'rb').read().decode('utf-8')
         for line in content.splitlines():
+            print line
             self.stop_words.add(line)
 
     def extract_tags(self, *args, **kwargs):

@@ -19,8 +19,9 @@ test_sent = (
 words = zaber_nlp.cut(test_sent)
 print('/'.join(words))
 zaber_nlp.load_userdict("userdict.txt")
-words = zaber_nlp.cut(test_sent)
-print('/'.join(words))
+words = zaber_nlp.posseg.cut(test_sent)
+for word, flag in words:
+    print('%s %s' % (word, flag))
 
 print("=" * 40)
 

@@ -13,6 +13,7 @@ from math import log
 from . import finalseg
 from ._compat import *
 
+
 if os.name == 'nt':
     from shutil import move as _replace_file
 else:
@@ -257,7 +258,7 @@ class Tokenizer(object):
                     yield elem
 
     def cut(self, sentence, cut_all=False, HMM=True):
-        '''
+        """
         The main function that segments an entire sentence that contains
         Chinese characters into seperated words.
 
@@ -265,7 +266,7 @@ class Tokenizer(object):
             - sentence: The str(unicode) to be segmented.
             - cut_all: Model type. True for full pattern, False for accurate pattern.
             - HMM: Whether to use the Hidden Markov Model.
-        '''
+        """
         sentence = strdecode(sentence)
         # 分詞主函数,返回结果是一个可迭代的 generator
 
