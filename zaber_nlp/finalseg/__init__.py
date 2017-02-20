@@ -80,7 +80,7 @@ re_skip = re.compile("(\d+\.\d+|[a-zA-Z0-9]+)")
 
 
 def cut(sentence):
-    sentence = strdecode(sentence)
+    sentence = str_decode(sentence)
     blocks = re_han.split(sentence)
     for blk in blocks:
         if re_han.match(blk):

@@ -23,17 +23,17 @@ print('=' * 40)
 print(u'2. 添加新词典/调整词典')
 print('-' * 40)
 
-print('/'.join(zaber_nlp.cut('如果放到post中将出错。', HMM=False)))
+print('/'.join(zaber_nlp.cut('如果放到post中将出错。')))
 # 如果/放到/post/中将/出错/。
 print(zaber_nlp.suggest_freq(('中', '将'), True))
 # 494
-print('/'.join(zaber_nlp.cut('如果放到post中将出错。', HMM=False)))
+print('/'.join(zaber_nlp.cut('如果放到post中将出错。')))
 # 如果/放到/post/中/将/出错/。
-print('/'.join(zaber_nlp.cut('「台中」正确应该不会被切开', HMM=False)))
+print('/'.join(zaber_nlp.cut('「台中」正确应该不会被切开')))
 # 「/台/中/」/正确/应该/不会/被/切开
 print(zaber_nlp.suggest_freq('台中', True))
 # 69
-print('/'.join(zaber_nlp.cut('「台中」正确应该不会被切开', HMM=False)))
+print('/'.join(zaber_nlp.cut('「台中」正确应该不会被切开')))
 # 「/台中/」/正确/应该/不会/被/切开
 
 print('=' * 40)

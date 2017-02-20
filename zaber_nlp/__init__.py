@@ -13,7 +13,6 @@ from math import log
 from . import finalseg
 from ._compat import *
 
-
 if os.name == 'nt':
     from shutil import move as _replace_file
 else:
@@ -35,16 +34,10 @@ pool = None
 
 re_userdict = re.compile('^(.+?)( [0-9]+)?( [a-z]+)?$', re.U)
 
-re_eng = re.compile('[a-zA-Z0-9]', re.U)
+# re_eng = re.compile('[a-zA-Z0-9]', re.U)
 
-# \u4E00-\u9FD5a-zA-Z0-9+#&\._ : All non-space characters. Will be handled with re_han
-# \r\n|\s : whitespace characters. Will not be handled.
 re_han_default = re.compile("([\u4E00-\u9FD5a-zA-Z0-9+#&\._]+)", re.U)
 re_skip_default = re.compile("(\r\n|\s)", re.U)
-
-
-# re_han_cut_all = re.compile("([\u4E00-\u9FD5]+)", re.U)
-# re_skip_cut_all = re.compile("[^a-zA-Z0-9+#\n]", re.U)
 
 
 def setLogLevel(log_level):
@@ -257,7 +250,7 @@ class Tokenizer(object):
                 for elem in buf:
                     yield elem
 
-    def cut(self, sentence, cut_all=False, HMM=True):
+    def cut(self, sentence):
         """
         The main function that segments an entire sentence that contains
         Chinese characters into seperated words.
@@ -267,7 +260,7 @@ class Tokenizer(object):
             - cut_all: Model type. True for full pattern, False for accurate pattern.
             - HMM: Whether to use the Hidden Markov Model.
         """
-        sentence = strdecode(sentence)
+        sentence = str_decode(sentence)
         # 分詞主函数,返回结果是一个可迭代的 generator
 
         re_han = re_han_default
@@ -288,11 +281,9 @@ class Tokenizer(object):
                 for x in tmp:
                     if re_skip.match(x):
                         yield x
-                    elif not cut_all:  # 精准模式下逐个字符输出
+                    else:  # 精准模式下逐个词语输出
                         for xx in x:
                             yield xx
-                    else:
-                        yield x
 
     def lcut(self, *args, **kwargs):
         return list(self.cut(*args, **kwargs))
@@ -306,7 +297,7 @@ class Tokenizer(object):
             return open(self.dictionary, 'rb')
 
     def load_userdict(self, f):
-        '''
+        """
         Load personalized dict to improve detect rate.
 
         Parameter:
@@ -319,7 +310,7 @@ class Tokenizer(object):
         word2 freq2 word_type2
         ...
         Word type may be ignored
-        '''
+        """
         self.check_initialized()
         if isinstance(f, string_types):
             f_name = f
@@ -351,7 +342,7 @@ class Tokenizer(object):
         that ensures the word can be cut out.
         """
         self.check_initialized()
-        word = strdecode(word)
+        word = str_decode(word)
         freq = int(freq) if freq is not None else self.suggest_freq(word, False)
         self.FREQ[word] = freq
         self.total += freq
@@ -386,11 +377,11 @@ class Tokenizer(object):
         freq = 1
         if isinstance(segment, string_types):
             word = segment
-            for seg in self.cut(word, HMM=False):
+            for seg in self.cut(word):
                 freq *= self.FREQ.get(seg, 1) / ftotal
             freq = max(int(freq * self.total) + 1, self.FREQ.get(word, 1))
         else:
-            segment = tuple(map(strdecode, segment))
+            segment = tuple(map(str_decode, segment))
             word = ''.join(segment)
             for seg in segment:
                 freq *= self.FREQ.get(seg, 1) / ftotal
@@ -427,4 +418,3 @@ load_userdict = dt.load_userdict
 set_dictionary = dt.set_dictionary
 suggest_freq = dt.suggest_freq
 user_word_tag_tab = dt.user_word_tag_tab
-

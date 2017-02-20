@@ -46,8 +46,8 @@ testlist = [
 ]
 
 for sent, seg in testlist:
-    print('/'.join(zaber_nlp.cut(sent, HMM=False)))
+    print('/'.join(zaber_nlp.cut(sent)))
     word = ''.join(seg)
     print('%s Before: %s, After: %s' % (word, zaber_nlp.get_FREQ(word), zaber_nlp.suggest_freq(seg, True)))
-    print('/'.join(zaber_nlp.cut(sent, HMM=False)))
+    print('/'.join(zaber_nlp.cut(sent)))
     print("-" * 40)

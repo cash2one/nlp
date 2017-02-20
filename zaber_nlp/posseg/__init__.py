@@ -214,7 +214,7 @@ class POSTokenizer(object):
 
     def __cut_internal(self, sentence, HMM=True):
         self.makesure_userdict_loaded()
-        sentence = strdecode(sentence)
+        sentence = str_decode(sentence)
         blocks = re_han_internal.split(sentence)
         if HMM:
             cut_blk = self.__cut_DAG
@@ -279,7 +279,7 @@ def cut(sentence, HMM=True):
         for w in dt.cut(sentence, HMM=HMM):
             yield w
     else:
-        parts = strdecode(sentence).splitlines(True)
+        parts = str_decode(sentence).splitlines(True)
         if HMM:
             result = zaber_nlp.pool.map(_lcut_internal, parts)
         else:

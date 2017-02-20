@@ -33,7 +33,7 @@ else:
     iteritems = lambda d: iter(d.items())
 
 
-def strdecode(sentence):
+def str_decode(sentence):
     if not isinstance(sentence, text_type):
         try:
             sentence = sentence.decode('utf-8')
