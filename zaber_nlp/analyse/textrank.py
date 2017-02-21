@@ -18,6 +18,7 @@ class KeywordExtractor(object):
         "by", "be", "as", "on", "with", "can", "if", "from", "which", "you", "it",
         "this", "then", "at", "have", "all", "not", "one", "has", "or", "that"
     ))
+    stop_words = []
 
     def set_stop_words(self, stop_words_path):
         abs_path = _get_abs_path(stop_words_path)
@@ -25,7 +26,7 @@ class KeywordExtractor(object):
             raise Exception("zaber_nlp: file does not exist: " + abs_path)
         content = open(abs_path, 'rb').read().decode('utf-8')
         for line in content.splitlines():
-            self.stop_words.add(line)
+            self.stop_words.append(line)
 
     def extract_tags(self, *args, **kwargs):
         raise NotImplementedError

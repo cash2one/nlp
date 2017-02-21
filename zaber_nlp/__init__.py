@@ -83,11 +83,9 @@ class Tokenizer(object):
         f.close()
         return lfreq, ltotal
 
+    # noinspection PyBroadException
     def initialize(self, dictionary=None):
         """
-        :param dictionary:
-        :return:
-
          判断有无已经缓存的前缀词典cache_file文件，
          若有相应的cache文件则直接使用 marshal.load
          方法加载前缀词典，若无则通过gen_pfdict对指
@@ -166,7 +164,7 @@ class Tokenizer(object):
             self.initialized = True
             default_logger.debug(
                 "Loading model cost %.3f seconds." % (time.time() - t1))
-            default_logger.debug("Prefix dict has been built succesfully.")
+            default_logger.debug("Prefix dict has been built successfully.")
 
     def check_initialized(self):
         # 是否已经加载词库
@@ -298,18 +296,8 @@ class Tokenizer(object):
 
     def load_userdict(self, f):
         """
-        Load personalized dict to improve detect rate.
+        加载新词词库，提高分词准确率
 
-        Parameter:
-            - f : A plain text file contains words and their ocurrences.
-                  Can be a file-like object, or the path of the dictionary file,
-                  whose encoding must be utf-8.
-
-        Structure of dict file:
-        word1 freq1 word_type1
-        word2 freq2 word_type2
-        ...
-        Word type may be ignored
         """
         self.check_initialized()
         if isinstance(f, string_types):
