@@ -1,11 +1,15 @@
 from __future__ import absolute_import, unicode_literals
-import os
-import re
-import sys
-import zaber_nlp
+
 import pickle
-from .._compat import *
+import re
+
+import zaber_nlp
+from .char_state_tab import P as char_state_tab_P
+from .prob_emit import P as emit_P
+from .prob_start import P as start_P
+from .prob_trans import P as trans_P
 from .viterbi import viterbi
+from .._compat import *
 
 PROB_START_P = "prob_start.p"
 PROB_TRANS_P = "prob_trans.p"
@@ -32,17 +36,7 @@ def load_model():
     return state, start_p, trans_p, emit_p
 
 
-if sys.platform.startswith("java"):
-    char_state_tab_P, start_P, trans_P, emit_P = load_model()
-else:
-    from .char_state_tab import P as char_state_tab_P
-    from .prob_start import P as start_P
-    from .prob_trans import P as trans_P
-    from .prob_emit import P as emit_P
-
-
 class pair(object):
-
     def __init__(self, word, flag):
         self.word = word
         self.flag = flag
@@ -76,19 +70,9 @@ class pair(object):
 
 
 class POSTokenizer(object):
-
     def __init__(self, tokenizer=None):
         self.tokenizer = tokenizer or zaber_nlp.Tokenizer()
         self.load_word_tag(self.tokenizer.get_dict_file())
-
-    def __repr__(self):
-        return '<POSTokenizer tokenizer=%r>' % self.tokenizer
-
-    def __getattr__(self, name):
-        if name in ('cut_for_search', 'lcut_for_search', 'tokenize'):
-            # may be possible?
-            raise NotImplementedError
-        return getattr(self.tokenizer, name)
 
     def initialize(self, dictionary=None):
         self.tokenizer.initialize(dictionary)
@@ -149,35 +133,10 @@ class POSTokenizer(object):
                         else:
                             yield pair(x, 'x')
 
-    def __cut_DAG_NO_HMM(self, sentence):
-        DAG = self.tokenizer.get_DAG(sentence)
-        route = {}
-        self.tokenizer.calc(sentence, DAG, route)
-        x = 0
-        N = len(sentence)
-        buf = ''
-        while x < N:
-            y = route[x][1] + 1
-            l_word = sentence[x:y]
-            if re_eng1.match(l_word):
-                buf += l_word
-                x = y
-            else:
-                if buf:
-                    yield pair(buf, 'eng')
-                    buf = ''
-                yield pair(l_word, self.word_tag_tab.get(l_word, 'x'))
-                x = y
-        if buf:
-            yield pair(buf, 'eng')
-            buf = ''
-
     def __cut_DAG(self, sentence):
         DAG = self.tokenizer.get_DAG(sentence)
         route = {}
-
         self.tokenizer.calc(sentence, DAG, route)
-
         x = 0
         buf = ''
         N = len(sentence)
@@ -212,15 +171,11 @@ class POSTokenizer(object):
                 for elem in buf:
                     yield pair(elem, self.word_tag_tab.get(elem, 'x'))
 
-    def __cut_internal(self, sentence, HMM=True):
+    def __cut_internal(self, sentence):
         self.makesure_userdict_loaded()
         sentence = str_decode(sentence)
         blocks = re_han_internal.split(sentence)
-        if HMM:
-            cut_blk = self.__cut_DAG
-        else:
-            cut_blk = self.__cut_DAG_NO_HMM
-
+        cut_blk = self.__cut_DAG
         for blk in blocks:
             if re_han_internal.match(blk):
                 for word in cut_blk(blk):
@@ -242,15 +197,10 @@ class POSTokenizer(object):
     def _lcut_internal(self, sentence):
         return list(self.__cut_internal(sentence))
 
-    def _lcut_internal_no_hmm(self, sentence):
-        return list(self.__cut_internal(sentence, False))
-
-    def cut(self, sentence, HMM=True):
-        for w in self.__cut_internal(sentence, HMM=HMM):
+    def cut(self, sentence):
+        for w in self.__cut_internal(sentence):
             yield w
 
-    def lcut(self, *args, **kwargs):
-        return list(self.cut(*args, **kwargs))
 
 # default Tokenizer instance
 
@@ -265,29 +215,22 @@ def _lcut_internal(s):
     return dt._lcut_internal(s)
 
 
-def _lcut_internal_no_hmm(s):
-    return dt._lcut_internal_no_hmm(s)
-
-
-def cut(sentence, HMM=True):
+def cut(sentence):
     """
     Note that this only works using dt, custom POSTokenizer
     instances are not supported.
     """
     global dt
     if zaber_nlp.pool is None:
-        for w in dt.cut(sentence, HMM=HMM):
+        for w in dt.cut(sentence):
             yield w
     else:
         parts = str_decode(sentence).splitlines(True)
-        if HMM:
-            result = zaber_nlp.pool.map(_lcut_internal, parts)
-        else:
-            result = zaber_nlp.pool.map(_lcut_internal_no_hmm, parts)
+        result = zaber_nlp.pool.map(_lcut_internal, parts)
         for r in result:
             for w in r:
                 yield w
 
 
-def lcut(sentence, HMM=True):
-    return list(cut(sentence, HMM))
+def lcut(sentence):
+    return list(cut(sentence))

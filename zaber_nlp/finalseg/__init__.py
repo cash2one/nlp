@@ -28,8 +28,10 @@ def load_model():
     return start_p, trans_p, emit_p
 
 if sys.platform.startswith("java"):
+    print "java java"
     start_P, trans_P, emit_P = load_model()
 else:
+    print "other other"
     from .prob_start import P as start_P
     from .prob_trans import P as trans_P
     from .prob_emit import P as emit_P

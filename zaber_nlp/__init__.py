@@ -249,15 +249,6 @@ class Tokenizer(object):
                     yield elem
 
     def cut(self, sentence):
-        """
-        The main function that segments an entire sentence that contains
-        Chinese characters into seperated words.
-
-        Parameter:
-            - sentence: The str(unicode) to be segmented.
-            - cut_all: Model type. True for full pattern, False for accurate pattern.
-            - HMM: Whether to use the Hidden Markov Model.
-        """
         sentence = str_decode(sentence)
         # 分詞主函数,返回结果是一个可迭代的 generator
 
@@ -272,7 +263,7 @@ class Tokenizer(object):
             if not blk:
                 continue
             if re_han.match(blk):  # re_han匹配的串
-                for word in cut_block(blk):  # 根据不同模式的方法进行分词
+                for word in cut_block(blk):  # 进行具体分词行为
                     yield word
             else:  # 按照re_skip正则表对blk进行重新切分
                 tmp = re_skip.split(blk)  # 返回list
