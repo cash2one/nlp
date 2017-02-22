@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, unicode_literals
+
 import re
-import os
-import sys
-import pickle
+
+from .prob_emit import P as emit_P
+from .prob_start import P as start_P
+from .prob_trans import P as trans_P
 from .._compat import *
 
 MIN_FLOAT = -3.14e100
@@ -12,29 +14,12 @@ PROB_START_P = "prob_start.p"
 PROB_TRANS_P = "prob_trans.p"
 PROB_EMIT_P = "prob_emit.p"
 
-
 PrevStatus = {
     'B': 'ES',
     'M': 'MB',
     'S': 'SE',
     'E': 'BM'
 }
-
-
-def load_model():
-    start_p = pickle.load(get_module_res("finalseg", PROB_START_P))
-    trans_p = pickle.load(get_module_res("finalseg", PROB_TRANS_P))
-    emit_p = pickle.load(get_module_res("finalseg", PROB_EMIT_P))
-    return start_p, trans_p, emit_p
-
-if sys.platform.startswith("java"):
-    print "java java"
-    start_P, trans_P, emit_P = load_model()
-else:
-    print "other other"
-    from .prob_start import P as start_P
-    from .prob_trans import P as trans_P
-    from .prob_emit import P as emit_P
 
 
 def viterbi(obs, states, start_p, trans_p, emit_p):
@@ -77,6 +62,7 @@ def __cut(sentence):
     if nexti < len(sentence):
         yield sentence[nexti:]
 
+
 re_han = re.compile("([\u4E00-\u9FD5]+)")
 re_skip = re.compile("(\d+\.\d+|[a-zA-Z0-9]+)")
 
@@ -93,5 +79,3 @@ def cut(sentence):
             for x in tmp:
                 if x:
                     yield x
-
-

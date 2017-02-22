@@ -48,7 +48,7 @@ s = "此外，公司拟对全资子公司吉林欧亚置业有限公司增资4.3
 print(' TextRank')
 print('-' * 40)
 
-for x, w in zaber_nlp.analyse.textrank(s, withWeight=True):
+for x, w in zaber_nlp.analyse.Text_Rank(s, allowPOS='n', withWeight=True, withFlag=True):
     print('%s %s' % (x, w))
 
 print('=' * 40)
@@ -65,5 +65,5 @@ content = open("../study/origin/aa", "rb").read()
 # zaber_nlp.cut(content)
 # print("Default Mode: " + "/ ".join(zaber_nlp.cut(content)))  # 默认模式
 zaber_nlp.analyse.set_stop_words("./stop_words.txt")
-for x, w in zaber_nlp.analyse.textrank(content, withWeight=True, topK=10):
+for x, w in zaber_nlp.analyse.Text_Rank(content, withWeight=True, topK=10):
     print('%s %s' % (x, w))

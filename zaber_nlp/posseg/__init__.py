@@ -230,7 +230,3 @@ def cut(sentence):
         for r in result:
             for w in r:
                 yield w
-
-
-def lcut(sentence):
-    return list(cut(sentence))
