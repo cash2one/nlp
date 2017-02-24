@@ -9,11 +9,15 @@ sys.path.append("../")
 
 import zaber_nlp.analyse
 
+words = zaber_nlp.posseg.cut("摸者， ")
+# print(" " + "/ ".join(words))  # 默认模式
+for word, flag in words:
+    print('%s %s' % (word, flag))
 print('=' * 40)
 print('1. 分词')
 print('-' * 40)
 
-seg_list = zaber_nlp.cut("2012厦门国际马拉松将于1月7日举行厦门国际马拉松赛")
+seg_list = zaber_nlp.cut("2012厦门国际聆听者将于1月7日举行厦门国际马拉松赛")
 print(" " + "/ ".join(seg_list))  # 默认模式
 
 seg_list = zaber_nlp.cut("羽球女单李雪芮率先亮相 横扫对手获小组开门红_网易体育")
@@ -67,3 +71,8 @@ content = open("../study/origin/aa", "rb").read()
 zaber_nlp.analyse.set_stop_words("./stop_words.txt")
 for x, w in zaber_nlp.analyse.Text_Rank(content, withWeight=True, topK=10):
     print('%s %s' % (x, w))
+
+words = zaber_nlp.posseg.cut("摸者， ")
+# print(" " + "/ ".join(words))  # 默认模式
+for word, flag in words:
+    print('%s %s' % (word, flag))
