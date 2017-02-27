@@ -80,11 +80,11 @@ class TextRank(KeywordExtractor):
     def __init__(self):
         self.tokenizer = self.postokenizer = zaber_nlp.posseg.dt
         self.stop_words = self.STOP_WORDS.copy()
-        self.pos_filt = frozenset(('ns', 'n', 'vn', 'v'))
+        self.filter = frozenset(('ns', 'n', 'vn', 'v'))
         self.span = 5
 
     def pairfilter(self, wp):
-        return (wp.flag in self.pos_filt and len(wp.word.strip()) >= 2
+        return (wp.flag in self.filter and len(wp.word.strip()) >= 2
                 and wp.word.lower() not in self.stop_words)
 
     def text_rank(self, sentence, topK=20, withWeight=False, allowPOS=('ns', 'n', 'vn', 'v'), withFlag=False):
@@ -99,7 +99,7 @@ class TextRank(KeywordExtractor):
             - withFlag: if True, return a list of pair(word, weight) like posseg.cut
                         if False, return a list of words
         """
-        self.pos_filt = frozenset(allowPOS)
+        self.filter = frozenset(allowPOS)
         g = UndirectWeightedGraph()
         cm = defaultdict(int)
         words = tuple(self.tokenizer.cut(sentence))
