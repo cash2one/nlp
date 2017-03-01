@@ -1,6 +1,8 @@
 <component name="ProjectDictionaryState">
   <dictionary name="zaber">
     <words>
+      <w>csrf</w>
+      <w>csrfmiddlewaretoken</w>
       <w>zaber</w>
     </words>
   </dictionary>

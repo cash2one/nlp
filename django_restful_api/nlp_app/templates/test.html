@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jqcloud.min.css">
+    <link rel="stylesheet" href="css/ng-table.css">
+    <link rel="stylesheet" href="css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="css/ngDialog.css">
+    <link rel="stylesheet" href="css/ngDialog-theme-plain.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="demoApp" class="ng-scope">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="nav ng-scope" ng-controller="MenuCtrl">
+    <div class="logo">
+        <div class="logo_img"><img src="images/logo.png"></div>
+        <div class="logo_login"><a class="yh" href="#">登录</a>|<a href="#">注册</a></div>
+    </div>
+
+    <div class="daoh">
+        <ul>
+            <!-- ngRepeat: (model, menu) in menus track by $index -->
+            <li ng-repeat="(model, menu) in menus track by $index" ng-class="{'active':currentMenu == 'main'}"
+                ng-mouseenter="setHide(model,false)" ng-mouseleave="setHide(model,true)" class="ng-scope">
+                <a href="#/main" ng-click="selectMenu(this.model)" class="ng-binding">首页</a>
+                <!-- ngIf: this.model=='textanalysis' -->
+            </li><!-- end ngRepeat: (model, menu) in menus track by $index -->
+            <li ng-repeat="(model, menu) in menus track by $index" ng-class="{'active':currentMenu == 'textanalysis'}"
+                ng-mouseenter="setHide(model,false)" ng-mouseleave="setHide(model,true)" class="ng-scope">
+                <a href="#/textanalysis" ng-click="selectMenu(this.model)" class="ng-binding">文本分析</a>
+                <!-- ngIf: this.model=='textanalysis' -->
+                <div class="second ng-scope ng-hide" ng-hide="menu.isHide" ng-if="this.model=='textanalysis'" style="">
+                    <div class="erji">
+                        <ul>
+                            <!-- ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/library" class="ng-binding">分词、新词和词库</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/emotion" class="ng-binding">情感口碑</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/translate" class="ng-binding">简繁、汉拼转换</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/classify" class="ng-binding">自定义分类、标签</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/summary" class="ng-binding">词云、摘要</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/correction" class="ng-binding">纠错、补全</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/clustering" class="ng-binding">话题聚类</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/extract" class="ng-binding">信息抽取</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/mutilang" class="ng-binding">多语言</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+                            <li ng-repeat="(k,v) in menu.sonMenus track by $index" class="ng-scope">
+                                <a href="#/distinct" class="ng-binding">文本去重</a>
+                            </li><!-- end ngRepeat: (k,v) in menu.sonMenus track by $index -->
+
+                        </ul>
+                    </div>
+                </div><!-- end ngIf: this.model=='textanalysis' -->
+            </li><!-- end ngRepeat: (model, menu) in menus track by $index -->
+            <li ng-repeat="(model, menu) in menus track by $index" ng-class="{'active':currentMenu == 'videoimage'}"
+                ng-mouseenter="setHide(model,false)" ng-mouseleave="setHide(model,true)" class="ng-scope">
+                <a href="#/videoimage" ng-click="selectMenu(this.model)" class="ng-binding">视频图像</a>
+                <!-- ngIf: this.model=='textanalysis' -->
+            </li><!-- end ngRepeat: (model, menu) in menus track by $index -->
+            <li ng-repeat="(model, menu) in menus track by $index" ng-class="{'active':currentMenu == 'audiofrequency'}"
+                ng-mouseenter="setHide(model,false)" ng-mouseleave="setHide(model,true)" class="ng-scope">
+                <a href="#/audiofrequency" ng-click="selectMenu(this.model)" class="ng-binding">音频</a>
+                <!-- ngIf: this.model=='textanalysis' -->
+            </li><!-- end ngRepeat: (model, menu) in menus track by $index -->
+
+        </ul>
+    </div>
+</div>
+
+<div class="conter">
+    <!-- ngView: -->
+    <div ng-view="" class="ng-scope">
+        <div class="banner banner6 ng-scope">
+            <div class="text">
+                <div class="text_web1">
+                    <h2>分词、新词和词库</h2>
+                    <p class="ziduan">配合在线的新词发现，我们的分词不会拆分有意义的词语，并积累了丰富的专业词库</p>
+                    <!--<a ng-click="show_ck=true;" style="cursor: pointer;">查看词库</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="comter1 ng-scope" style=" margin-top: 0px;" ng-hide="show_ck">
+            <div class="wbfx">
+                <h2 class="title">输入文本</h2>
+                <div class="wbsrk">
+                    <!--<div style="margin-bottom: 10px;" class="fetch">-->
+                    <!--<input class="url_input" style="width:90%;" ng-model="formData.inputUrl" placeholder="请输入待抓取的网页链接" value="http://www.baidu.com">-->
+                    <!--<submit-btn text="抓取" click="getCrawlerResult()" flag='flag1' style="float:right;"></submit-btn>-->
+                    <!--</div>-->
+                    <textarea style="height: 250px;"
+                              class="form-control textarea_list ng-pristine ng-valid ng-empty ng-touched" rows="12"
+                              ng-model="formData.inputText" placeholder="请输入待分析的文本。。。" name="inputText">werewrewrewrwerwer</textarea>
+                </div>
+                <div class="more ng-scope">
+                    <submit-btn text="提交分析" click="getResult()" flag="flag" style="float: left;"
+                                class="ng-isolate-scope"><a href="javascript:;" ng-hide="flag"
+                                                            style="background-color: #ff7043;" ng-click="click()"
+                                                            class="ng-binding"> 提交分析</a><a ng-show="flag"
+                                                                                           style="background-color:lightgray;"
+                                                                                           class="ng-hide"> <img
+                            src="images/loading.gif"
+                            style="height: 20px;"></a></submit-btn>
+                </div>
+            </div>
+        </div>
+        <h2 class="title result_head ng-scope" ng-hide="show_ck">分析结果</h2>
+        <div ng-show="first &amp;&amp; !show_ck" class="ng-scope ng-hide">
+            <div class="wbfx" style="padding-top: 0;">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h5 class="feilei">词性分词</h5>
+                        <!--<p class="feilei jju">分词个数：<span ng-model="results.length" style="color:blue; font-size:40px">{{results.length}}</span>-->
+                        <!--</p>-->
+                        <div class="thumbnail">
+                            <div class="yunfx_dwbys_l yunfx_dwbys_sz ng-hide" ng-hide="results.length==0">
+                                <dl class="words">
+                                    <!-- ngRepeat: r in results -->
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="feilei">词性类别图示</h5>
+                        <div class="thumbnail">
+                            <div class="yunfx_dwbys_l yunfx_dwbys_sz ng-hide" ng-hide="results.length==0">
+                                <dl class="words">
+                                    <!-- ngRepeat: t in types -->
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wbfx ng-scope ng-hide" ng-show="show_ck">
+            <h2 class="title">专业词库</h2>
+            <div class="ciku">
+                <ul>
+                    <!-- ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">会计
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">动漫
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">医院
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">同义词
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">大学课程
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">明星
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">汽车
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">电影
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">财经
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">颜色
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">公司名称
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">医疗健康
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">反义词
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">地方
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">学校
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">歌曲
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">游戏
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">计算机
+                    </li><!-- end ngRepeat: cate in cates -->
+                    <li ng-repeat="cate in cates" ng-class="{active: cate==myCate}" ng-click="getCate(cate)"
+                        flag="flag2" class="ng-binding ng-scope">音乐
+                    </li><!-- end ngRepeat: cate in cates -->
+                </ul>
+            </div>
+            <p class="feilei jju">该类总数有：
+                <input type="text" class="control_form ng-pristine ng-untouched ng-valid ng-empty"
+                       ng-model="cateTotalCount">
+                <input type="text" class="control_form zyjju ng-pristine ng-untouched ng-valid ng-empty"
+                       ng-model="searchText" placeholder="请输入搜索关键词">
+                <!--<div style="margin-bottom: 10px;" class="fetch">-->
+                <submit-btn class="search ng-isolate-scope" text="搜索" click="getSearchResult()" flag="flag3"
+                            style="float:none;"><a href="javascript:;" ng-hide="flag"
+                                                   style="background-color: #ff7043;" '="" ng-click="click()"
+                    class="ng-binding"> 搜索</a><a ng-show="flag" style="background-color:lightgray;" class="ng-hide">
+                        <img src="images/loading.gif" style="height: 20px;"></a></submit-btn>
+                <!--</div>-->
+            </p>
+            <table class="table table-bordered" style=" margin: 0px; ">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>词语</th>
+                    <!--<th>词性</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <!-- ngRepeat: result in results1 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="foots">
+    <p class="foots_left"><img src="images/logo1.png"><a href="#">公司简介</a>|<a href="#">联系我们</a></p>
+    <p class="foots_right"><a href="#">Copyright 2015 Baifendian Corporation All Rights Reserved.</a>|<a href="#">京ICP备09109727号</a>|<a
+            href="#">京公网安备11010802010283号</a></p>
+</div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<!--<script src="bower_components/angular.js"></script>-->
+<!--<script src="bower_components/angular-route.js"></script>-->
+<!--<script src="bower_components/angular-animate.js"></script>-->
+<!--<script src="bower_components/angular-cookies.js"></script>-->
+<!--<script src="bower_components/angular-resource.js"></script>-->
+<!--<script src="bower_components/angular-sanitize.js"></script>-->
+<!--<script src="bower_components/angular-touch.js"></script>-->
+<!--<script src="bower_components/bootstrap.js"></script>-->
+<!--<script src="bower_components/ng-table.js"></script>-->
+<!--<script src="bower_components/lodash.js"></script>-->
+<!--<script src="bower_components/highstock.js"></script>-->
+<!--<script src="bower_components/highcharts-ng.js"></script>-->
+<!--<script src="bower_components/highcharts-more.js"></script>-->
+<!--<script src="bower_components/angular-jqcloud.js"></script>-->
+<!--<script src="bower_components/jqcloud.min.js"></script>-->
+<!--<script src="bower_components/ngDialog.js"></script>-->
+<!--&lt;!&ndash; endbower &ndash;&gt;-->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!--<script src="bower_components/app.js"></script>-->
+<!--<script src="bower_components/main.js"></script>-->
+<!--<script src="bower_components/textanalysis.js"></script>-->
+<!--<script src="bower_components/videoimage.js"></script>-->
+<!--<script src="bower_components/audiofrequency.js"></script>-->
+<!--<script src="bower_components/emotion.js"></script>-->
+<!--<script src="bower_components/summary.js"></script>-->
+<!--<script src="bower_components/mutilang.js"></script>-->
+<!--<script src="bower_components/library.js"></script>-->
+<!--<script src="bower_components/correction.js"></script>-->
+<!--<script src="bower_components/clustering.js"></script>-->
+<!--<script src="bower_components/extract.js"></script>-->
+<!--<script src="bower_components/translate.js"></script>-->
+<!--<script src="bower_components/distinct.js"></script>-->
+<!-- endbuild -->
+
+<!--<script type="text/javascript">-->
+<!--angular.module('demoApp')-->
+<!--.controller('MenuCtrl', ['$scope','$location','menus',function ($scope, $location, menus) {-->
+<!--var $path = $location.path().substring(1);-->
+<!--$scope.currentMenu = "main";-->
+<!--angular.forEach(menus, function(menu, key){-->
+<!--menus[key]['isHide'] = true;-->
+<!--})-->
+<!--$scope.menus = menus;-->
+<!--if ( $path ) $scope.currentMenu = $path;-->
+<!--$scope.selectMenu = function(menu) {-->
+<!--$scope.currentMenu = menu;-->
+<!--}-->
+<!--$scope.setHide = function(cmodel,hideBool){-->
+<!--$scope.menus[cmodel]['isHide'] = hideBool;-->
+<!--}-->
+<!--}]);-->
+<!--</script>-->
+
+
+</body>
+</html>
