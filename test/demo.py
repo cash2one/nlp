@@ -1,12 +1,6 @@
 # encoding=utf-8
 from __future__ import unicode_literals
 
-import sys
-
-reload(sys)
-sys.setdefaultencoding('gbk')
-sys.path.append("../")
-
 import zaber_nlp.analyse
 
 words = zaber_nlp.posseg.cut("摸者， ")
