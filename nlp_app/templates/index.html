@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://ai.baifendian.com/#/library -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="/static/nlp_app/images/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+        ng\:form {
+            display: block;
+        }
+    </style>
+
+    <title>认知平台</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/nlp_app/css/bootstrap.css">
+    <script src="/static/nlp_app/bower_components/jquery.min.js"></script>
+    <script src="/static/nlp_app/bower_components/angular.js"></script>
+    <link rel="stylesheet" href="/static/nlp_app/css/style.css">
+    <style id="style-1-cropbar-clipper">
+
+        .en-markup-crop-options div div:first-of-type {
+            margin-left: 0px !important;
+        }
+    </style>
+</head>
+<body class="ng-scope">
+<div class="nav ng-scope" ng-controller="MenuCtrl">
+    <div class="logo">
+        <div class="logo_img"><img src="/static/nlp_app/images/logo.png"></div>
+        <div class="logo_login"><a class="yh" href="http://ai.baifendian.com/#">登录</a>|<a
+                href="http://ai.baifendian.com/#">注册</a></div>
+    </div>
+</div>
+
+<div class="conter">
+    <!-- ngView: -->
+    <div ng-view="" class="ng-scope">
+        <div class="banner banner6 ng-scope">
+            <div class="text">
+                <div class="text_web1">
+                    <h2>分词、新词和词库</h2>
+                    <p class="ziduan">配合在线的新词发现，我们的分词不会拆分有意义的词语，并积累了丰富的专业词库</p>
+                </div>
+            </div>
+        </div>
+        <div class="comter1 ng-scope" style=" margin-top: 0;">
+            <div class="wbfx">
+                <h2 class="title">输入文本</h2>
+                <div class="wbsrk">
+                    <textarea style="height: 250px;"
+                              class="form-control textarea_list ng-pristine ng-valid ng-empty ng-touched" rows="12"
+                              placeholder="请输入待分析的文本。。。" id="inputText"></textarea>
+                </div>
+                <div class="more ng-scope">
+                    <submit-btn text="提交分析" style="float: left;" class="ng-isolate-scope">
+                        <a href="javascript:;" style="background-color: #ff7043;" id="submit"
+                           class="ng-binding ">提交分析</a>
+                        <a style="background-color:lightgray;" id="loading" class="ng-hide">
+                            <img src="/static/nlp_app/images/loading.gif" style="height: 20px;"></a></submit-btn>
+                </div>
+            </div>
+        </div>
+        <h2 class="title result_head ng-scope">分析结果</h2>
+        <div id='result' class="ng-scope ng-hide">
+            <div class="wbfx" style="padding-top: 0;">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h5 class="feilei">词性分词</h5>
+                        <div class="thumbnail">
+                            <div class="yunfx_dwbys_l yunfx_dwbys_sz ">
+                                <dl class="words" id="result_words">
+                                    <!-- ngRepeat: r in results -->
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="feilei">词性类别图示</h5>
+                        <div class="thumbnail">
+                            <div class="yunfx_dwbys_l yunfx_dwbys_sz ">
+                                <dl class="words" id="cate">
+                                    <!-- ngRepeat: t in types -->
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foots">
+    <p class="foots_left"><img src="/static/nlp_app/images/logo1.png"><a href="http://ai.baifendian.com/#">公司简介</a>|<a
+            href="http://ai.baifendian.com/#">联系我们</a></p>
+    <p class="foots_right"><a href="http://ai.baifendian.com/#">Copyright 2015 Baifendian Corporation All Rights
+        Reserved.</a>|<a href="http://ai.baifendian.com/#">京ICP备09109727号</a>|<a href="http://ai.baifendian.com/#">京公网安备11010802010283号</a>
+    </p>
+</div>
+
+<script>
+    $(function () {
+        $("#submit").click(function () {
+            $("#result_words").empty()
+            if ($("#inputText").val() != '') {
+                var data = {
+                    q: $("#inputText").val().replace(/\n/g, "^^"),
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                };
+                $("#submit").addClass("ng-hide")
+                $("#loading").removeClass("ng-hide")
+                $.ajax({
+                    dataType: "json",
+                    method: 'POST',
+                    url: '/add/',
+                    data: data,
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+                    , success: function (data) {
+                        val_list = ""
+                        $.each(data.words, function (key, val) {
+                            val_list = val_list + val + " "
+                        });
+                        $("#result_words").html(val_list)
+                        cate_list = ""
+                        $.each(data.cate, function (key, val) {
+                            cate_list = cate_list + val + " "
+                        });
+                        $("#result_words").html(val_list)
+                        $("#cate").html(cate_list)
+                        $("#submit").removeClass("ng-hide")
+                        $("#loading").addClass("ng-hide")
+                        $("#result").removeClass("ng-hide")
+                    }, error: function (jqXHR) {
+                        $("#submit").removeClass("ng-hide")
+                        $("#loading").addClass("ng-hide")
+                        alert(jqXHR.statusText);
+                    }
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
