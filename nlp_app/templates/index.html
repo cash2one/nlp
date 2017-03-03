@@ -79,7 +79,7 @@
                         <h5 class="feilei">词性类别图示</h5>
                         <div class="thumbnail">
                             <div class="yunfx_dwbys_l yunfx_dwbys_sz ">
-                                <dl class="words" id="cate">
+                                <dl class="words" id="category">
                                     <!-- ngRepeat: t in types -->
                                 </dl>
                             </div>
@@ -103,6 +103,7 @@
     $(function () {
         $("#submit").click(function () {
             $("#result_words").empty()
+            $("#category").empty()
             if ($("#inputText").val() != '') {
                 var data = {
                     q: $("#inputText").val().replace(/\n/g, "^^"),
@@ -113,21 +114,20 @@
                 $.ajax({
                     dataType: "json",
                     method: 'POST',
-                    url: '/add/',
+                    url: 'http://127.0.0.1:8000/v1/demo/word_seg/',
                     data: data,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
                     , success: function (data) {
-                        val_list = ""
+                        var val_list = ""
                         $.each(data.words, function (key, val) {
                             val_list = val_list + val + " "
                         });
                         $("#result_words").html(val_list)
-                        cate_list = ""
-                        $.each(data.cate, function (key, val) {
+                        var cate_list = ""
+                        $.each(data.category, function (key, val) {
                             cate_list = cate_list + val + " "
                         });
-                        $("#result_words").html(val_list)
-                        $("#cate").html(cate_list)
+                        $("#category").html(cate_list)
                         $("#submit").removeClass("ng-hide")
                         $("#loading").addClass("ng-hide")
                         $("#result").removeClass("ng-hide")

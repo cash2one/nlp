@@ -2,85 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/images/banner5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/images/icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/images/logo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_restful_api/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_restful_api/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_restful_api/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_restful_api/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/bower_components/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/bower_components/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/static/nlp_app/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nlp_app/views.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/django_restful_api/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/django_restful_api/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/django_restful_api/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/django_restful_api/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/manage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-jqcloud.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular-touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/audiofrequency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/clustering.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/correction.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/distinct.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/emotion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/extract.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/highcharts-more.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/highcharts-ng.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/highstock.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/jqcloud.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/library.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/lodash.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/mutilang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/ng-table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/ngDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/summary.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/textanalysis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/translate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/videoimage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/jqcloud.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/ng-table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/ngDialog-theme-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/ngDialog-theme-plain.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/ngDialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nlp.iml" afterPath="$PROJECT_DIR$/.idea/nlp.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/bower_components/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_restful_api/nlp_app/templates/css/style.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_restful_api/urls.py" afterPath="$PROJECT_DIR$/django_restful_api/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nlp_app/templates/index.html" afterPath="$PROJECT_DIR$/nlp_app/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nlp_app/views.py" afterPath="$PROJECT_DIR$/nlp_app/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,45 +54,7 @@
     <favorites_list name="nlp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nlp_app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nlp_app/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="129" column="49" lean-forward="false" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#submit-btn#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zaber_nlp/posseg/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-441">
-              <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -278,8 +169,10 @@
         <option value="$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html" />
         <option value="$PROJECT_DIR$/django_restful_api/nlp_app/views.py" />
         <option value="$PROJECT_DIR$/zaber_nlp/__init__.py" />
-        <option value="$PROJECT_DIR$/nlp_app/views.py" />
+        <option value="$PROJECT_DIR$/django_restful_api/settings.py" />
         <option value="$PROJECT_DIR$/nlp_app/templates/index.html" />
+        <option value="$PROJECT_DIR$/django_restful_api/urls.py" />
+        <option value="$PROJECT_DIR$/nlp_app/views.py" />
       </list>
     </option>
   </component>
@@ -312,6 +205,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,7 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nlp_app" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,10 +243,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="nlp_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,7 +262,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,7 +288,7 @@
       <recent name="E:\PycharmProjects\nlp\django_restful_api\nlp_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.demo">
+  <component name="RunManager" selected="Django server.nlp_restful_api">
     <configuration default="false" name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -958,7 +847,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488363418737</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="STATIC">
+      <created>1488452301355</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1488452301355</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -980,18 +876,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23827533" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17512275" sideWeight="0.5075643" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38297874" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34042552" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27168575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.52" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -999,6 +894,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1078,34 +974,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/study/NaiveBayesClassifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/userdict.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22263">
-          <caret line="92" column="22" lean-forward="false" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Anaconda2/Lib/UserString.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-1081368587/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -1268,114 +1136,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/lodash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/jqcloud.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ng-table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog-theme-default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog-theme-plain.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/images/banner5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/django_restful_api/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4975">
-          <caret line="199" column="35" lean-forward="false" selection-start-line="199" selection-start-column="35" selection-end-line="199" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/clustering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/videoimage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/django_restful_api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/lodash.js" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/jqcloud.min.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ng-table.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog-theme-default.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog-theme-plain.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/images/banner5.jpg" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/django_restful_api/settings.py" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/clustering.js" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/videoimage.js" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/django_restful_api/urls.py" />
     <entry file="file://$PROJECT_DIR$/zaber_nlp/finalseg/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1394,40 +1168,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="e#17#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/views.py" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/django_restful_api/manage.py" />
     <entry file="file://$PROJECT_DIR$/zaber_nlp/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2175">
@@ -1440,15 +1183,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="37" />
-          <folding>
-            <element signature="e#16#53#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/numba/types/misc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="393" column="8" lean-forward="false" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="446" column="35" lean-forward="true" selection-start-line="446" selection-start-column="35" selection-end-line="446" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zaber_nlp/posseg/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
+        <state relative-caret-position="25">
           <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
@@ -1456,23 +1212,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nlp_app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="123" column="27" lean-forward="true" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_restful_api/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nlp_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_app/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/test/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="129" column="49" lean-forward="false" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
+        <state relative-caret-position="225">
+          <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="55" />
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#submit-btn#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#17#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_restful_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
