@@ -4,7 +4,6 @@ import sys
 
 try:
     import pkg_resources
-
     get_module_res = lambda *res: pkg_resources.resource_stream(__name__,
                                                                 os.path.join(*res))
 except ImportError:

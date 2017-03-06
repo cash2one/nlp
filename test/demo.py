@@ -70,3 +70,5 @@ words = zaber_nlp.posseg.cut("摸者， ")
 # print(" " + "/ ".join(words))  # 默认模式
 for word, flag in words:
     print('%s %s' % (word, flag))
+
+zaber_nlp.analyse.Associate()

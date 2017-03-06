@@ -54,7 +54,7 @@ class UndirectWeightedGraph:
 
         # this line for build stable iteration
         sorted_keys = sorted(self.graph.keys())
-        for x in xrange(10):  # 10 iters
+        for x in range(10):  # 10 iters
             for n in sorted_keys:
                 s = 0
                 for e in self.graph[n]:

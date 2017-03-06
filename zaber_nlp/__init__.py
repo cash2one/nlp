@@ -73,7 +73,7 @@ class Tokenizer(object):
                 freq = int(freq)
                 lfreq[word] = freq
                 ltotal += freq
-                for ch in xrange(len(word)):  # 处理word的前缀
+                for ch in range(len(word)):  # 处理word的前缀
                     wfrag = word[:ch + 1]
                     if wfrag not in lfreq:  # word前缀不在lfreq则其出现频次置0
                         lfreq[wfrag] = 0
@@ -91,6 +91,7 @@ class Tokenizer(object):
          方法加载前缀词典，若无则通过gen_pfdict对指
          定的词库dict.txt进行计算生成前缀词典
         """
+
         if dictionary:
             abs_path = _get_abs_path(dictionary)
             if self.dictionary == abs_path and self.initialized:
@@ -144,6 +145,7 @@ class Tokenizer(object):
                 DICT_WRITING[abs_path] = wlock
                 with wlock:
                     self.FREQ, self.total = self.gen_pfdict(self.get_dict_file())
+
                     default_logger.debug(
                         "Dumping model to file cache %s" % cache_file)
                     try:
@@ -178,7 +180,7 @@ class Tokenizer(object):
         # 对概率值取对数之后的结果(可以让概率相乘的计算变成对数相加,防止相乘造成下溢)
         logtotal = log(self.total)
         # 从后往前遍历句子 反向计算最大概率
-        for idx in xrange(N - 1, -1, -1):
+        for idx in range(N - 1, -1, -1):
             '''
             列表推倒求最大概率对数路径
             route[idx] = max([ (概率对数，词语末字位置) for x in DAG[idx] ])
@@ -194,7 +196,7 @@ class Tokenizer(object):
         self.check_initialized()
         DAG = {}
         N = len(sentence)
-        for k in xrange(N):
+        for k in range(N):
             tmplist = []
             i = k
             frag = sentence[k]
@@ -282,8 +284,8 @@ class Tokenizer(object):
     def get_dict_file(self):
         if self.dictionary == DEFAULT_DICT:
             return get_module_res(DEFAULT_DICT_NAME)
-        else:
-            return open(self.dictionary, 'rb')
+            # else:
+            #     return open(self.dictionary, 'rb')
 
     def load_userdict(self, f):
         """
@@ -327,7 +329,7 @@ class Tokenizer(object):
         self.total += freq
         if tag:
             self.user_word_tag_tab[word] = tag
-        for ch in xrange(len(word)):
+        for ch in range(len(word)):
             wfrag = word[:ch + 1]
             if wfrag not in self.FREQ:
                 self.FREQ[wfrag] = 0
@@ -369,13 +371,13 @@ class Tokenizer(object):
             add_word(word, freq)
         return freq
 
-    def set_dictionary(self, dictionary_path):
-        with self.lock:
-            abs_path = _get_abs_path(dictionary_path)
-            if not os.path.isfile(abs_path):
-                raise Exception("zaber_nlp: file does not exist: " + abs_path)
-            self.dictionary = abs_path
-            self.initialized = False
+        # def set_dictionary(self, dictionary_path):
+        #     with self.lock:
+        #         abs_path = _get_abs_path(dictionary_path)
+        #         if not os.path.isfile(abs_path):
+        #             raise Exception("zaber_nlp: file does not exist: " + abs_path)
+        #         self.dictionary = abs_path
+        #         self.initialized = False
 
 
 # default Tokenizer instance
@@ -394,6 +396,6 @@ get_DAG = dt.get_DAG
 get_dict_file = dt.get_dict_file
 initialize = dt.initialize
 load_userdict = dt.load_userdict
-set_dictionary = dt.set_dictionary
+# set_dictionary = dt.set_dictionary
 suggest_freq = dt.suggest_freq
 user_word_tag_tab = dt.user_word_tag_tab
