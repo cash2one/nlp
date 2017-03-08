@@ -10,6 +10,7 @@ Text_Rank = default_TextRank.extract_tags
 default_Association = Association()
 
 Associate = default_Association.str_match
+Associate_find = default_Association.str_find
 
 
 def set_stop_words(stop_words_path):
