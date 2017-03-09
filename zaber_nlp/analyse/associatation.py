@@ -13,8 +13,40 @@ from .._compat import *
 
 
 class Association(object):
-    DEFAULT_ENTITY_NAME = "entity.txt"
-    DEFAULT_ENTITY = None
+    def __init__(self):
+        self.DEFAULT_ENTITY_NAME = "entity.txt"
+        self.DEFAULT_ENTITY = None
+        self.ent_list = self.get_entity(self.get_entity_file())
+        self.auto = ahocorasick.Automaton()
+        self.index = esm.Index()
+        self.initialized = False
+
+    def initialize(self):
+        start = time.time()
+        print "所用实体名称库数据量：", len(self.ent_list)
+        int_dict = {}
+        for row_idx, int_line in enumerate(self.ent_list):
+            for col_idx, v in enumerate(int_line[1:][0]):
+                if v in int_dict:
+                    int_dict[v].append(str(row_idx) + '.' + str(col_idx))
+                else:
+                    int_dict[v] = [str(row_idx) + '.' + str(col_idx)]
+        for k, v in int_dict.items():
+            self.auto.add_word(k, (v, k))
+        self.auto.make_automaton()
+        print "pyahocorasick加载所用时间：", time.time() - start
+        start = time.time()
+        for row_idx, int_line in enumerate(self.ent_list):
+            for col_idx, v in enumerate(int_line[1:][0]):
+                self.index.enter(v, (str(row_idx) + '.' + str(col_idx), v))
+        self.index.fix()
+        print "esmre加载所用时间：", time.time() - start
+        self.initialized = True
+
+    def check_initialized(self):
+        # 是否已经加载词库
+        if not self.initialized:
+            self.initialize()
 
     def get_entity(self, f):
         ent_list = []
@@ -36,47 +68,37 @@ class Association(object):
             return get_module_res(self.DEFAULT_ENTITY_NAME)
 
     def match(self, text):
-        int_list = self.get_entity(self.get_entity_file())
+        self.check_initialized()
         start = time.time()
-        auto = ahocorasick.Automaton()
-        int_dict = {}
-        for row_idx, int_line in enumerate(int_list):
-            for col_idx, v in enumerate(int_line[1:][0]):
-                if v in int_dict:
-                    int_dict[v].append(str(row_idx) + '.' + str(col_idx))
-                else:
-                    int_dict[v] = [str(row_idx) + '.' + str(col_idx)]
-        for k, v in int_dict.items():
-            auto.add_word(k, (v, k))
-        auto.make_automaton()
-        print time.time() - start
-        for find, int_tuple in auto.iter(text):
+        ent_score = list(self.ent_list)
+        print id(ent_score)
+        for find, int_tuple in self.auto.iter(text):
             for idx_item in int_tuple[0]:
                 idx = str(idx_item).split('.')
                 index = int(idx[0])
-                int_list[index][0] += 1
-        int_sort = sorted(int_list, key=lambda lamb: lamb[0], reverse=True)
-        print time.time() - start
-        print str(int_sort[:15]).decode(encoding='string_escape')
-        return int_sort[:15]
+                ent_score[index][0] += 1
+        ent_sort = sorted(ent_score, key=lambda lamb: lamb[0], reverse=True)
+        end = time.time()
+        print "pyahocorasick匹配所用时间：", end - start
+        print "结果："
+        print str(ent_sort[:10]).decode(encoding='string_escape')
+        return ent_sort[:10]
 
     def match_esmre(self, text):
-        int_list = self.get_entity(self.get_entity_file())
+        self.check_initialized()
         start = time.time()
-        index = esm.Index()
-        for row_idx, int_line in enumerate(int_list):
-            for col_idx, v in enumerate(int_line[1:][0]):
-                index.enter(v, (str(row_idx) + '.' + str(col_idx), v))
-        index.fix()
-        print time.time() - start
-        for find, int_tuple in index.query(text):
+        ent_score = list(self.ent_list)
+        print id(ent_score)
+        for find, int_tuple in self.index.query(text):
             idx = str(int_tuple[0]).split('.')
             index = int(idx[0])
-            int_list[index][0] += 1
-        int_sort = sorted(int_list, key=lambda lamb: lamb[0], reverse=True)
-        print time.time() - start
-        print str(int_sort[:15]).decode(encoding='string_escape')
-        return int_sort[:15]
+            ent_score[index][0] += 1
+        ent_sort = sorted(ent_score, key=lambda lamb: lamb[0], reverse=True)
+        end = time.time()
+        print "esmre匹配所用时间：", end - start
+        print "结果："
+        print str(ent_sort[:10]).decode(encoding='string_escape')
+        return ent_sort[:10]
 
     str_match = match
     str_find = match_esmre

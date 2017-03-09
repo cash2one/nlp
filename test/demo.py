@@ -3,10 +3,6 @@ from __future__ import unicode_literals
 
 import zaber_nlp.analyse
 
-words = zaber_nlp.posseg.cut("摸者， ")
-# print(" " + "/ ".join(words))  # 默认模式
-for word, flag in words:
-    print('%s %s' % (word, flag))
 print('=' * 40)
 print('1. 分词')
 print('-' * 40)
@@ -67,5 +63,5 @@ for x, w in zaber_nlp.analyse.Text_Rank(content, withWeight=True, topK=10):
     print('%s %s' % (x, w))
 
 content = open("../study/origin/aa", "rb").read()
-zaber_nlp.analyse.Associate_find(content)
 zaber_nlp.analyse.Associate(content)
+zaber_nlp.analyse.Associate_find(content)
