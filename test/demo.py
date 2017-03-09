@@ -67,6 +67,5 @@ for x, w in zaber_nlp.analyse.Text_Rank(content, withWeight=True, topK=10):
     print('%s %s' % (x, w))
 
 content = open("../study/origin/aa", "rb").read()
-zaber_nlp.analyse.Associate(content)
-
 zaber_nlp.analyse.Associate_find(content)
+zaber_nlp.analyse.Associate(content)
