@@ -9,6 +9,8 @@ import ahocorasick
 import esm
 import time
 
+import numpy as np
+
 from .._compat import *
 
 
@@ -26,7 +28,7 @@ class Association(object):
         print "所用实体名称库数据量：", len(self.ent_list)
         int_dict = {}
         for row_idx, int_line in enumerate(self.ent_list):
-            for col_idx, v in enumerate(int_line[1:][0]):
+            for col_idx, v in enumerate(int_line):
                 if v in int_dict:
                     int_dict[v].append(str(row_idx) + '.' + str(col_idx))
                 else:
@@ -37,7 +39,7 @@ class Association(object):
         print "pyahocorasick加载所用时间：", time.time() - start
         start = time.time()
         for row_idx, int_line in enumerate(self.ent_list):
-            for col_idx, v in enumerate(int_line[1:][0]):
+            for col_idx, v in enumerate(int_line):
                 self.index.enter(v, (str(row_idx) + '.' + str(col_idx), v))
         self.index.fix()
         print "esmre加载所用时间：", time.time() - start
@@ -56,7 +58,7 @@ class Association(object):
                 line = line.strip()
                 if line != '':
                     line_list = line.split(' ')
-                    ent_list.append([0, line_list])
+                    ent_list.append(line_list)
             except ValueError:
                 raise ValueError(
                     'invalid dictionary entry in %s at Line %s: %s' % (self.DEFAULT_ENTITY_NAME, index, line))
@@ -67,38 +69,28 @@ class Association(object):
         if self.DEFAULT_ENTITY is None:
             return get_module_res(self.DEFAULT_ENTITY_NAME)
 
-    def match(self, text):
+    def match_pyahocorasick(self, text):
         self.check_initialized()
-        start = time.time()
-        ent_score = list(self.ent_list)
-        print id(ent_score)
+        ent_score = np.zeros(len(self.ent_list))
         for find, int_tuple in self.auto.iter(text):
             for idx_item in int_tuple[0]:
                 idx = str(idx_item).split('.')
                 index = int(idx[0])
-                ent_score[index][0] += 1
+                ent_score[index] += 1
+        ent_score = np.column_stack((ent_score, self.ent_list))
         ent_sort = sorted(ent_score, key=lambda lamb: lamb[0], reverse=True)
-        end = time.time()
-        print "pyahocorasick匹配所用时间：", end - start
-        print "结果："
-        print str(ent_sort[:10]).decode(encoding='string_escape')
         return ent_sort[:10]
 
     def match_esmre(self, text):
         self.check_initialized()
-        start = time.time()
-        ent_score = list(self.ent_list)
-        print id(ent_score)
+        ent_score = np.zeros(len(self.ent_list))
         for find, int_tuple in self.index.query(text):
             idx = str(int_tuple[0]).split('.')
             index = int(idx[0])
-            ent_score[index][0] += 1
+            ent_score[index] += 1
+        ent_score = np.column_stack((ent_score, self.ent_list))
         ent_sort = sorted(ent_score, key=lambda lamb: lamb[0], reverse=True)
-        end = time.time()
-        print "esmre匹配所用时间：", end - start
-        print "结果："
-        print str(ent_sort[:10]).decode(encoding='string_escape')
         return ent_sort[:10]
 
-    str_match = match
-    str_find = match_esmre
+    str_pyahocorasick = match_pyahocorasick
+    str_esmre = match_esmre

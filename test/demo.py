@@ -61,7 +61,3 @@ content = open("../study/origin/aa", "rb").read()
 zaber_nlp.analyse.set_stop_words("./stop_words.txt")
 for x, w in zaber_nlp.analyse.Text_Rank(content, withWeight=True, topK=10):
     print('%s %s' % (x, w))
-
-content = open("../study/origin/aa", "rb").read()
-zaber_nlp.analyse.Associate(content)
-zaber_nlp.analyse.Associate_find(content)

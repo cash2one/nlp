@@ -9,8 +9,8 @@ Text_Rank = default_TextRank.extract_tags
 
 default_Association = Association()
 
-Associate = default_Association.str_match
-Associate_find = default_Association.str_find
+pyahocorasick = default_Association.str_pyahocorasick
+esmre = default_Association.str_esmre
 
 
 def set_stop_words(stop_words_path):

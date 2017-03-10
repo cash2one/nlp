@@ -8,7 +8,7 @@ import pylab
 import NovelRecommend
 
 # 由搜狗语料库 生成数据
-folder_path = 'E:/PycharmProjects/nlp/SogouC.reduced/Reduced'
+folder_path = 'E:/PycharmProjects/nlp/study/SogouC.reduced/Reduced'
 # 找到该文件夹下面的文件夹集合
 folder_list = os.listdir(folder_path)
 class_list = []
