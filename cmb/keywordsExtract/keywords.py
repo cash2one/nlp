@@ -12,7 +12,6 @@ sys.path.append("../preProcess")
 sys.path.append("../similar/similar")
 
 from preProcess import PreProcess
-from similar import Model
 
 
 class Keywords(object):
@@ -21,9 +20,9 @@ class Keywords(object):
         Brief:
             constructor of Keywords.
         """
-        self.synonym_model = Model("./synonym_dicts/synonym.txt", "./synonym_dicts/tyccl.txt",
-                                   "./synonym_dicts/redirect.txt", "./synonym_dicts/wiki_similar.txt",
-                                   "./synonym_dicts/vec.txt", only_synonym=True)
+        # self.synonym_model = Model("./synonym_dicts/synonym.txt", "./synonym_dicts/tyccl.txt",
+        #                            "./synonym_dicts/redirect.txt", "./synonym_dicts/wiki_similar.txt",
+        #                            "./synonym_dicts/vec.txt", only_synonym=True)
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
         self.st_stopwords = rf.read_stopwords(stopfile)
@@ -281,7 +280,7 @@ class Keywords(object):
                         continue
             return d_res
         except Exception, e:
-            print  traceback.print_exc()
+            # print  traceback.print_exc()
             return d_words
 
     def compute_idf(self, wordic):
@@ -370,7 +369,8 @@ class Keywords(object):
         for k in d_words:
             if k not in deleted_words:
                 words.remove(k)
-                l_tmp = self.synonym_model.synonym(k.encode("utf-8"))
+                # l_tmp = self.synonym_model.synonym(k.encode("utf-8"))
+                l_tmp = []
                 for item1 in l_tmp:
                     for item2 in words:
                         if item1 == item2.encode("utf-8"):
@@ -480,8 +480,18 @@ class Keywords(object):
 
 if __name__ == '__main__':
     text = '''
-    我们可以看到这种绘图方式实际上是按命令添加的，以plot开始，可以以任何方式结束，每加上一个元素，实际上都是以一句单独的命令来实现的。这样做的缺点就是，其实不符合人对于画图的一般认识。其次，就是，我们没有一个停止绘图的标志，这使得有时候再处理的时候就会产生一些困惑。优势其实也有，在做参数修改的时候，我们往往可以很方便地直接用一句单独的命令修改，譬如对于x轴的调整，觉得不满意就可以写命令直接调整。而ggplot2则意味着要重新作图。
+    秃笔我们可以看到这种绘图方式实际上是按命令添加的，以plot开始，可以以任何方式结束，每加上一个元素，实际上都是以一句单独的命令来实现的。这样做的缺点就是，其实不符合人对于画图的一般认识。其次，就是，我们没有一个停止绘图的标志，这使得有时候再处理的时候就会产生一些困惑。优势其实也有，在做参数修改的时候，我们往往可以很方便地直接用一句单独的命令修改，譬如对于x轴的调整，觉得不满意就可以写命令直接调整。而ggplot2则意味着要重新作图。
     '''
+
+    # text='''
+    # We can see that this drawing is actually added by the command to plot to start,
+    #  you can end in any way, each plus an element, in fact, is a separate order to achieve.
+    #  The disadvantage of doing so is that it does not conform to the general understanding of drawing.
+    #  Second, that is, we do not have a sign to stop drawing, which makes some time to deal with some confusion.
+    #  In fact, there are advantages, in the parameters of the time to modify, we can often be very convenient
+    #  to use a separate order to modify, for example, the adjustment of the x-axis, feel
+    # dissatisfied can write commands directly adjusted. And ggplot2 means to re-map.
+    # '''
     topN = 1000
     kw = Keywords(settings.df_file, settings.stopwords)
     d_res = kw.process(text, topN, '')

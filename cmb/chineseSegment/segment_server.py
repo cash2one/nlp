@@ -37,7 +37,7 @@ class SegmentHander(object):
             res = self.seg.ner_recog(word)
             res = json.dumps(res, ensure_ascii=False)
         except Exception, e:
-            logging.error(e)
+            self.error = logging.error(e)
         return res
 
 
