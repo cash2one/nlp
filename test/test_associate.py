@@ -9,7 +9,7 @@ import zaber_nlp.analyse
 folder_path = 'E:/PycharmProjects/nlp/study/SogouC.reduced/Reduced'
 # 找到该文件夹下面的文件夹集合
 folder_list = os.listdir(folder_path)
-N = 1000
+N = 1800
 process_times = []  # 统计处理每个文件的时间
 sum_all_files = 0
 for i in range(len(folder_list)):
@@ -24,7 +24,7 @@ for i in range(len(folder_list)):
             break
         complete_path = open(new_folder_path + '\\' + f, 'r')
         raw = complete_path.read()
-        result1 = zaber_nlp.analyse.esmre(raw)
+        result1 = zaber_nlp.analyse.pyahocorasick(raw)
         j += 1
     end_time = time.clock()
     process_times.append(end_time - start_time)

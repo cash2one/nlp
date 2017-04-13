@@ -2,10 +2,203 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/设计文档.docx" afterPath="$PROJECT_DIR$/设计文档.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/organization.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/organization_bak.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/public_company.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/public_company_bak.xls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/ahocorasick.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/collector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/common/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/common/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/common/monkey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/common/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/connection_pool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/dynamic_host_set.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/loadbalancer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/loadbalancing_strategy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/loadbalancing_strategy/random_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/loadbalancing_strategy/round_robin_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/thrift_server/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/thrift_server/gevent_processpool_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/zkclient.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/client.conf.develop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/client.conf.online" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/client.conf.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/server.conf.develop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/server.conf.online" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/server.conf.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/etc/update.conf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen-java/SegmentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen/segment/SegmentService-remote" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen/segment/SegmentService.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen/segment/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen/segment/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/gen/segment/ttypes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/ner_dicts/public_company.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/nohup.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/pos_map.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/segment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/segment.thrift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/segment_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/set_logger.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/start_segment.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/stop_segment.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/transfer_excel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/会计.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/动漫.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/医疗健康.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/医院.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/地方.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/学校.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/教育.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/明星.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/歌曲.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/汽车.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/游戏.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/计算机.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/财经.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/音乐.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/chineseSegment/user_dicts/颜色.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/collector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/common/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/common/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/common/monkey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/common/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/connection_pool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/dynamic_host_set.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/loadbalancer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/loadbalancing_strategy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/loadbalancing_strategy/random_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/loadbalancing_strategy/round_robin_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/thrift_server/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/thrift_server/gevent_processpool_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/bfd/harpc/zkclient.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/client.conf.develop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/client.conf.online" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/client.conf.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/server.conf.develop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/server.conf.online" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/server.conf.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/etc/update.conf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen-java/KeywordsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen/keywords/KeywordsService-remote" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen/keywords/KeywordsService.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen/keywords/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen/keywords/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/gen/keywords/ttypes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/keywords.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/keywords.thrift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/keywords_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/readfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/set_logger.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/stopwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/keywordsExtract/xinhua_df.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/preProcess/langconv.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/preProcess/preProcess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/preProcess/zh_wiki.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/Manual.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/collector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/common/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/common/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/common/monkey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/common/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/connection_pool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/dynamic_host_set.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/loadbalancer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/loadbalancing_strategy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/loadbalancing_strategy/random_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/loadbalancing_strategy/round_robin_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/thrift_server/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/thrift_server/gevent_processpool_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/bfd/harpc/zkclient.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/client.conf.develop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/client.conf.online" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/client.conf.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/server.conf.develop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/server.conf.online" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/server.conf.test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/etc/update.conf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/gen/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/gen/sentiment/SentimentService-remote" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/gen/sentiment/SentimentService.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/gen/sentiment/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/gen/sentiment/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/gen/sentiment/ttypes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/nohup.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/opinion_dicts.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/rest_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/rval.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/senti.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/senti2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/senti_dict.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/senti_rest_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/senti_zkl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/sentiment.thrift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/sentiment_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/set_logger.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/start_senti.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/text_cnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/collector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/common/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/common/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/common/monkey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/common/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/connection_pool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/dynamic_host_set.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/loadbalancer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/loadbalancing_strategy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/loadbalancing_strategy/random_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/loadbalancing_strategy/round_robin_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/thrift_server/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/thrift_server/gevent_processpool_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/bfd/harpc/zkclient.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/gen/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/gen/sentiment/SentimentService-remote" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/gen/sentiment/SentimentService.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/gen/sentiment/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/gen/sentiment/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/gen/sentiment/ttypes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/sentiment.thrift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmb/sentiAnalyze/thrift/sentiment_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/LeNet_5.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nlp.iml" afterPath="$PROJECT_DIR$/.idea/nlp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/demo.py" afterPath="$PROJECT_DIR$/test/demo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_associate.py" afterPath="$PROJECT_DIR$/test/test_associate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zaber_nlp/entity.txt" afterPath="$PROJECT_DIR$/zaber_nlp/entity.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/分词.vsdx" afterPath="$PROJECT_DIR$/分词.vsdx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,32 +209,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/nlp$ahocorasick.coverage" NAME="ahocorasick Coverage Results" MODIFIED="1487584713846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
-    <SUITE FILE_PATH="coverage/nlp$demo.coverage" NAME="demo Coverage Results" MODIFIED="1489134026636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1486602443888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nlp$test_lock.coverage" NAME="test_lock Coverage Results" MODIFIED="1486973493186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$extract_topic.coverage" NAME="extract_topic Coverage Results" MODIFIED="1486972829798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$test.coverage" NAME="test Coverage Results" MODIFIED="1489051159238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
+    <SUITE FILE_PATH="coverage/nlp$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1491991399718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/sentiAnalyze" />
     <SUITE FILE_PATH="coverage/nlp$extract_tags_stop_words.coverage" NAME="extract_tags_stop_words Coverage Results" MODIFIED="1486955889831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$test_change_dictpath.coverage" NAME="test_change_dictpath Coverage Results" MODIFIED="1486973358945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$test_associate.coverage" NAME="test_associate Coverage Results" MODIFIED="1489566057722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$client.coverage" NAME="client Coverage Results" MODIFIED="1492065064889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/chineseSegment" />
+    <SUITE FILE_PATH="coverage/nlp$test_file.coverage" NAME="test_file Coverage Results" MODIFIED="1486973411899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$demo.coverage" NAME="demo Coverage Results" MODIFIED="1491992297680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$jiebafenci.coverage" NAME="jiebafenci Coverage Results" MODIFIED="1486949767327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp$extract_topic.coverage" NAME="extract_topic Coverage Results" MODIFIED="1486972829798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1486602443888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nlp$associatation.coverage" NAME="associatation Coverage Results" MODIFIED="1488795369512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zaber_nlp/analyse" />
+    <SUITE FILE_PATH="coverage/nlp$qq.coverage" NAME="qq Coverage Results" MODIFIED="1490032250176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$test_pos.coverage" NAME="test_pos Coverage Results" MODIFIED="1488332681847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$senti_rest_server.coverage" NAME="senti_rest_server Coverage Results" MODIFIED="1491992187568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/sentiAnalyze" />
     <SUITE FILE_PATH="coverage/nlp$test_bug.coverage" NAME="test_bug Coverage Results" MODIFIED="1486973080436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$NovelRecommend.coverage" NAME="NovelRecommend Coverage Results" MODIFIED="1486606500402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp$NaiveBayesClassifier.coverage" NAME="NaiveBayesClassifier Coverage Results" MODIFIED="1489134812300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
     <SUITE FILE_PATH="coverage/nlp$test_pos_file.coverage" NAME="test_pos_file Coverage Results" MODIFIED="1486974371334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$test.coverage" NAME="test Coverage Results" MODIFIED="1489051159238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
-    <SUITE FILE_PATH="coverage/nlp$associatation.coverage" NAME="associatation Coverage Results" MODIFIED="1488795369512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zaber_nlp/analyse" />
-    <SUITE FILE_PATH="coverage/nlp$NovelRecommend.coverage" NAME="NovelRecommend Coverage Results" MODIFIED="1486606500402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nlp$test_userdict.coverage" NAME="test_userdict Coverage Results" MODIFIED="1487234037451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$test_change_dictpath.coverage" NAME="test_change_dictpath Coverage Results" MODIFIED="1486973358945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$test_associate.coverage" NAME="test_associate Coverage Results" MODIFIED="1489484338767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$jiebafenci.coverage" NAME="jiebafenci Coverage Results" MODIFIED="1486949767327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nlp$Nosetests_in_jieba_test.coverage" NAME="Nosetests in jieba_test Coverage Results" MODIFIED="1486973012693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$test_file.coverage" NAME="test_file Coverage Results" MODIFIED="1486973411899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$test_multithread.coverage" NAME="test_multithread Coverage Results" MODIFIED="1486973554159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$test_pos.coverage" NAME="test_pos Coverage Results" MODIFIED="1488332681847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$ahocorasick.coverage" NAME="ahocorasick Coverage Results" MODIFIED="1487584713846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
+    <SUITE FILE_PATH="coverage/nlp$test_userdict.coverage" NAME="test_userdict Coverage Results" MODIFIED="1487234037451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$segment_server.coverage" NAME="segment_server Coverage Results" MODIFIED="1491986870198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/chineseSegment" />
+    <SUITE FILE_PATH="coverage/nlp$test_lock.coverage" NAME="test_lock Coverage Results" MODIFIED="1486973493186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$Nosetests_in_jieba_test.coverage" NAME="Nosetests in jieba_test Coverage Results" MODIFIED="1486973012693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/nlp$keywords.coverage" NAME="keywords Coverage Results" MODIFIED="1492068091494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/keywordsExtract" />
     <SUITE FILE_PATH="coverage/nlp$rnnfenci.coverage" NAME="rnnfenci Coverage Results" MODIFIED="1486461248878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -58,13 +258,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_associate.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test_associate.py">
+      <file leaf-file-name="keywords.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmb/keywordsExtract/keywords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="875">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
-                <element signature="e#18#27#0" expanded="true" />
+                <element signature="e#25#92#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,7 +282,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'E', 'k'</find>
       <find>'k'</find>
       <find>pos_filt</find>
       <find>css</find>
@@ -112,6 +311,7 @@
       <find>日</find>
       <find>2</find>
       <find>int_sort</find>
+      <find>CLUSTER_GRAM</find>
     </findStrings>
     <replaceStrings>
       <replace>end_time</replace>
@@ -142,16 +342,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NovelRecommend.py" />
-        <option value="$PROJECT_DIR$/jiebafenci.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/zaberFenci/__init__.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/zaber_nlp/analyse/tfidf.py" />
-        <option value="$PROJECT_DIR$/test/extract_tags_idfpath.py" />
-        <option value="$PROJECT_DIR$/test/extract_tags_stop_words.py" />
-        <option value="$PROJECT_DIR$/test/extract_tags_with_weight.py" />
-        <option value="$PROJECT_DIR$/zaber_nlp/analyse/analyzer.py" />
         <option value="$PROJECT_DIR$/test/test_multithread.py" />
         <option value="$PROJECT_DIR$/study/origin/aa" />
         <option value="$PROJECT_DIR$/test/stopwords.txt" />
@@ -186,13 +376,23 @@
         <option value="$PROJECT_DIR$/study/data/novel/4093_洛炜01.爱杀.txt" />
         <option value="$PROJECT_DIR$/zaber_nlp/dict.txt" />
         <option value="$PROJECT_DIR$/study/test.py" />
-        <option value="$PROJECT_DIR$/test/demo.py" />
         <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/study/NaiveBayesClassifier.py" />
-        <option value="$PROJECT_DIR$/zaber_nlp/analyse/associatation.py" />
         <option value="$PROJECT_DIR$/zaber_nlp/analyse/__init__.py" />
         <option value="$PROJECT_DIR$/zaber_nlp/entity.txt" />
         <option value="$PROJECT_DIR$/test/test_associate.py" />
+        <option value="$PROJECT_DIR$/zaber_nlp/analyse/associatation.py" />
+        <option value="$PROJECT_DIR$/test/kmean.py" />
+        <option value="$PROJECT_DIR$/test/qq.py" />
+        <option value="$PROJECT_DIR$/study/LeNet_5.py" />
+        <option value="$PROJECT_DIR$/cmb/chineseSegment/client.py" />
+        <option value="$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/client.py" />
+        <option value="$PROJECT_DIR$/cmb/sentiAnalyze/senti_rest_server.py" />
+        <option value="$PROJECT_DIR$/cmb/sentiAnalyze/test.py" />
+        <option value="$PROJECT_DIR$/test/demo.py" />
+        <option value="$PROJECT_DIR$/cmb/chineseSegment/segment_server.py" />
+        <option value="$PROJECT_DIR$/cmb/chineseSegment/etc/client.conf.develop" />
+        <option value="$PROJECT_DIR$/cmb/keywordsExtract/keywords.py" />
       </list>
     </option>
   </component>
@@ -224,6 +424,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,38 +434,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zaber_nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zaber_nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="posseg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,33 +475,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
+              <option name="myItemId" value="cmb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SogouC.reduced" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SogouC.reduced" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Reduced" />
+              <option name="myItemId" value="similar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,21 +493,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nlp_app" />
+              <option name="myItemId" value="cmb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="similar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="similar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_restful_api/settings.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../deepnlp" />
     <property name="SearchEverywhereHistoryKey" value="ent_dict&#9;null&#9;null&#10;flag&#9;null&#9;null&#10;bann&#9;null&#9;null&#10;ban&#9;FILE&#9;file://E:/PycharmProjects/nlp/django_restful_api/nlp_app/static/nlp_app/images/banner5.jpg&#10;banner5&#9;null&#9;null&#10;INSTALLED_APPS&#9;null&#9;null&#10;_lcut&#9;null&#9;null&#10;dag&#9;null&#9;null&#10;ini&#9;null&#9;null&#10;add&#9;null&#9;null&#10;us&#9;null&#9;null&#10;jieba&#9;RUN_CONFIGURATION&#9;jiebafenci&#10;get_Da&#9;null&#9;null&#10;get_DAG&#9;null&#9;null" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -380,7 +548,76 @@
       <recent name="E:\PycharmProjects\nlp\django_restful_api\nlp_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_associate">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.keywords">
+    <configuration default="false" name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cmb/chineseSegment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmb/chineseSegment/client.py" />
+      <option name="PARAMETERS" value="develop" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="client (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cmb/sentiAnalyze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmb/sentiAnalyze/client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="senti_rest_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cmb/sentiAnalyze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmb/sentiAnalyze/senti_rest_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -397,24 +634,26 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_associate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="keywords" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cmb/keywordsExtract" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="nlp" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_associate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmb/keywordsExtract/keywords.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -435,6 +674,13 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -513,6 +759,7 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -542,26 +789,6 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="nlp" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -595,15 +822,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="nlp" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -617,16 +839,9 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="nlp" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -640,18 +855,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="nlp" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="nlp_restful_api" type="Python.DjangoServer" factoryName="Django server">
@@ -678,17 +885,43 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.nlp_restful_api" />
-      <item index="1" class="java.lang.String" itemvalue="Python.demo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_associate" />
+      <item index="1" class="java.lang.String" itemvalue="Python.client" />
+      <item index="2" class="java.lang.String" itemvalue="Python.client (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.senti_rest_server" />
+      <item index="4" class="java.lang.String" itemvalue="Python.demo" />
+      <item index="5" class="java.lang.String" itemvalue="Python.keywords" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_associate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.demo" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.keywords" />
+        <item index="1" class="java.lang.String" itemvalue="Python.client" />
+        <item index="2" class="java.lang.String" itemvalue="Python.demo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.senti_rest_server" />
+        <item index="4" class="java.lang.String" itemvalue="Python.client (1)" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -935,7 +1168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489142828281</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="list  merge  multi_files">
+      <created>1489486306731</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1489486306731</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -956,26 +1196,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2987897" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27168575" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41734862" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29787233" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45171848" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22087745" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2700491" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.52" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.52" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2667758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1059,165 +1299,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/ngDialog-theme-plain.css" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/images/banner5.jpg" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/django_restful_api/settings.py" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/clustering.js" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/videoimage.js" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/django_restful_api/urls.py" />
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/finalseg/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/views.py" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/nlp_app/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/django_restful_api/manage.py" />
-    <entry file="file://$PROJECT_DIR$/test/test_pos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/numba/types/misc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="393" column="8" lean-forward="false" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Anaconda2/Lib/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="446" column="35" lean-forward="true" selection-start-line="446" selection-start-column="35" selection-end-line="446" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/posseg/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_restful_api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_app/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/分词.vsdx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp_app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1157">
-          <caret line="144" column="3" lean-forward="false" selection-start-line="144" selection-start-column="3" selection-end-line="144" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/scipy/misc/doccer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/analyse/textrank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="106" column="30" lean-forward="false" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-1081368587/ahocorasick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3977">
-          <caret line="99" column="29" lean-forward="false" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="481" column="0" lean-forward="false" selection-start-line="481" selection-start-column="0" selection-end-line="481" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/_compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000008/10.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000008/28.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000008/22.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-1081368587/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="1822" column="56" lean-forward="false" selection-start-line="1822" selection-start-column="56" selection-end-line="1822" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/ahocorasick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-1081368587/esm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/study/origin/aa">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1275,32 +1356,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zaber_nlp/analyse/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/analyse/associatation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1743">
-          <caret line="95" column="4" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1315,15 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="12" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="584429" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zaber_nlp/entity.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="584429" column="0" lean-forward="false" selection-start-line="584429" selection-start-column="0" selection-end-line="584429" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,16 +1381,256 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaber_nlp/entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="584429" column="0" lean-forward="false" selection-start-line="584429" selection-start-column="0" selection-end-line="584429" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaber_nlp/analyse/associatation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/xlwt/Worksheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14427">
+          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/xlwt/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/xlwt/Workbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zaber_nlp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000008/13.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/SogouC.reduced/Reduced/C000008/10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_associate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="157">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/kmean.py" />
+    <entry file="file://$PROJECT_DIR$/test/qq.py" />
+    <entry file="file://$PROJECT_DIR$/test/stop_words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4200">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhaoshang/chineseSegment/client.py" />
+    <entry file="file://$PROJECT_DIR$/zhaoshang/chineseSegment/start_segment.sh" />
+    <entry file="file://$PROJECT_DIR$/zhaoshang/chineseSegment/segment_server.py" />
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/etc/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/etc/client.conf.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/etc/server.conf.online">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10501">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#18#27#0" expanded="true" />
+            <marker date="1490858184000" expanded="true" signature="1822:1855" ph="select count... ORGANIZATION" />
+            <marker date="1490858184000" expanded="true" signature="2023:2111" ph="select FULL_... ORGANIZATION" />
+            <marker date="1490858184000" expanded="true" signature="3783:3818" ph="select count... PUBLIC_COMPANY" />
+            <marker date="1490858184000" expanded="true" signature="4028:4154" ph="select MARKE... PUBLIC_COMPANY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/kazoo-2.2.1-py2.7.egg/kazoo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/etc/update.conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/LeNet_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/start_segment.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda2/Lib/site-packages/kazoo-2.2.1-py2.7.egg/kazoo/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="450" column="7" lean-forward="false" selection-start-line="450" selection-start-column="7" selection-end-line="450" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/zkclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/sentiAnalyze/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/sentiAnalyze/senti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/sentiAnalyze/senti_rest_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/sentiAnalyze/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/bfd/harpc/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="225" column="55" lean-forward="true" selection-start-line="225" selection-start-column="55" selection-end-line="225" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/segment_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/etc/client.conf.develop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/chineseSegment/etc/server.conf.develop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/similar/similar/similar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/similar/similar/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmb/keywordsExtract/keywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#92#0" expanded="true" />
           </folding>
         </state>
       </provider>

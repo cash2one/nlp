@@ -1,0 +1,261 @@
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.609 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.601 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.617 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.566 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.578 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.578 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.563 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Traceback (most recent call last):
+  File "segment_server.py", line 17, in <module>
+    from segment import Segment
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/segment.py", line 6, in <module>
+    import jieba.posseg as pg
+  File "/usr/lib/python2.7/site-packages/jieba/posseg/__init__.py", line 257, in <module>
+    dt = POSTokenizer(jieba.dt)
+  File "/usr/lib/python2.7/site-packages/jieba/posseg/__init__.py", line 82, in __init__
+    self.load_word_tag(self.tokenizer.get_dict_file())
+  File "/usr/lib/python2.7/site-packages/jieba/posseg/__init__.py", line 105, in load_word_tag
+    word, _, tag = line.split(" ")
+KeyboardInterrupt
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.633 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.660 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.702 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.571 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.571 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.966 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.003 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.603 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Traceback (most recent call last):
+  File "segment_server.py", line 54, in <module>
+    server_demo.start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 112, in start
+    self._start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 268, in _start
+    self._server.serve()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/thrift_server/gevent_processpool_server.py", line 108, in serve
+    self._post_start_callback()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 152, in _post_start_callback
+    self._collector.set_path("%s/%s" % (self._statistic_path, self._node_name))
+AttributeError: 'GeventProcessPoolThriftServer' object has no attribute '_node_name'
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.843 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.614 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.596 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Traceback (most recent call last):
+  File "segment_server.py", line 54, in <module>
+    server_demo.start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 112, in start
+    self._start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 268, in _start
+    self._server.serve()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/thrift_server/gevent_processpool_server.py", line 92, in serve
+    self.serverTransport.listen()
+  File "build/bdist.linux-x86_64/egg/thrift/transport/TSocket.py", line 173, in listen
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+Starting chinese segment server...
+Starting chinese segment server...
+Traceback (most recent call last):
+  File "segment_server.py", line 55, in <module>
+    server_demo.start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 112, in start
+    self._start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 268, in _start
+    self._server.serve()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/thrift_server/gevent_processpool_server.py", line 108, in serve
+    self._post_start_callback()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 152, in _post_start_callback
+    self._collector.set_path("%s/%s" % (self._statistic_path, self._node_name))
+AttributeError: 'GeventProcessPoolThriftServer' object has no attribute '_node_name'
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.625 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.627 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.620 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.645 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.613 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.477 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.472 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.486 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.490 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.500 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Traceback (most recent call last):
+  File "segment_server.py", line 55, in <module>
+    server_demo.start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 112, in start
+    self._start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 268, in _start
+    self._server.serve()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/thrift_server/gevent_processpool_server.py", line 108, in serve
+    self._post_start_callback()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 152, in _post_start_callback
+    self._collector.set_path("%s/%s" % (self._statistic_path, self._node_name))
+AttributeError: 'GeventProcessPoolThriftServer' object has no attribute '_node_name'
+Starting chinese segment server...
+Starting chinese segment server...
+Traceback (most recent call last):
+  File "segment_server.py", line 55, in <module>
+    server_demo.start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 112, in start
+    self._start()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 268, in _start
+    self._server.serve()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/thrift_server/gevent_processpool_server.py", line 108, in serve
+    self._post_start_callback()
+  File "/opt/Jinhuang/xinhua_net/chineseSegment/bfd/harpc/server.py", line 152, in _post_start_callback
+    self._collector.set_path("%s/%s" % (self._statistic_path, self._node_name))
+AttributeError: 'GeventProcessPoolThriftServer' object has no attribute '_node_name'
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.457 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.518 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.537 seconds.
+Prefix dict has been built succesfully.
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/handlers.py", line 77, in emit
+    self.doRollover()
+  File "/usr/lib64/python2.7/logging/handlers.py", line 346, in doRollover
+    os.rename(self.baseFilename, dfn)
+OSError: [Errno 2] No such file or directory
+Logged from file segment_server.py, line 30
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/handlers.py", line 77, in emit
+    self.doRollover()
+  File "/usr/lib64/python2.7/logging/handlers.py", line 346, in doRollover
+    os.rename(self.baseFilename, dfn)
+OSError: [Errno 2] No such file or directory
+Logged from file segment_server.py, line 30
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/handlers.py", line 77, in emit
+    self.doRollover()
+  File "/usr/lib64/python2.7/logging/handlers.py", line 346, in doRollover
+    os.rename(self.baseFilename, dfn)
+OSError: [Errno 2] No such file or directory
+Logged from file segment_server.py, line 30
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.483 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.496 seconds.
+Prefix dict has been built succesfully.
+Starting chinese segment server...
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.484 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.542 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.538 seconds.
+Prefix dict has been built succesfully.
+No handlers could be found for logger "kazoo.client"
