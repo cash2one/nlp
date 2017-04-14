@@ -3,7 +3,6 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-import settings
 
 
 def read_stopwords(infile):
@@ -13,6 +12,19 @@ def read_stopwords(infile):
         if tmp:
             st_stopwords.add(tmp)
     return st_stopwords
+
+
+def load_user_dict(infile):
+    """
+    加载新词词库，提高分词准确率
+
+    """
+    ud_userdicts = set()
+    for line in open(infile, 'rb'):
+        tmp = line.strip().decode('utf-8')
+        if tmp:
+            ud_userdicts.add(tmp)
+    return ud_userdicts
 
 
 def load_wd_df(df_file):

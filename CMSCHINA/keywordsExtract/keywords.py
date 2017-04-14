@@ -1,17 +1,27 @@
 # -*- coding: utf-8 -*-
 
-import sys, os, jieba, math, collections, re, copy, json, traceback
-import jieba.posseg as pseg
-import settings
-import readfile as rf
-import gensim.models.phrases
+import collections
+import copy
+import math
+import os
+import re
+import sys
+
 import Levenshtein
+import gensim.models.phrases
+import jieba
+import jieba.posseg as pseg
+
+import readfile as rf
+import settings
 
 cur_dir = os.path.dirname(os.path.abspath(__file__)) or os.getcwd()
 sys.path.append("../preProcess")
 sys.path.append("../similar/similar")
 
 from preProcess import PreProcess
+
+import time
 
 
 class Keywords(object):
@@ -23,6 +33,10 @@ class Keywords(object):
         # self.synonym_model = Model("./synonym_dicts/synonym.txt", "./synonym_dicts/tyccl.txt",
         #                            "./synonym_dicts/redirect.txt", "./synonym_dicts/wiki_similar.txt",
         #                            "./synonym_dicts/vec.txt", only_synonym=True)
+        self.update_period = 10  # minute
+        self.updated_time = 0
+        self.user_dicts = set()
+        self.user_file = './user_dict.txt'
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
         self.st_stopwords = rf.read_stopwords(stopfile)
@@ -51,6 +65,16 @@ class Keywords(object):
              'al': 0.5, \
              'v': 1.0, \
              'shuming': 1.5}
+
+    def update(self):
+        now_time = time.time()
+        if now_time - self.updated_time > self.update_period * 60:
+            new_dict = rf.load_user_dict(self.user_file)
+            for w in self.user_dicts - new_dict:
+                jieba.del_word(w)
+            for w in new_dict - self.user_dicts:
+                jieba.add_word(w)
+            self.updated_time = now_time
 
     def filter_url(self, line):
         """
@@ -467,6 +491,7 @@ class Keywords(object):
         Outputs:
             an ordered dictionary whose keys are the words, whose values are the weights.
         """
+        self.update()
         self.title_times = min(4.0, len(content) / (len(title) + 1) / 35)
         title = self.prep.normalize(title).decode("utf-8")
         content = self.prep.normalize(content).decode("utf-8")
