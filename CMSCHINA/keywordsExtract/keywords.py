@@ -36,12 +36,14 @@ class Keywords(object):
         self.update_period = 10  # minute
         self.updated_time = 0
         self.user_dicts = set()
+        self.stock_dict = rf.read_db()
         self.user_file = './user_dict.txt'
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
         self.st_stopwords = rf.read_stopwords(stopfile)
         self.http = re.compile(r'(?:(?:https?:)|(?:www)|(?:wap))[\w\.\&\/\=\:\?%\-]+')
         self.nickname = re.compile(r'(?://@|@).{2,12}(?::| |,|，|\.)')
+        # m 股票代码
         self.pos_list = \
             {'vn': 1.0, \
              'vl': 1.0, \
@@ -60,7 +62,6 @@ class Keywords(object):
              'nz': 1.3, \
              'nl': 1.0, \
              'ng': 1.0, \
-             'eng': 0, \
              'a': 0.5, \
              'al': 0.5, \
              'v': 1.0, \
@@ -70,6 +71,7 @@ class Keywords(object):
         now_time = time.time()
         if now_time - self.updated_time > self.update_period * 60:
             new_dict = rf.load_user_dict(self.user_file)
+            print new_dict
             for w in self.user_dicts - new_dict:
                 jieba.del_word(w)
             for w in new_dict - self.user_dicts:
@@ -97,6 +99,9 @@ class Keywords(object):
             jieba segmentation with both word and part of speech returned. 
         """
         l_words = [(obj.word.strip(), obj.flag) for obj in pseg.cut(line.strip()) if obj.word.strip()]
+        for tu in l_words:
+            for i in tu:
+                print i
         l_res = []
         flag = None
         flag_n_combine = False
@@ -228,12 +233,16 @@ class Keywords(object):
                     continue
         return d_res
 
+    # def extract_stock(self, d_words):
+
+
     def filter_word_by_pos(self, d_words):
         """
         Brief:
             filter words based on the part of speech.
         """
         d_res = {}
+
         try:
             s_start_pos = {'n', 'v'}
             s_ner_pos = {'nt', 'nr', 'nz', 'ns'}
@@ -472,6 +481,7 @@ class Keywords(object):
                 ll_d.append(self.word_posseg(sent))
         ll_bigram_lines = self.bigram_keywords_extract_pos(ll_d, settings.bigram_min_count, settings.bigram_threshold)
         d_words_weight = self.get_words_weight(ll_bigram_lines)
+        print d_words_weight
         d_words_filter_stop = self.filter_stopwords(d_words_weight)
         d_words_filter_pos = self.filter_word_by_pos(d_words_filter_stop)
         d_words_filter_pos = self.compute_idf(d_words_filter_pos)
@@ -505,18 +515,12 @@ class Keywords(object):
 
 if __name__ == '__main__':
     text = '''
-    秃笔我们可以看到这种绘图方式实际上是按命令添加的，以plot开始，可以以任何方式结束，每加上一个元素，实际上都是以一句单独的命令来实现的。这样做的缺点就是，其实不符合人对于画图的一般认识。其次，就是，我们没有一个停止绘图的标志，这使得有时候再处理的时候就会产生一些困惑。优势其实也有，在做参数修改的时候，我们往往可以很方便地直接用一句单独的命令修改，譬如对于x轴的调整，觉得不满意就可以写命令直接调整。而ggplot2则意味着要重新作图。
+    Apple Co.ltd秃笔我们可以002430友阿有限公司0024301看到这种绘图方式实际上傅顶啥是按命令傅顶啥添加的，以plot开始，可以以任何方式结束，每加上一个元素，实际上都是以一句单独的命令来实现的。这样做的缺点就是，其实不符合人对于画图的一般认识。其次，就是，我们没有一个停止绘图的标志，这使得有时候再处理的时候就会产生一些困惑。优势其实也有，在做参数修改的时候，我们往往可以很方便地直接用一句单独的命令修改，譬如对于x轴的调整，觉得不满意就可以写命令直接调整。而ggplot2则意味着要重新作图。
     '''
 
-    # text='''
-    # We can see that this drawing is actually added by the command to plot to start,
-    #  you can end in any way, each plus an element, in fact, is a separate order to achieve.
-    #  The disadvantage of doing so is that it does not conform to the general understanding of drawing.
-    #  Second, that is, we do not have a sign to stop drawing, which makes some time to deal with some confusion.
-    #  In fact, there are advantages, in the parameters of the time to modify, we can often be very convenient
-    #  to use a separate order to modify, for example, the adjustment of the x-axis, feel
-    # dissatisfied can write commands directly adjusted. And ggplot2 means to re-map.
-    # '''
+    text = '''
+        1111,fff df,fvsf,
+    '''
     topN = 1000
     kw = Keywords(settings.df_file, settings.stopwords)
     d_res = kw.process(text, topN, '')

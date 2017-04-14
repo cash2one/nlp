@@ -27,6 +27,40 @@ def load_user_dict(infile):
     return ud_userdicts
 
 
+import MySQLdb
+
+
+def read_db():
+    db = MySQLdb.Connect(
+        host='172.24.5.218',
+        port=3306,
+        db='text',
+        user='crawl',
+        passwd='crawl',
+        charset='utf8')
+    cursor = db.cursor()
+    # SQL 查询语句
+    sql = "SELECT STOCK_CODE,STOCK_NAME FROM PUBLIC_COMPANY LIMIT 10"
+    re_dict = {}
+    try:
+        # 执行SQL语句
+        cursor.execute(sql)
+        # 获取所有记录列表
+        results = cursor.fetchall()
+        for row in results:
+            STOCK_CODE = row[0]
+            STOCK_NAME = row[1]
+            # 打印结果
+            dict[STOCK_CODE] = STOCK_NAME
+            print "STOCK_NAME=%s,STOCK_CODE=%s" % \
+                  (STOCK_NAME, STOCK_CODE)
+    except:
+        print "Error: unable to fecth data"
+    # 关闭数据库连接
+    db.close()
+    return re_dict
+
+
 def load_wd_df(df_file):
     wd_df = {}
     for line in open(df_file):

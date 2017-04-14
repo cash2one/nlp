@@ -272,7 +272,7 @@ class Segment(object):
 
 
 if __name__ == "__main__":
-    seg = Segment("pos_map.txt", [".E:/PycharmProjects/nlp/CMSCHINACMSCHINA/chineseSegment/user_dicts/颜色.txt"])
+    seg = Segment("pos_map.txt", ["E:/PycharmProjects/nlp/CMSCHINA/keywordsExtract/user_dict.txt"])
     # l_pos_seg = seg.pos_seg("美国格林大学乔治?克林顿决定出访中国， 习近平将迎接他。他们将在1991年2月3日下午五点左右会面。我的电话号码是13807025737，QQ号是3356701943，email是sgyjkl_34@126.com，备用邮箱是30807033@qq.com，身份证号是370401198912150427，银行账号是6214342578651989，车牌号是冀J33455")
     # print " ".join([item[0].decode("utf-8") + "/" + item[1].decode("utf-8") for item in l_pos_seg])
     # l_ner_recog = seg.ner_recog("美国格林大学乔治?克林顿决定出访中国， 习近平将迎接他。他们将在1991年2月3日下午五点左右会面。我的电话号码是13807025737，QQ号是3356701943，email是sgyjkl_34@126.com，备用邮箱是30807033@qq.com，身份证号是370401198912150427，银行账号是6214342578651989，车牌号是冀J33455")
