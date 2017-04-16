@@ -56,7 +56,7 @@ class Tokenizer(object):
         self.total = 0
         self.user_word_tag_tab = {}
         self.initialized = False
-        self.tmp_dir = None
+        self.tmp_dir = u'c:/users/泽彪/appdata/local/temp'
         self.cache_file = None
 
     def __repr__(self):

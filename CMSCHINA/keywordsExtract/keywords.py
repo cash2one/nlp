@@ -9,8 +9,8 @@ import sys
 
 import Levenshtein
 import gensim.models.phrases
-import jieba
-import jieba.posseg as pseg
+import zaber_nlp as jieba
+import zaber_nlp.posseg as pseg
 
 import readfile as rf
 import settings
@@ -36,7 +36,6 @@ class Keywords(object):
         self.update_period = 10  # minute
         self.updated_time = 0
         self.user_dicts = set()
-        self.stock_dict = rf.read_db()
         self.user_file = './user_dict.txt'
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
@@ -60,7 +59,6 @@ class Keywords(object):
              'nsf': 1.3, \
              'nt': 1.5, \
              'nz': 1.3, \
-             'nl': 1.0, \
              'ng': 1.0, \
              'a': 0.5, \
              'al': 0.5, \
@@ -70,13 +68,33 @@ class Keywords(object):
     def update(self):
         now_time = time.time()
         if now_time - self.updated_time > self.update_period * 60:
-            new_dict = rf.load_user_dict(self.user_file)
-            print new_dict
-            for w in self.user_dicts - new_dict:
+            now_dict = self.merge_user_dict()
+            for w in self.user_dicts - now_dict:
                 jieba.del_word(w)
-            for w in new_dict - self.user_dicts:
-                jieba.add_word(w)
+            for w in now_dict - self.user_dicts:
+                jieba.add_word(w, 100, 'nt')
+            self.user_dicts = now_dict
             self.updated_time = now_time
+
+    def merge_user_dict(self):
+        user_dict = rf.load_user_dict(self.user_file)
+        stock_name, full_name = rf.read_public_company()
+        stock_name = set(stock_name)
+        full_name = set(full_name)
+        merge_list = user_dict | stock_name | full_name
+        # merge_list = user_dict
+        return merge_list
+
+    def merge_weight(self, key_dict):
+        stock_name, full_name = rf.read_public_company()
+        stock_dict = {}
+        for i in range(len(stock_name)):
+            stock_dict[full_name[i]] = stock_name[i]
+        for key in key_dict.keys():
+            if key in stock_dict.keys():
+                key_dict[stock_dict[key]][0] += key_dict[key][0]
+                del key_dict[key]
+        return key_dict
 
     def filter_url(self, line):
         """
@@ -481,7 +499,6 @@ class Keywords(object):
                 ll_d.append(self.word_posseg(sent))
         ll_bigram_lines = self.bigram_keywords_extract_pos(ll_d, settings.bigram_min_count, settings.bigram_threshold)
         d_words_weight = self.get_words_weight(ll_bigram_lines)
-        print d_words_weight
         d_words_filter_stop = self.filter_stopwords(d_words_weight)
         d_words_filter_pos = self.filter_word_by_pos(d_words_filter_stop)
         d_words_filter_pos = self.compute_idf(d_words_filter_pos)
@@ -491,6 +508,8 @@ class Keywords(object):
                 d_words_filter_pos[key] = copy.deepcopy(d_res_titles[key])
             else:
                 d_words_filter_pos[key][0] += d_res_titles[key][0]
+        # 合并公司以及股票的权重
+        d_words_filter_pos = self.merge_weight(d_words_filter_pos)
         return d_words_filter_pos
 
     def process(self, content, topN, title=''):
@@ -506,7 +525,6 @@ class Keywords(object):
         title = self.prep.normalize(title).decode("utf-8")
         content = self.prep.normalize(content).decode("utf-8")
         d_words_texts = self.core_process(title, content)
-
         d_words_repl = self.remove_delimiter_pos(d_words_texts)
         d_words_rm_redunt = self.remove_redundancy(d_words_repl, settings.similarity_threshold)
         d_words_topN = self.get_topN_Phrase(d_words_rm_redunt, topN)
@@ -515,12 +533,8 @@ class Keywords(object):
 
 if __name__ == '__main__':
     text = '''
-    Apple Co.ltd秃笔我们可以002430友阿有限公司0024301看到这种绘图方式实际上傅顶啥是按命令傅顶啥添加的，以plot开始，可以以任何方式结束，每加上一个元素，实际上都是以一句单独的命令来实现的。这样做的缺点就是，其实不符合人对于画图的一般认识。其次，就是，我们没有一个停止绘图的标志，这使得有时候再处理的时候就会产生一些困惑。优势其实也有，在做参数修改的时候，我们往往可以很方便地直接用一句单独的命令修改，譬如对于x轴的调整，觉得不满意就可以写命令直接调整。而ggplot2则意味着要重新作图。
-    '''
+    Apple Co.ltd秃笔我们可以002430蓝黛传动0024301看到重庆蓝黛动力传动机械股份有限公司这种绘图方式实际上傅顶啥是按命令傅顶啥添加的'''
 
-    text = '''
-        1111,fff df,fvsf,
-    '''
     topN = 1000
     kw = Keywords(settings.df_file, settings.stopwords)
     d_res = kw.process(text, topN, '')

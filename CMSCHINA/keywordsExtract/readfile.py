@@ -30,35 +30,35 @@ def load_user_dict(infile):
 import MySQLdb
 
 
-def read_db():
-    db = MySQLdb.Connect(
-        host='172.24.5.218',
-        port=3306,
-        db='text',
-        user='crawl',
-        passwd='crawl',
-        charset='utf8')
-    cursor = db.cursor()
-    # SQL 查询语句
-    sql = "SELECT STOCK_CODE,STOCK_NAME FROM PUBLIC_COMPANY LIMIT 10"
-    re_dict = {}
-    try:
-        # 执行SQL语句
-        cursor.execute(sql)
-        # 获取所有记录列表
-        results = cursor.fetchall()
-        for row in results:
-            STOCK_CODE = row[0]
-            STOCK_NAME = row[1]
-            # 打印结果
-            dict[STOCK_CODE] = STOCK_NAME
-            print "STOCK_NAME=%s,STOCK_CODE=%s" % \
-                  (STOCK_NAME, STOCK_CODE)
-    except:
-        print "Error: unable to fecth data"
-    # 关闭数据库连接
-    db.close()
-    return re_dict
+def read_public_company():
+    com_list = []
+    # db = MySQLdb.Connect(
+    #     host='172.24.5.218',
+    #     port=3306,
+    #     db='text',
+    #     user='crawl',
+    #     passwd='crawl',
+    #     charset='utf8')
+    # cursor = db.cursor()
+    # # SQL 查询语句
+    # sql = "SELECT FULL_NAME,STOCK_NAME FROM PUBLIC_COMPANY LIMIT 10"
+    # try:
+    #     # 执行SQL语句
+    #     cursor.execute(sql)
+    #     # 获取所有记录列表
+    #     results = cursor.fetchall()
+    #     for row in results:
+    #         FULL_NAME = row[0]
+    #         STOCK_NAME = row[1]
+    #         # 打印结果
+    #         com_list.append([FULL_NAME,STOCK_NAME])
+    # except:
+    #     print "Error: unable to fecth data"
+    # # 关闭数据库连接
+    # db.close()
+    stock_list = [u'蓝黛传动', u'锦龙股份']
+    full_list = [u'重庆蓝黛动力传动机械股份有限公司', u'广东锦龙发展股份有限公司']
+    return stock_list, full_list
 
 
 def load_wd_df(df_file):
