@@ -9,11 +9,11 @@ import sys
 
 import Levenshtein
 import gensim.models.phrases
-import zaber_nlp as jieba
-import zaber_nlp.posseg as pseg
 
 import readfile as rf
 import settings
+import zaber_nlp as jieba
+import zaber_nlp.posseg as pseg
 
 cur_dir = os.path.dirname(os.path.abspath(__file__)) or os.getcwd()
 sys.path.append("../preProcess")
@@ -33,16 +33,15 @@ class Keywords(object):
         # self.synonym_model = Model("./synonym_dicts/synonym.txt", "./synonym_dicts/tyccl.txt",
         #                            "./synonym_dicts/redirect.txt", "./synonym_dicts/wiki_similar.txt",
         #                            "./synonym_dicts/vec.txt", only_synonym=True)
-        self.update_period = 10  # minute
+        self.update_period = 0  # minute
         self.updated_time = 0
         self.user_dicts = set()
-        self.user_file = './user_dict.txt'
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
+        self.stop_file = stopfile
         self.st_stopwords = rf.read_stopwords(stopfile)
         self.http = re.compile(r'(?:(?:https?:)|(?:www)|(?:wap))[\w\.\&\/\=\:\?%\-]+')
         self.nickname = re.compile(r'(?://@|@).{2,12}(?::| |,|，|\.)')
-        # m 股票代码
         self.pos_list = \
             {'vn': 1.0, \
              'vl': 1.0, \
@@ -68,16 +67,19 @@ class Keywords(object):
     def update(self):
         now_time = time.time()
         if now_time - self.updated_time > self.update_period * 60:
+            # 新词、实体名称
             now_dict = self.merge_user_dict()
             for w in self.user_dicts - now_dict:
                 jieba.del_word(w)
             for w in now_dict - self.user_dicts:
                 jieba.add_word(w, 100, 'nt')
             self.user_dicts = now_dict
+            # update stopfile
+            self.st_stopwords = rf.read_stopwords(self.stop_file)
             self.updated_time = now_time
 
     def merge_user_dict(self):
-        user_dict = rf.load_user_dict(self.user_file)
+        user_dict = rf.load_user_dict(settings.user_file)
         stock_name, full_name = rf.read_public_company()
         stock_name = set(stock_name)
         full_name = set(full_name)
@@ -117,9 +119,9 @@ class Keywords(object):
             jieba segmentation with both word and part of speech returned. 
         """
         l_words = [(obj.word.strip(), obj.flag) for obj in pseg.cut(line.strip()) if obj.word.strip()]
-        for tu in l_words:
-            for i in tu:
-                print i
+        # for tu in l_words:
+        #     for i in tu:
+        #         print i
         l_res = []
         flag = None
         flag_n_combine = False
@@ -537,6 +539,11 @@ if __name__ == '__main__':
 
     topN = 1000
     kw = Keywords(settings.df_file, settings.stopwords)
+    d_res = kw.process(text, topN, '')
+    for k, v in d_res.items()[0:50]:
+        print k, v
+    time.sleep(10)
+    kw.update()
     d_res = kw.process(text, topN, '')
     for k, v in d_res.items()[0:50]:
         print k, v

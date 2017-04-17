@@ -18,6 +18,7 @@ topN = 10000
 # input files
 stopwords = 'stopwords.txt'  # stopwords
 df_file = 'xinhua_df.txt'
-
+user_file = 'user_dict.txt'
+noise_file = 'noise_dict.txt'
 # new_xinhua_df param
 xinhua_doc_num = 1506837

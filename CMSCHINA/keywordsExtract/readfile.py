@@ -27,9 +27,6 @@ def load_user_dict(infile):
     return ud_userdicts
 
 
-import MySQLdb
-
-
 def read_public_company():
     com_list = []
     # db = MySQLdb.Connect(
