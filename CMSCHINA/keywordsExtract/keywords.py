@@ -36,6 +36,7 @@ class Keywords(object):
         self.update_period = 0  # minute
         self.updated_time = 0
         self.user_dicts = set()
+        self.ner_dicts = set()
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
         self.stop_file = stopfile
@@ -67,34 +68,50 @@ class Keywords(object):
     def update(self):
         now_time = time.time()
         if now_time - self.updated_time > self.update_period * 60:
-            # 新词、实体名称
-            now_dict = self.merge_user_dict()
+            # 新词
+            now_dict = rf.load_user_dict(settings.user_file)
             for w in self.user_dicts - now_dict:
                 jieba.del_word(w)
             for w in now_dict - self.user_dicts:
-                jieba.add_word(w, 100, 'nt')
+                jieba.add_word(w, 1000)
             self.user_dicts = now_dict
+            # 实体名称
+            now_dict = self.merge_ner_dict()
+            for w in self.ner_dicts - now_dict:
+                jieba.del_word(w)
+            for w in now_dict - self.ner_dicts:
+                jieba.add_word(w, 100, 'nt')
+            self.ner_dicts = now_dict
             # update stopfile
-            self.st_stopwords = rf.read_stopwords(self.stop_file)
+            self.st_stopwords = self.merge_stop_nosie()
             self.updated_time = now_time
 
-    def merge_user_dict(self):
-        user_dict = rf.load_user_dict(settings.user_file)
+    def merge_stop_nosie(self):
+        stop_dict = rf.read_stopwords(self.stop_file)
+        nosie_dict = rf.read_stopwords(settings.noise_file)
+        merge_list = stop_dict | nosie_dict
+        return merge_list
+
+    def merge_ner_dict(self):
         stock_name, full_name = rf.read_public_company()
         stock_name = set(stock_name)
         full_name = set(full_name)
-        merge_list = user_dict | stock_name | full_name
+        merge_list = stock_name | full_name
         # merge_list = user_dict
         return merge_list
 
-    def merge_weight(self, key_dict):
+    def merge_ner_weight(self, key_dict):
         stock_name, full_name = rf.read_public_company()
         stock_dict = {}
         for i in range(len(stock_name)):
             stock_dict[full_name[i]] = stock_name[i]
         for key in key_dict.keys():
             if key in stock_dict.keys():
-                key_dict[stock_dict[key]][0] += key_dict[key][0]
+                if stock_dict[key] in key_dict.keys():
+                    key_dict[stock_dict[key]][0] += key_dict[key][0]
+                else:
+                    key_dict[stock_dict[key]] = [0, 'nt']
+                    key_dict[stock_dict[key]][0] = key_dict[key][0]
                 del key_dict[key]
         return key_dict
 
@@ -511,7 +528,7 @@ class Keywords(object):
             else:
                 d_words_filter_pos[key][0] += d_res_titles[key][0]
         # 合并公司以及股票的权重
-        d_words_filter_pos = self.merge_weight(d_words_filter_pos)
+        d_words_filter_pos = self.merge_ner_weight(d_words_filter_pos)
         return d_words_filter_pos
 
     def process(self, content, topN, title=''):
@@ -535,7 +552,7 @@ class Keywords(object):
 
 if __name__ == '__main__':
     text = '''
-    Apple Co.ltd秃笔我们可以002430蓝黛传动0024301看到重庆蓝黛动力传动机械股份有限公司这种绘图方式实际上傅顶啥是按命令傅顶啥添加的'''
+    Apple Co.ltd道德卫士我们可以002430蓝黛传动0024301看到重庆蓝黛动力传动机械股份有限公司这种绘图方式实际上傅顶啥是按命令傅顶啥添加的'''
 
     topN = 1000
     kw = Keywords(settings.df_file, settings.stopwords)
