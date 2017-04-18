@@ -71,9 +71,9 @@ class Keywords(object):
             # 新词
             now_dict = rf.load_user_dict(settings.user_file)
             for w in self.user_dicts - now_dict:
-                jieba.del_word(w)
-            for w in now_dict - self.user_dicts:
-                jieba.add_word(w, 1000)
+                jieba.del_word(w[0])
+            for word, freq, tag in now_dict - self.user_dicts:
+                jieba.add_word(word, freq, tag)
             self.user_dicts = now_dict
             # 实体名称
             now_dict = self.merge_ner_dict()
@@ -82,7 +82,7 @@ class Keywords(object):
             for w in now_dict - self.ner_dicts:
                 jieba.add_word(w, 100, 'nt')
             self.ner_dicts = now_dict
-            # update stopfile
+            # 停用词和噪声词
             self.st_stopwords = self.merge_stop_nosie()
             self.updated_time = now_time
 

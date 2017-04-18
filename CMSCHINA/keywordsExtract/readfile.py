@@ -19,40 +19,52 @@ def load_user_dict(infile):
     加载新词词库，提高分词准确率
 
     """
-    ud_userdicts = set()
-    for line in open(infile, 'rb'):
-        tmp = line.strip().decode('utf-8')
-        if tmp:
-            ud_userdicts.add(tmp)
-    return ud_userdicts
+    import re
+    re_userdict = re.compile('^(.+?)( [0-9]+)?( [a-z]+)?$', re.U)
+    f = open(infile, 'rb')
+    new_dict = set()
+    for lineno, ln in enumerate(f, 1):
+        line = ln.strip()
+        if not line:
+            continue
+        # match won't be None because there's at least one character
+        line_split = line.split(' ')
+        word, freq, tag = re_userdict.match(line).groups()
+        if freq is not None:
+            freq = freq.strip()
+        if tag is not None:
+            tag = tag.strip()
+        new_dict.add((word, freq, tag))
+    return new_dict
 
 
 def read_public_company():
+    import MySQLdb
     com_list = []
-    # db = MySQLdb.Connect(
-    #     host='172.24.5.218',
-    #     port=3306,
-    #     db='text',
-    #     user='crawl',
-    #     passwd='crawl',
-    #     charset='utf8')
-    # cursor = db.cursor()
-    # # SQL 查询语句
-    # sql = "SELECT FULL_NAME,STOCK_NAME FROM PUBLIC_COMPANY LIMIT 10"
-    # try:
-    #     # 执行SQL语句
-    #     cursor.execute(sql)
-    #     # 获取所有记录列表
-    #     results = cursor.fetchall()
-    #     for row in results:
-    #         FULL_NAME = row[0]
-    #         STOCK_NAME = row[1]
-    #         # 打印结果
-    #         com_list.append([FULL_NAME,STOCK_NAME])
-    # except:
-    #     print "Error: unable to fecth data"
-    # # 关闭数据库连接
-    # db.close()
+    db = MySQLdb.Connect(
+        host='172.24.5.218',
+        port=3306,
+        db='text',
+        user='crawl',
+        passwd='crawl',
+        charset='utf8')
+    cursor = db.cursor()
+    # SQL 查询语句
+    sql = "SELECT FULL_NAME,STOCK_NAME FROM PUBLIC_COMPANY LIMIT 10"
+    try:
+        # 执行SQL语句
+        cursor.execute(sql)
+        # 获取所有记录列表
+        results = cursor.fetchall()
+        for row in results:
+            FULL_NAME = row[0]
+            STOCK_NAME = row[1]
+            # 打印结果
+            com_list.append([FULL_NAME, STOCK_NAME])
+    except:
+        print "Error: unable to fecth data"
+    # 关闭数据库连接
+    db.close()
     stock_list = [u'蓝黛传动', u'锦龙股份']
     full_list = [u'重庆蓝黛动力传动机械股份有限公司', u'广东锦龙发展股份有限公司']
     return stock_list, full_list
