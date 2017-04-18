@@ -9,11 +9,11 @@ import sys
 
 import Levenshtein
 import gensim.models.phrases
+import jieba
+import jieba.posseg as pseg
 
 import readfile as rf
 import settings
-import zaber_nlp as jieba
-import zaber_nlp.posseg as pseg
 
 cur_dir = os.path.dirname(os.path.abspath(__file__)) or os.getcwd()
 sys.path.append("../preProcess")
@@ -37,6 +37,7 @@ class Keywords(object):
         self.updated_time = 0
         self.user_dicts = set()
         self.ner_dicts = set()
+        self.finance_dicts = set()
         self.prep = PreProcess()
         self.wd_df = rf.load_wd_df(df_file)
         self.stop_file = stopfile
@@ -44,26 +45,28 @@ class Keywords(object):
         self.http = re.compile(r'(?:(?:https?:)|(?:www)|(?:wap))[\w\.\&\/\=\:\?%\-]+')
         self.nickname = re.compile(r'(?://@|@).{2,12}(?::| |,|，|\.)')
         self.pos_list = \
-            {'vn': 1.0, \
-             'vl': 1.0, \
-             'l': 1.0, \
-             'an': 1.0, \
-             'n': 1.0, \
-             'nl': 1.2, \
-             'nr': 1.5, \
-             'nrj': 1.5, \
-             'nrt': 1.5, \
-             'nrf': 1.5, \
-             'nrfg': 1.5, \
-             'ns': 1.3, \
-             'nsf': 1.3, \
-             'nt': 1.5, \
-             'nz': 1.3, \
-             'ng': 1.0, \
-             'a': 0.5, \
-             'al': 0.5, \
-             'v': 1.0, \
-             'shuming': 1.5}
+            {
+                'jr': 1.5, \
+                'vn': 1.0, \
+                'vl': 1.0, \
+                'l': 1.0, \
+                'an': 1.0, \
+                'n': 1.0, \
+                'nl': 1.2, \
+                'nr': 1.5, \
+                'nrj': 1.5, \
+                'nrt': 1.5, \
+                'nrf': 1.5, \
+                'nrfg': 1.5, \
+                'ns': 1.3, \
+                'nsf': 1.3, \
+                'nt': 1.5, \
+                'nz': 1.3, \
+                'ng': 1.0, \
+                'a': 0.5, \
+                'al': 0.5, \
+                'v': 1.0, \
+                'shuming': 1.5}
 
     def update(self):
         now_time = time.time()
@@ -82,6 +85,13 @@ class Keywords(object):
             for w in now_dict - self.ner_dicts:
                 jieba.add_word(w, 100, 'nt')
             self.ner_dicts = now_dict
+            # 金融词库
+            now_dict = rf.load_jr_dict(settings.finance_file)
+            for w in self.finance_dicts - now_dict:
+                jieba.del_word(w[0])
+            for word, freq, tag in now_dict - self.finance_dicts:
+                jieba.add_word(word, freq, tag)
+            self.finance_dicts = now_dict
             # 停用词和噪声词
             self.st_stopwords = self.merge_stop_nosie()
             self.updated_time = now_time

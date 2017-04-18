@@ -14,6 +14,30 @@ def read_stopwords(infile):
     return st_stopwords
 
 
+def load_jr_dict(infile):
+    """
+    加载金融词库，提高分词准确率
+
+    """
+    import re
+    re_userdict = re.compile('^(.+?)( [0-9]+)?( [a-z]+)?$', re.U)
+    f = open(infile, 'rb')
+    new_dict = set()
+    for lineno, ln in enumerate(f, 1):
+        line = ln.strip()
+        if not line:
+            continue
+        # match won't be None because there's at least one character
+        line_split = line.split(' ')
+        word, freq, tag = re_userdict.match(line).groups()
+        if freq is not None:
+            freq = freq.strip()
+        if tag is not None:
+            tag = tag.strip()
+        new_dict.add((word, freq, tag))
+    return new_dict
+
+
 def load_user_dict(infile):
     """
     加载新词词库，提高分词准确率
@@ -65,8 +89,8 @@ def read_public_company():
         print "Error: unable to fecth data"
     # 关闭数据库连接
     db.close()
-    stock_list = [u'蓝黛传动', u'锦龙股份']
-    full_list = [u'重庆蓝黛动力传动机械股份有限公司', u'广东锦龙发展股份有限公司']
+    stock_list = [u'天通股份', u'锦龙股份']
+    full_list = [u'天通控股股份有限公司', u'广东锦龙发展股份有限公司']
     return stock_list, full_list
 
 

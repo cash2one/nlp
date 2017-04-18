@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040bbab-56ae-416a-9da8-ddd916d80292" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/origin/1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/origin/2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/jr.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/output.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/for_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/origin/hx1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/origin/hx2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/study/origin/jr.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/study/test.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSCHINA/chineseSegment/public_company.xls" afterPath="$PROJECT_DIR$/CMSCHINA/chineseSegment/public_company.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nlp.iml" afterPath="$PROJECT_DIR$/.idea/nlp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/readfile.py" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/readfile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/user_dict.txt" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/user_dict.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/study/test.py" afterPath="$PROJECT_DIR$/study/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/settings.py" afterPath="$PROJECT_DIR$/CMSCHINA/keywordsExtract/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +27,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nlp$client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1491991399718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/sentiAnalyze" />
-    <SUITE FILE_PATH="coverage/nlp$test.coverage" NAME="test Coverage Results" MODIFIED="1492512421548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
+    <SUITE FILE_PATH="coverage/nlp$test.coverage" NAME="test Coverage Results" MODIFIED="1492525699044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CMSCHINA/keywordsExtract" />
     <SUITE FILE_PATH="coverage/nlp$extract_tags_stop_words.coverage" NAME="extract_tags_stop_words Coverage Results" MODIFIED="1486955889831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$test_change_dictpath.coverage" NAME="test_change_dictpath Coverage Results" MODIFIED="1486973358945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$test_associate.coverage" NAME="test_associate Coverage Results" MODIFIED="1489566057722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -36,16 +44,18 @@
     <SUITE FILE_PATH="coverage/nlp$test_bug.coverage" NAME="test_bug Coverage Results" MODIFIED="1486973080436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$NovelRecommend.coverage" NAME="NovelRecommend Coverage Results" MODIFIED="1486606500402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp$keywords__1_.coverage" NAME="keywords (1) Coverage Results" MODIFIED="1492141690556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CMSCHINA/keywordsExtract" />
+    <SUITE FILE_PATH="coverage/nlp$for_test.coverage" NAME="for_test Coverage Results" MODIFIED="1492525694426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
     <SUITE FILE_PATH="coverage/nlp$NaiveBayesClassifier.coverage" NAME="NaiveBayesClassifier Coverage Results" MODIFIED="1489134812300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
     <SUITE FILE_PATH="coverage/nlp$test_pos_file.coverage" NAME="test_pos_file Coverage Results" MODIFIED="1486974371334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$test_multithread.coverage" NAME="test_multithread Coverage Results" MODIFIED="1486973554159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$ahocorasick.coverage" NAME="ahocorasick Coverage Results" MODIFIED="1487584713846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/study" />
+    <SUITE FILE_PATH="coverage/nlp$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1492520380752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CMSCHINA/keywordsExtract" />
     <SUITE FILE_PATH="coverage/nlp$test_userdict.coverage" NAME="test_userdict Coverage Results" MODIFIED="1487234037451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$segment_server.coverage" NAME="segment_server Coverage Results" MODIFIED="1491986870198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/chineseSegment" />
     <SUITE FILE_PATH="coverage/nlp$segment.coverage" NAME="segment Coverage Results" MODIFIED="1492155121092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CMSCHINA/chineseSegment" />
     <SUITE FILE_PATH="coverage/nlp$Nosetests_in_jieba_test.coverage" NAME="Nosetests in jieba_test Coverage Results" MODIFIED="1486973012693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/nlp$test_lock.coverage" NAME="test_lock Coverage Results" MODIFIED="1486973493186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/nlp$keywords.coverage" NAME="keywords Coverage Results" MODIFIED="1492501728430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CMSCHINA/keywordsExtract" />
+    <SUITE FILE_PATH="coverage/nlp$keywords.coverage" NAME="keywords Coverage Results" MODIFIED="1492519468570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CMSCHINA/keywordsExtract" />
     <SUITE FILE_PATH="coverage/nlp$rnnfenci.coverage" NAME="rnnfenci Coverage Results" MODIFIED="1486461248878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nlp$similar.coverage" NAME="similar Coverage Results" MODIFIED="1492071610550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cmb/similar/similar" />
   </component>
@@ -69,7 +79,64 @@
     <favorites_list name="nlp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="e#100#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keywords.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="93" column="32" lean-forward="true" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+              <folding>
+                <element signature="e#25#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keywords_server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+              <folding>
+                <element signature="e#40#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,12 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zaber_nlp/posseg/prob_trans.py" />
-        <option value="$PROJECT_DIR$/zaber_nlp/posseg/prob_start.py" />
-        <option value="$PROJECT_DIR$/zaber_nlp/posseg/prob_emit.py" />
-        <option value="$PROJECT_DIR$/zaber_nlp/posseg/__init__.py" />
-        <option value="$PROJECT_DIR$/test/test_pos.py" />
-        <option value="$PROJECT_DIR$/django_restful_api/django_restful_api/settings.py" />
         <option value="$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/css/style.css" />
         <option value="$PROJECT_DIR$/django_restful_api/nlp_app/static/nlp_app/bower_components/videoimage.js" />
         <option value="$PROJECT_DIR$/django_restful_api/nlp_app/templates/test.html" />
@@ -185,14 +246,20 @@
         <option value="$PROJECT_DIR$/cmb/chineseSegment/segment.py" />
         <option value="$PROJECT_DIR$/CMSCHINA/chineseSegment/segment.py" />
         <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/stopwords1.txt" />
-        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/settings.py" />
         <option value="$PROJECT_DIR$/zaber_nlp/__init__.py" />
         <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/user_dict.txt" />
         <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/stopwords.txt" />
-        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py" />
-        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/readfile.py" />
-        <option value="$PROJECT_DIR$/study/test.py" />
         <option value="$PROJECT_DIR$/study/origin/2.txt" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/gen-java/input.txt" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/test.py" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/input.txt" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/output.txt" />
+        <option value="$PROJECT_DIR$/study/test.py" />
+        <option value="$PROJECT_DIR$/study/for_test.py" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/jr.txt" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/readfile.py" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/settings.py" />
+        <option value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py" />
       </list>
     </option>
   </component>
@@ -292,39 +359,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zaber_nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SogouC.reduced" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,11 +435,11 @@
       <recent name="E:\PycharmProjects\nlp\django_restful_api\nlp_app\templates\bower_components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\nlp\CMSCHINA\keywordsExtract" />
       <recent name="E:\PycharmProjects\nlp\study\origin" />
       <recent name="E:\PycharmProjects\nlp\study\SogouC.reduced" />
       <recent name="E:\PycharmProjects\nlp\zaber_nlp" />
       <recent name="E:\PycharmProjects\nlp\zaber_nlp\analyse" />
-      <recent name="E:\PycharmProjects\nlp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -484,13 +519,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CMSCHINA/keywordsExtract" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nlp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CMSCHINA/keywordsExtract/test.py" />
+      <option name="PARAMETERS" value="input.txt output.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="for_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/study" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="nlp" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/study/for_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -725,19 +779,21 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.nlp_restful_api" />
       <item index="1" class="java.lang.String" itemvalue="Python.demo" />
       <item index="2" class="java.lang.String" itemvalue="Python.keywords" />
       <item index="3" class="java.lang.String" itemvalue="Python.segment" />
       <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="5" class="java.lang.String" itemvalue="Python.for_test" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.keywords" />
-        <item index="2" class="java.lang.String" itemvalue="Python.segment" />
-        <item index="3" class="java.lang.String" itemvalue="Python.demo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.for_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.keywords" />
+        <item index="3" class="java.lang.String" itemvalue="Python.segment" />
+        <item index="4" class="java.lang.String" itemvalue="Python.demo" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -1055,7 +1111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492499704634</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="CMSCHINA  差金融词库">
+      <created>1492512800074</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1492512800074</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1082,9 +1145,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46317512" sideWeight="0.5128593" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4871407" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41311476" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29500756" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2487725" sideWeight="0.4871407" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41243863" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29500756" sideWeight="0.48" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2651391" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2647504" sideWeight="0.48" order="1" side_tool="false" content_ui="tabs" />
@@ -1144,7 +1207,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="red alarm" />
     <MESSAGE value="red alarm 2" />
     <MESSAGE value="remove some functions" />
     <MESSAGE value="remove some  test functions" />
@@ -1169,7 +1231,8 @@
     <MESSAGE value="CMSCHINA" />
     <MESSAGE value="CMSCHINA stop nosie" />
     <MESSAGE value="CMSCHINA  差新词词频" />
-    <option name="LAST_COMMIT_MESSAGE" value="CMSCHINA  差新词词频" />
+    <MESSAGE value="CMSCHINA  差金融词库" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMSCHINA  差金融词库" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1179,18 +1242,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMSCHINA/chineseSegment/etc/server.conf.develop">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmb/similar/similar/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/cmb/keywordsExtract/synonym_dicts/redirect.txt" />
-    <entry file="file://$PROJECT_DIR$/cmb/keywordsExtract/synonym_dicts/synonym.txt" />
-    <entry file="file://$PROJECT_DIR$/cmb/keywordsExtract/synonym_dicts/vec.txt" />
-    <entry file="file://$PROJECT_DIR$/cmb/keywordsExtract/synonym_dicts/wiki_similar.txt" />
     <entry file="file://$PROJECT_DIR$/cmb/similar/similar/similar.py" />
     <entry file="file://$PROJECT_DIR$/CMSCHINA/chineseSegment/ner_dicts/public_company.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1285,13 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-421837065/__builtin__.py" />
     <entry file="file://F:/Program Files/Anaconda2/Lib/site-packages/jieba/__init__.py" />
     <entry file="file://F:/Program Files/Anaconda2/Lib/tempfile.py" />
@@ -1350,22 +1394,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/stopwords1.txt" />
-    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/user_dict.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/xinhua_df.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/stopwords.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
@@ -1379,26 +1407,6 @@
         <state relative-caret-position="-2642">
           <caret line="289" column="8" lean-forward="false" selection-start-line="289" selection-start-column="8" selection-end-line="289" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/readfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <marker date="1492502531148" expanded="true" signature="1213:1269" ph="SELECT FULL_... PUBLIC_COMPANY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,22 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/origin/2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1466,10 +1458,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/user_dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/xinhua_df.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#17#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#40#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="202" column="25" lean-forward="false" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9250">
+          <caret line="786" column="5" lean-forward="true" selection-start-line="786" selection-start-column="5" selection-end-line="786" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/origin/jr.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="34060" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/jr.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="34060" column="0" lean-forward="false" selection-start-line="34060" selection-start-column="0" selection-end-line="34060" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/for_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/readfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <marker date="1492525448288" expanded="true" signature="1855:1911" ph="SELECT FULL_... PUBLIC_COMPANY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#100#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/keywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="93" column="32" lean-forward="true" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSCHINA/keywordsExtract/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
       </provider>

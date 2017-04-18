@@ -16,6 +16,7 @@ similarity_threshold = 0.65
 topN = 10000
 
 # input files
+finance_file = 'jr.txt'
 stopwords = 'stopwords.txt'  # stopwords
 df_file = 'xinhua_df.txt'
 user_file = 'user_dict.txt'
