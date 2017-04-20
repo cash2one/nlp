@@ -25,7 +25,6 @@ __all__ = ['patch_all',
 
 saved = {}
 
-
 def is_module_patched(modname):
     """Check if a module has been replaced with a cooperative version."""
     return modname in saved

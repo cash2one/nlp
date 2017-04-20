@@ -18,7 +18,6 @@ import socket
 import logging
 
 from bfd.harpc import settings
-
 ASYNC_TAG = False
 
 

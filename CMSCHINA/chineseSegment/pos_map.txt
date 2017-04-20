@@ -34,9 +34,9 @@ ag 形容词语素
 al 形容词惯用语
 b 区别词
 bl 区别词惯用语
-g 语素词
 z 状态词
 zg 状态词
+g 语素词
 r 代词
 rr 人称代词
 rz 指示代词
@@ -110,7 +110,6 @@ l 习用语
 eng 英文缩写
 uv 助词
 nb 书名、报刊名或电影名
-qc 汽车词汇
 cj 财经词汇
 dm 动漫名称
 gq 歌曲名称
@@ -124,6 +123,7 @@ yy 医院名称
 mu 音乐词汇
 yx 游戏词汇
 company 上市公司
+organization 机构名称
 id 身份证号码
 phone 手机号码
 qq qq号码

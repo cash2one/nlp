@@ -39,7 +39,6 @@ from bfd.harpc.collector import StatisticsCollector
 from bfd.harpc import settings
 
 from bfd.harpc.common import monkey
-
 monkey.patch_thrift()
 
 
@@ -47,7 +46,6 @@ class ServerBase(object):
     """
         harpc python serverbase
     """
-
     def __init__(self, processor, handler, config):
         self._logger = logging.getLogger(__name__)
         self._section_name = utils.get_module(__name__)
@@ -156,7 +154,6 @@ class ServerBase(object):
 
     def _statistics_wrapper(self, processor):
         """wrapper process function for statistics"""
-
         def add_statistic(func):
             @functools.wraps(func)
             def wrapper(*args, **kwargs):
@@ -170,9 +167,7 @@ class ServerBase(object):
                 finally:
                     end = time.time()
                     self._collector.collect(flag, end - start)
-
             return wrapper
-
         for name, func in inspect.getmembers(processor, predicate=inspect.ismethod):
             if name.startswith("process_"):
                 setattr(processor, name, add_statistic(func))

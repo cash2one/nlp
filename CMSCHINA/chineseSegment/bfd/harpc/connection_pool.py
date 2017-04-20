@@ -21,7 +21,6 @@ from thrift.transport import TTransport
 from thrift.protocol import TBinaryProtocol
 from bfd.harpc.common import utils
 from bfd.harpc import settings
-
 ASYNC_TAG = False
 
 

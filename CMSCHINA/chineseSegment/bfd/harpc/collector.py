@@ -134,7 +134,7 @@ class StatisticsCollector(object):
             current_req_num = self._current_info.success + self._current_info.failure
             total_req_num = self._total_info.success + self._total_info.failure
             self._current_info.avgtime = ((
-                                              current_req_num - 1) * self._current_info.avgtime + req_time) / current_req_num
+                                          current_req_num - 1) * self._current_info.avgtime + req_time) / current_req_num
             self._total_info.avgtime = ((total_req_num - 1) * self._total_info.avgtime + req_time) / total_req_num
 
 

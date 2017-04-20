@@ -3,7 +3,6 @@ import os
 import sys
 from logging.handlers import TimedRotatingFileHandler
 
-
 def set_logger(filename):
     logger = logging.getLogger()
     if filename[0] == '/':
@@ -22,3 +21,4 @@ def set_logger(filename):
     logger.handlers = []
     logger.addHandler(hdlr)
     logger.setLevel(logging.DEBUG)
+

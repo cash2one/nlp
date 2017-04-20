@@ -569,8 +569,8 @@ if __name__ == '__main__':
     d_res = kw.process(text, topN, '')
     for k, v in d_res.items()[0:50]:
         print k, v
-    time.sleep(10)
-    kw.update()
-    d_res = kw.process(text, topN, '')
-    for k, v in d_res.items()[0:50]:
-        print k, v
+        # time.sleep(10)
+        # kw.update()
+        # d_res = kw.process(text, topN, '')
+        # for k, v in d_res.items()[0:50]:
+        #     print k, v

@@ -1,10 +1,17 @@
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
-import sys, os, json, re
+import esm
+import json
+import logging
+import os
+import re
+import sys
+import time
+
+import MySQLdb
 import jieba
 import jieba.posseg as pg
-import time
 
 cur_dir = os.path.dirname(os.path.abspath(__file__)) or os.getcwd()
 sys.path.append("../preProcess")
@@ -21,12 +28,11 @@ l_org_suffix = ["一厂", "二厂", "三厂", "四厂", "五厂", "防疫站", "
 class Segment(object):
     def __init__(self, pos_map, user_dict_path=None, stopwords=None):
         # 初始化预处理模块，传入用户自定义词典和停用词词典。停用词词典暂时不用保留。
+        self.ip = '172.24.5.218'
         self.prep = PreProcess()
         self.d_pos_map = self.load_map(pos_map)
         self.user_dict = user_dict_path
         self.stopwords = stopwords
-        # 上市公司实体名称词典
-        self.s_pub_company = self.load_public_company()
         # 保存词性标注的结果
         self.l_res_pos = None
         # 传入的字符串
@@ -36,7 +42,147 @@ class Segment(object):
         if user_dict_path and isinstance(user_dict_path, list):
             for path in user_dict_path:
                 jieba.load_userdict(path)
+        # 从数据库中读取机构实体数据
+        self.org_index, self.org_data = self.load_org_sql()
+        # 从数据库中读取上市公司实体数据
+        self.pub_index, self.pub_data = self.load_pub_sql()
         return
+
+    def load_org_sql(self):
+        index = esm.Index()
+        org_data = {}
+        conn = MySQLdb.Connect(
+            host=self.ip,
+            port=3306,
+            db='text',
+            user='crawl',
+            passwd='crawl',
+            charset='utf8')
+        cursor = conn.cursor()
+        sql = "select FULL_NAME, WEB_SITE, SHORT_NAME, UC_NO, REGISTER_NO FROM ORGANIZATION "
+        # 执行SQL语句
+        cursor.execute(sql)
+        # 获取所有记录列表
+        results = cursor.fetchall()
+        t1 = time.time()
+        for full_name, web_site, short_name, uc_no, register_no in results:
+            # 取出来是unicode
+            if not full_name:
+                full_name = ""
+            if not web_site:
+                web_site = ""
+            if not short_name:
+                short_name = ""
+            if not uc_no:
+                uc_no = ""
+            if not register_no:
+                register_no = ""
+            if len(full_name):
+                # index里面存的是utf-8
+                index.enter(full_name.strip().replace(" ", "").encode("utf-8"))
+                # 用字典的形式存infobox
+                org_data[full_name.strip().replace(" ", "").encode("utf-8")] = {
+                    "full_name": full_name.strip().encode("utf-8"),
+                    "web_site": web_site.encode("utf-8"),
+                    "short_name": short_name.strip().replace(" ", "").encode("utf-8"),
+                    "uc_no": uc_no.encode("utf-8"),
+                    "register_no": register_no.encode("utf-8")
+                }
+            if len(short_name):
+                index.enter(short_name.strip().replace(" ", "").encode("utf-8"))
+                org_data[short_name.strip().replace(" ", "").encode("utf-8")] = {
+                    "full_name": full_name.strip().replace(" ", "").encode("utf-8"),
+                    "web_site": web_site.encode("utf-8"),
+                    "short_name": short_name.strip().replace(" ", "").encode("utf-8"),
+                    "uc_no": uc_no.encode("utf-8"),
+                    "register_no": register_no.encode("utf-8")
+                }
+        index.fix()
+        t2 = time.time()
+        print ("loading organization sql takes: %s s" % (t2 - t1))
+        return index, org_data
+
+    def load_pub_sql(self):
+        index = esm.Index()
+        pub_data = {}
+        conn = MySQLdb.Connect(
+            host=self.ip,
+            port=3306,
+            db='text',
+            user='crawl',
+            passwd='crawl',
+            charset='utf8')
+        cursor = conn.cursor()
+        sql = "select MARKET_CODE, MARKET_DESC, STOCK_CODE, STOCK_NAME, FULL_NAME, SHORT_NAME, WEBSITE, UC_NO from PUBLIC_COMPANY "
+        cursor.execute(sql)
+        # 执行完后是double tuple结构
+        results = cursor.fetchall()
+        t1 = time.time()
+        for market_code, market_desc, stock_code, stock_name, full_name, short_name, website, uc_no in results:
+            # 取出来是unicode
+            if not market_code:
+                market_code = ""
+            if not market_desc:
+                market_desc = ""
+            if not stock_code:
+                stock_code = ""
+            if not stock_name:
+                stock_name = ""
+            if not full_name:
+                full_name = ""
+            if not short_name:
+                short_name = ""
+            if not website:
+                website = ""
+            if not uc_no:
+                uc_no = ""
+            if len(stock_name):
+                # index里面存的是utf-8
+                index.enter(stock_name.strip().replace(" ", "").encode("utf-8"))
+                # 用字典的形式存infobox
+                pub_data[stock_name.strip().replace(" ", "").encode("utf-8")] = {
+                    "market_code": market_code.encode("utf-8"),
+                    "market_desc": market_desc.strip().replace(" ", "").encode("utf-8"),
+                    "stock_code": stock_code.strip().replace(" ", "").encode("utf-8"),
+                    # stock_name不加去除空格
+                    "stock_name": stock_name.strip().encode("utf-8"),
+                    "full_name": full_name.strip().replace(" ", "").encode("utf-8"),
+                    "short_name": short_name.strip().replace(" ", "").encode("utf-8"),
+                    "website": website.encode("utf-8"),
+                    "uc_no": uc_no.encode("utf-8")
+                }
+            if len(full_name):
+                # index里面存的是utf-8
+                index.enter(full_name.strip().replace(" ", "").encode("utf-8"))
+                # 用字典的形式存infobox
+                pub_data[full_name.strip().replace(" ", "").encode("utf-8")] = {
+                    "market_code": market_code.encode("utf-8"),
+                    "market_desc": market_desc.strip().replace(" ", "").encode("utf-8"),
+                    "stock_code": stock_code.strip().replace(" ", "").encode("utf-8"),
+                    "stock_name": stock_name.strip().encode("utf-8"),
+                    "full_name": full_name.strip().replace(" ", "").encode("utf-8"),
+                    "short_name": short_name.strip().replace(" ", "").encode("utf-8"),
+                    "website": website.encode("utf-8"),
+                    "uc_no": uc_no.encode("utf-8")
+                }
+            if len(short_name):
+                # index里面存的是utf-8
+                index.enter(short_name.strip().replace(" ", "").encode("utf-8"))
+                # 用字典的形式存infobox
+                pub_data[short_name.strip().replace(" ", "").encode("utf-8")] = {
+                    "market_code": market_code.encode("utf-8"),
+                    "market_desc": market_desc.strip().replace(" ", "").encode("utf-8"),
+                    "stock_code": stock_code.strip().replace(" ", "").encode("utf-8"),
+                    "stock_name": stock_name.strip().encode("utf-8"),
+                    "full_name": full_name.strip().replace(" ", "").encode("utf-8"),
+                    "short_name": short_name.strip().replace(" ", "").encode("utf-8"),
+                    "website": website.encode("utf-8"),
+                    "uc_no": uc_no.encode("utf-8")
+                }
+        index.fix()
+        t2 = time.time()
+        print ("loading public company sql takes: %s s" % (t2 - t1))
+        return index, pub_data
 
     def load_map(self, pos_map):
         d_res = {}
@@ -46,13 +192,6 @@ class Segment(object):
                 k, v = line.split(" ")[0], line.split(" ")[1].decode("utf-8")
                 d_res[k] = v
         return d_res
-
-    def load_public_company(self):
-        s_res = set()
-        with open("./ner_dicts/public_company.txt") as f:
-            for line in f:
-                s_res.add(line.strip().decode("utf-8"))
-        return s_res
 
     def pos_seg(self, string):
         # 分词模块
@@ -92,6 +231,8 @@ class Segment(object):
         l_tmp = [[item[0].encode("utf-8"), self.d_pos_map[item[1]].encode("utf-8")] for item in l_tmp]
         # 删除自定义词典里面的词语
         t1 = time.time()
+        if self.user_dict == None:
+            return l_tmp
         for path in self.user_dict:
             with open(path) as f:
                 for line in f:
@@ -106,15 +247,35 @@ class Segment(object):
         if not self.l_res_pos:
             return ""
         l_ner = []
+        l_temp, d_data = self.search_org_pub(string)
+        l_ner += l_temp
         l_ner += self.search_nr()
         l_ner += self.search_ns()
         l_ner += self.search_nt()
         l_ner += self.search_t()
         l_ner += self.search_nz()
-        l_ner += self.search_pub_com()
         l_ner += self.search_other_ner()
         l_ner = [(item[0].encode("utf-8"), self.d_pos_map[item[1]].encode("utf-8")) for item in l_ner]
-        return list(set(l_ner))
+        return list(set(l_ner)), d_data
+
+    def search_org_pub(self, string):
+        d_res = {}
+        string = self.prep.normalize(string)
+        org_result = self.org_index.query(string)
+        org_result = [item[1] for item in org_result]
+        for key in org_result:
+            logging.info(key)
+            d_res[key] = self.org_data[key]
+        org_result = [(item.decode("utf-8"), 'organization') for item in org_result]
+        pub_result = self.pub_index.query(string)
+        pub_result = [item[1] for item in pub_result]
+        for key in pub_result:
+            logging.info(key)
+            d_res[key] = self.pub_data[key]
+        pub_result = [(item.decode("utf-8"), 'company') for item in pub_result]
+        l_res = []
+        l_res = org_result + pub_result
+        return l_res, d_res
 
     def search_nr(self):
         l_tmp = []
@@ -216,16 +377,6 @@ class Segment(object):
                 l_res.append(item)
         return l_res
 
-    def search_pub_com(self):
-        l_res = []
-        string = self.string
-        for item in self.s_pub_company:
-            if item in string:
-                string = string.replace(item, "")
-                l_res.append((item, 'company'))
-        self.string = string
-        return l_res
-
     def search_other_ner(self):
         t1 = time.time()
         l_res = []
@@ -272,8 +423,12 @@ class Segment(object):
 
 
 if __name__ == "__main__":
-    seg = Segment("pos_map.txt", ["E:/PycharmProjects/nlp/CMSCHINA/keywordsExtract/user_dict.txt"])
-    # l_pos_seg = seg.pos_seg("美国格林大学乔治?克林顿决定出访中国， 习近平将迎接他。他们将在1991年2月3日下午五点左右会面。我的电话号码是13807025737，QQ号是3356701943，email是sgyjkl_34@126.com，备用邮箱是30807033@qq.com，身份证号是370401198912150427，银行账号是6214342578651989，车牌号是冀J33455")
-    # print " ".join([item[0].decode("utf-8") + "/" + item[1].decode("utf-8") for item in l_pos_seg])
-    # l_ner_recog = seg.ner_recog("美国格林大学乔治?克林顿决定出访中国， 习近平将迎接他。他们将在1991年2月3日下午五点左右会面。我的电话号码是13807025737，QQ号是3356701943，email是sgyjkl_34@126.com，备用邮箱是30807033@qq.com，身份证号是370401198912150427，银行账号是6214342578651989，车牌号是冀J33455")
-    # print " ".join([item[0].decode("utf-8") + "/" + item[1].decode("utf-8") for item in l_ner_recog])
+    seg = Segment("pos_map.txt", [])
+    l_pos_seg = seg.pos_seg("""
+万科企业股份有限公司.万科A
+""")
+    l_ner_recog, d_data = seg.ner_recog("""
+万科企业股份有限公司.万科A
+""")
+    print " ".join([item[0].decode("utf-8") + "/" + item[1].decode("utf-8") for item in l_ner_recog])
+    print json.dumps(d_data, ensure_ascii=False)

@@ -1,2 +1,2 @@
 #!/bin/bash
-nohup python segment_server.py develop &
+nohup /opt/environment/Python/bin/python segment_server.py develop &
