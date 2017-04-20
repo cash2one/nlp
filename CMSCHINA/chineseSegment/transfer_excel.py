@@ -2,13 +2,9 @@
 # -*- coding:utf-8 -*-
 
 import xlrd, MySQLdb, json, sys
-
 sys.path.append("../preProcess")
 from preProcess import PreProcess
-
 prep = PreProcess()
-
-
 def data2mysql_org(file_path):
     data = xlrd.open_workbook(file_path)
     table = data.sheets()[0]
@@ -33,7 +29,6 @@ def data2mysql_org(file_path):
         cursor.execute(sql, params)
     conn.commit()
     return
-
 
 def data2mysql_pub(file_path):
     data = xlrd.open_workbook(file_path)
@@ -60,9 +55,9 @@ def data2mysql_pub(file_path):
         params = [market_code, market_desc, stock_code, stock_name, full_name, short_name, website, uc_no]
         cursor.execute(sql, params)
     conn.commit()
-    return
-
+    return 
 
 if __name__ == "__main__":
     data2mysql_org("organization.xls")
     data2mysql_pub("public_company.xls")
+

@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys
-
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
+import settings
 
 def read_stopwords(infile):
     st_stopwords = set()
@@ -12,6 +11,39 @@ def read_stopwords(infile):
         if tmp:
             st_stopwords.add(tmp)
     return st_stopwords
+
+
+def read_organization():
+    import MySQLdb
+    stock_list = []
+    full_list = []
+    db = MySQLdb.Connect(
+        host='172.24.5.218',
+        port=3306,
+        db='text',
+        user='crawl',
+        passwd='crawl',
+        charset='utf8')
+    cursor = db.cursor()
+    # SQL 查询语句
+    sql = "SELECT SHORT_NAME FROM ORGANIZATION "
+    try:
+        # 执行SQL语句
+        cursor.execute(sql)
+        # 获取所有记录列表
+        results = cursor.fetchall()
+        for row in results:
+            # print len(row[0])
+            # print row[0]
+            # print len(row[0].strip())
+            # print row[0].strip()
+            STOCK_NAME = row[0].strip()
+            stock_list.append(STOCK_NAME)
+    except:
+        print "Error: unable to fecth data"
+    # 关闭数据库连接
+    return stock_list
+
 
 
 def load_jr_dict(infile):
@@ -32,6 +64,8 @@ def load_jr_dict(infile):
         word, freq, tag = re_userdict.match(line).groups()
         if freq is not None:
             freq = freq.strip()
+        else:
+            freq = 100
         if tag is not None:
             tag = tag.strip()
         new_dict.add((word, freq, tag))
@@ -56,6 +90,8 @@ def load_user_dict(infile):
         word, freq, tag = re_userdict.match(line).groups()
         if freq is not None:
             freq = freq.strip()
+        else:
+            freq = 100
         if tag is not None:
             tag = tag.strip()
         new_dict.add((word, freq, tag))
@@ -64,7 +100,8 @@ def load_user_dict(infile):
 
 def read_public_company():
     import MySQLdb
-    com_list = []
+    stock_list = []
+    full_list=[]
     db = MySQLdb.Connect(
         host='172.24.5.218',
         port=3306,
@@ -74,23 +111,25 @@ def read_public_company():
         charset='utf8')
     cursor = db.cursor()
     # SQL 查询语句
-    sql = "SELECT FULL_NAME,STOCK_NAME FROM PUBLIC_COMPANY LIMIT 10"
+    sql = "SELECT FULL_NAME,SHORT_NAME FROM PUBLIC_COMPANY "
     try:
         # 执行SQL语句
         cursor.execute(sql)
         # 获取所有记录列表
         results = cursor.fetchall()
         for row in results:
-            FULL_NAME = row[0]
-            STOCK_NAME = row[1]
-            # 打印结果
-            com_list.append([FULL_NAME, STOCK_NAME])
+            # print len(row[0])
+            # print row[0]
+            # print len(row[0].strip())
+            # print row[0].strip()
+            FULL_NAME = row[0].strip()
+            STOCK_NAME = row[1].strip()
+            stock_list.append(STOCK_NAME)
+            full_list.append(FULL_NAME)
     except:
         print "Error: unable to fecth data"
     # 关闭数据库连接
     db.close()
-    stock_list = [u'天通股份', u'锦龙股份']
-    full_list = [u'天通控股股份有限公司', u'广东锦龙发展股份有限公司']
     return stock_list, full_list
 
 

@@ -1,39 +1,30 @@
 # -*- coding: utf-8 -*-
 
-import collections
-import copy
-import math
-import os
-import re
-import sys
-
-import Levenshtein
-import gensim.models.phrases
-import jieba
+import sys, os, jieba, math, collections, re, copy, json, traceback
 import jieba.posseg as pseg
-
-import readfile as rf
 import settings
-
+import readfile as rf
+import gensim.models.phrases
+import Levenshtein
+import time
 cur_dir = os.path.dirname(os.path.abspath(__file__)) or os.getcwd()
 sys.path.append("../preProcess")
 sys.path.append("../similar/similar")
 
 from preProcess import PreProcess
-
-import time
-
+from similar import Model
 
 class Keywords(object):
+
     def __init__(self, df_file, stopfile):
         """
         Brief:
             constructor of Keywords.
         """
-        # self.synonym_model = Model("./synonym_dicts/synonym.txt", "./synonym_dicts/tyccl.txt",
-        #                            "./synonym_dicts/redirect.txt", "./synonym_dicts/wiki_similar.txt",
-        #                            "./synonym_dicts/vec.txt", only_synonym=True)
-        self.update_period = 0  # minute
+        self.synonym_model = Model("./synonym_dicts/synonym.txt", "./synonym_dicts/tyccl.txt",
+                                   "./synonym_dicts/redirect.txt", "./synonym_dicts/wiki_similar.txt",
+                                   "./synonym_dicts/vec.txt", only_synonym=True)
+        self.update_period = 10  # minute
         self.updated_time = 0
         self.user_dicts = set()
         self.ner_dicts = set()
@@ -60,7 +51,7 @@ class Keywords(object):
                 'nrfg': 1.5, \
                 'ns': 1.3, \
                 'nsf': 1.3, \
-                'nt': 1.5, \
+                'nt': 1.8, \
                 'nz': 1.3, \
                 'ng': 1.0, \
                 'a': 0.5, \
@@ -92,6 +83,7 @@ class Keywords(object):
             for word, freq, tag in now_dict - self.finance_dicts:
                 jieba.add_word(word, freq, tag)
             self.finance_dicts = now_dict
+
             # 停用词和噪声词
             self.st_stopwords = self.merge_stop_nosie()
             self.updated_time = now_time
@@ -103,27 +95,42 @@ class Keywords(object):
         return merge_list
 
     def merge_ner_dict(self):
+        print 'ner_merge'
         stock_name, full_name = rf.read_public_company()
+        organization = rf.read_organization()
+        # print len(list(organization))
+        organization = set(organization)
         stock_name = set(stock_name)
         full_name = set(full_name)
-        merge_list = stock_name | full_name
+        merge_list = stock_name | full_name | organization  
         # merge_list = user_dict
         return merge_list
 
     def merge_ner_weight(self, key_dict):
+        print 'weight_merge'
         stock_name, full_name = rf.read_public_company()
         stock_dict = {}
         for i in range(len(stock_name)):
-            stock_dict[full_name[i]] = stock_name[i]
+            stock_dict[stock_name[i]] = full_name[i]
         for key in key_dict.keys():
             if key in stock_dict.keys():
+                #	print stock_dict[key]
                 if stock_dict[key] in key_dict.keys():
+                    #	    print key_dict[stock_dict[key]]
                     key_dict[stock_dict[key]][0] += key_dict[key][0]
                 else:
                     key_dict[stock_dict[key]] = [0, 'nt']
                     key_dict[stock_dict[key]][0] = key_dict[key][0]
                 del key_dict[key]
         return key_dict
+
+    def filter_number(self, words):
+        for i in words.keys():
+            if any(char.isdigit() for char in i):
+                del words[i]
+        return words
+
+
 
     def filter_url(self, line):
         """
@@ -146,9 +153,6 @@ class Keywords(object):
             jieba segmentation with both word and part of speech returned. 
         """
         l_words = [(obj.word.strip(), obj.flag) for obj in pseg.cut(line.strip()) if obj.word.strip()]
-        # for tu in l_words:
-        #     for i in tu:
-        #         print i
         l_res = []
         flag = None
         flag_n_combine = False
@@ -158,15 +162,14 @@ class Keywords(object):
                 flag_n_combine = True
                 flag = l_res[-1][1]
             elif flag and flag_n_combine and (
-                                            'nr' in pair[1] or 'ns' in pair[1] or 'nt' in pair[1] or 'nz' in pair[
-                                1] or 'n' ==
-                            pair[1] or 'j' == pair[1]):
+                                    'nr' in pair[1] or 'ns' in pair[1] or 'nt' in pair[1] or 'nz' in pair[1] or 'n' ==
+                    pair[1] or 'j' == pair[1]):
                 flag = pair[1] if len(pair[1]) > len(l_res[-1][1]) else l_res[-1][1]
                 l_res[-1] = (l_res[-1][0] + pair[0], flag)
             else:
                 flag = None
                 flag_n_combine = False
-                if len(pair[0]) == 1: continue  # REMOVE single-character word
+                if len(pair[0]) == 1: continue  #REMOVE single-character word
                 l_res.append(pair)
         return l_res
 
@@ -186,6 +189,7 @@ class Keywords(object):
         for l_line in ll_lines:
             ll_words.append([t[0] for t in l_line])
             ll_flags.append([t[1] for t in l_line])
+
 
         # 如果a、b 满足：(cnt(a, b) - min_count) * N / (cnt(a) * cnt(b)) > threshold, 就将其当成一个词，N是文本词的总数
         bigram = gensim.models.phrases.Phrases(ll_words, min_count=min_count, threshold=threshold, delimiter='_')
@@ -280,16 +284,12 @@ class Keywords(object):
                     continue
         return d_res
 
-    # def extract_stock(self, d_words):
-
-
     def filter_word_by_pos(self, d_words):
         """
         Brief:
             filter words based on the part of speech.
         """
         d_res = {}
-
         try:
             s_start_pos = {'n', 'v'}
             s_ner_pos = {'nt', 'nr', 'nz', 'ns'}
@@ -308,7 +308,7 @@ class Keywords(object):
                 label = d_words[word][1].split()
                 # 含有ner的bigram，只取出其中的ner部分。
                 if len(label) >= 2 and (
-                                        'nt' in multi_label or 'nr' in multi_label or 'nz' in multi_label or 'ns' in multi_label):
+                                'nt' in multi_label or 'nr' in multi_label or 'nz' in multi_label or 'ns' in multi_label):
                     for idx in range(len(word.split('_'))):
                         l_w = word.split('_')
                         if label[idx] in self.pos_list:
@@ -322,7 +322,7 @@ class Keywords(object):
                 # 主要留下名词性，不出现名词性+副词/形容词
                 if len(label) >= 2 and label[0] in self.pos_list and \
                                 label[-1] in self.pos_list and \
-                                len(word) > 1 and \
+                                len(word) > 1 and\
                         not (label[0] in s_start_pos and label[-1] in s_end_pos):
                     d_res[word] = copy.deepcopy(d_words[word])
                     d_res[word][0] *= max(self.pos_list[label[0]], self.pos_list[label[-1]])
@@ -360,7 +360,7 @@ class Keywords(object):
                         continue
             return d_res
         except Exception, e:
-            # print  traceback.print_exc()
+            print  traceback.print_exc()
             return d_words
 
     def compute_idf(self, wordic):
@@ -377,7 +377,7 @@ class Keywords(object):
                     df = 1
                 else:
                     df = min_df
-            idf = math.log(settings.xinhua_doc_num / df, 10)
+            idf = math.log(settings.cmschina_doc_num / df, 10)
             wordic[word][0] *= 0.5 * idf
         return wordic
 
@@ -417,7 +417,7 @@ class Keywords(object):
                             d_res[word] += d_words[another_word]
                         else:
                             d_res[word] = d_words[word] + d_words[another_word]
-                    # 删除的条件：1.两者jaro相似度大于阈值（即其互为相近词的概率很大）
+                    #删除的条件：1.两者jaro相似度大于阈值（即其互为相近词的概率很大）
                     #            2.两者权重相差不大
                     #            3.删除词的长度都小于对比词
                     #            4.删除词、对比词权重比值在一定范围之内
@@ -436,8 +436,7 @@ class Keywords(object):
             use ordered dictionary to get top-n words.
         """
         d_ordered_res = collections.OrderedDict()
-        for tup in sorted([(item[0], item[1]) for item in d_words.iteritems()], key=lambda x: x[1], reverse=True)[
-                   :topN]:
+        for tup in sorted([(item[0], item[1]) for item in d_words.iteritems()], key=lambda x: x[1], reverse=True)[:topN]:
             d_ordered_res[tup[0]] = tup[1]
         d_ordered_res = self.semantic_dup_remove(d_ordered_res)
         return d_ordered_res  # 如果返回json串， json.loads() 之后是无序的。
@@ -449,8 +448,7 @@ class Keywords(object):
         for k in d_words:
             if k not in deleted_words:
                 words.remove(k)
-                # l_tmp = self.synonym_model.synonym(k.encode("utf-8"))
-                l_tmp = []
+                l_tmp = self.synonym_model.synonym(k.encode("utf-8"))
                 for item1 in l_tmp:
                     for item2 in words:
                         if item1 == item2.encode("utf-8"):
@@ -488,7 +486,7 @@ class Keywords(object):
     def handle_title(self, title):
         """
         Brief:
-            add to satisfy the need of xinhuashe_multitags' need.
+            add to satisfy the need of cmschina_multitags' need.
         Inputs:
         Outputs:
             l_res_titles: the list whose element of format (word, weight).
@@ -528,6 +526,8 @@ class Keywords(object):
                 ll_d.append(self.word_posseg(sent))
         ll_bigram_lines = self.bigram_keywords_extract_pos(ll_d, settings.bigram_min_count, settings.bigram_threshold)
         d_words_weight = self.get_words_weight(ll_bigram_lines)
+        # 过滤数字
+        d_words_weight = self.filter_number(d_words_weight)
         d_words_filter_stop = self.filter_stopwords(d_words_weight)
         d_words_filter_pos = self.filter_word_by_pos(d_words_filter_stop)
         d_words_filter_pos = self.compute_idf(d_words_filter_pos)
@@ -554,16 +554,16 @@ class Keywords(object):
         title = self.prep.normalize(title).decode("utf-8")
         content = self.prep.normalize(content).decode("utf-8")
         d_words_texts = self.core_process(title, content)
+
         d_words_repl = self.remove_delimiter_pos(d_words_texts)
         d_words_rm_redunt = self.remove_redundancy(d_words_repl, settings.similarity_threshold)
         d_words_topN = self.get_topN_Phrase(d_words_rm_redunt, topN)
         return self.normalize_weight(d_words_topN)
 
-
 if __name__ == '__main__':
     text = '''
-    Apple Co.ltd道德卫士我们可以002430蓝黛传动0024301看到重庆蓝黛动力传动机械股份有限公司这种绘图方式实际上傅顶啥是按命令傅顶啥添加的'''
-
+    我们可以看到这种绘图方式实际上是按命令添加的，金嘉富亿，可以以任何方式结束，每加上一个元素，实际上都是以一句单独的命令来实现的。这样做的缺点就是，其实不符合人对于画图的一般认识。其次，就是，我们没有一个停止绘图的标志，这使得有时候再处理的时候就会产生一些困惑。优势其实也有，在做参数修改的时候，我们往往可以很方便地直接用一句单独的命令修改，譬如对于x轴的调整，觉得不满意就可以写命令直接调整。而ggplot2则意味着要重新作图。
+    '''
     topN = 1000
     kw = Keywords(settings.df_file, settings.stopwords)
     d_res = kw.process(text, topN, '')
